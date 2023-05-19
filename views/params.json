@@ -1,0 +1,16 @@
+{
+  "name": "params",
+  "title": "Parameters",
+  "specType": "opendatafit-params",
+  "spec": {
+    "keys": [
+      {
+        "name": "k"
+      }
+    ]
+  },
+  "resources": [
+    "inputParams",
+    "outputParams"
+  ]
+}

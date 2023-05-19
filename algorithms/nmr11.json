@@ -1,0 +1,24 @@
+{
+  "name": "nmr11",
+  "title": "NMR 1:1",
+  "code": "",
+  "inputs": [
+    {
+      "name": "data",
+      "type": "resource",
+      "resource": "data"
+    },
+    {
+      "name": "params",
+      "type": "resource",
+      "resource": "inputParams"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "params",
+      "type": "resource",
+      "resource": "outputParams"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "main",
+  "algorithms": [
+    "nmr11"
+  ],
+  "layout": {
+    "type": "bindfit",
+    "spec": {
+      "panes": [
+        {
+          "name": "control",
+          "tabs": [
+            "data",
+            "params"
+          ]
+        },
+        {
+          "name": "main",
+          "tabs": [
+          ]
+        }
+      ],
+      "tabs": [
+        {
+          "name": "data",
+          "title": "Data",
+          "icon": "",
+          "views": [
+            "data"
+          ]
+        },
+        {
+          "name": "params",
+          "title": "Parameters",
+          "icon": "",
+          "views": [
+            "params"
+          ]
+        }
+      ]
+    }
+  }
+}

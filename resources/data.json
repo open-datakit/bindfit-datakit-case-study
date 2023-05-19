@@ -1,0 +1,24 @@
+{
+  "name": "data",
+  "title": "Data",
+  "description": "Input data",
+  "profile": "tabular-data-resource",
+  "data": [],
+  "schema": {
+    "primaryKey": "x",
+    "fields": [
+      {
+        "name": "x",
+        "type": "number",
+        "title": "",
+        "unit": ""
+      },
+      {
+        "name": "y",
+        "type": "number",
+        "title": "",
+        "unit": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "data",
+  "specType": "opendatafit-csv",
+  "spec": {},
+  "resources": [
+    "data"
+  ]
+}

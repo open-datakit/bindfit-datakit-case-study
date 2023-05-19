@@ -1,0 +1,33 @@
+{
+  "title": "Bindfit",
+  "description": "Binding constant fitter",
+  "algorithms": [
+    {
+      "name": "nmr11"
+    }
+  ],
+  "resources": [
+    {
+      "name": "data"
+    },
+    {
+      "name": "inputParams"
+    },
+    {
+      "name": "outputParams"
+    }
+  ],
+  "views": [
+    {
+      "name": "data"
+    },
+    {
+      "name": "params"
+    }
+  ],
+  "displays": [
+    {
+      "name": "main"
+    }
+  ]
+}

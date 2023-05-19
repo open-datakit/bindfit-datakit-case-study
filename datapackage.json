@@ -1,0 +1,176 @@
+{
+  "title": "Bindfit",
+  "description": "Binding constant fitter",
+  "algorithms": [
+    {
+      "name": "nmr11",
+      "title": "NMR 1:1",
+      "code": "",
+      "inputs": [
+        {
+          "name": "data",
+          "type": "resource",
+          "resource": "data"
+        },
+        {
+          "name": "params",
+          "type": "resource",
+          "resource": "inputParams"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "params",
+          "type": "resource",
+          "resource": "outputParams"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "data",
+      "title": "Data",
+      "description": "Input data",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {
+        "primaryKey": "x",
+        "fields": [
+          {
+            "name": "x",
+            "type": "number",
+            "title": "",
+            "unit": ""
+          },
+          {
+            "name": "y",
+            "type": "number",
+            "title": "",
+            "unit": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParams",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "data": {
+        "k": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": "Infinity"
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "outputParams",
+      "title": "Optimised parameters",
+      "description": "Optimised parameter values",
+      "profile": "parameter-data-resource"
+    }
+  ],
+  "views": [
+    {
+      "name": "data",
+      "specType": "opendatafit-csv",
+      "spec": {},
+      "resources": [
+        "data"
+      ]
+    },
+    {
+      "name": "params",
+      "title": "Parameters",
+      "specType": "opendatafit-params",
+      "spec": {
+        "keys": [
+          {
+            "name": "k"
+          }
+        ]
+      },
+      "resources": [
+        "inputParams",
+        "outputParams"
+      ]
+    }
+  ],
+  "displays": [
+    {
+      "name": "main",
+      "algorithms": [
+        "nmr11"
+      ],
+      "layout": {
+        "type": "bindfit",
+        "spec": {
+          "panes": [
+            {
+              "name": "control",
+              "tabs": [
+                "data",
+                "params"
+              ]
+            },
+            {
+              "name": "main",
+              "tabs": []
+            }
+          ],
+          "tabs": [
+            {
+              "name": "data",
+              "title": "Data",
+              "icon": "",
+              "views": [
+                "data"
+              ]
+            },
+            {
+              "name": "params",
+              "title": "Parameters",
+              "icon": "",
+              "views": [
+                "params"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

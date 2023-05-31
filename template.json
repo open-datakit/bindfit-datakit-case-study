@@ -3,7 +3,7 @@
   "description": "Binding constant fitter",
   "algorithms": [
     {
-      "name": "nmr11"
+      "name": "bindfit"
     }
   ],
   "resources": [

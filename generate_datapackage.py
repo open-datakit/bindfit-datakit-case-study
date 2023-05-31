@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import json
+import base64
 
 # Load datapackage template
 with open("template.json") as f:
@@ -11,7 +12,15 @@ def populate_items(dp, key):
     items = []
     for i in dp[key]:
         with open(key + "/" + i["name"] + ".json") as f:
-            items.append(json.load(f))
+            # Load individual item json definition
+            item = json.load(f)
+
+            # If algorithm, populate code field in base64
+            if key == "algorithms" and "code" in item:
+                with open(key + "/" + i["name"] + ".py", "rb") as c:
+                    item["code"] = base64.b64encode(c.read()).decode("utf-8")
+
+            items.append(item)
     dp[key] = items
 
 # TODO: Populate code in algorithms

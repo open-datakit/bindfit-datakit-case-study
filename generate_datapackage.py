@@ -23,8 +23,6 @@ def populate_items(dp, key):
             items.append(item)
     dp[key] = items
 
-# TODO: Populate code in algorithms
-
 for key in ["algorithms", "resources", "views", "displays"]:
     populate_items(dp, key)
 

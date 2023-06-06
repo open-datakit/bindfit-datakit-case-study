@@ -1,0 +1,117 @@
+{
+  "name": "options",
+  "title": "Fit options",
+  "description": "Fit options",
+  "profile": "options-data-resource",
+  "data": {
+    "model": "nmr1to1",
+    "method": "Nelder-Mead",
+    "normalise": true,
+    "dilute": false,
+    "flavour": "none"
+  },
+  "schema": {
+    "fields": [
+      {
+        "name": "model",
+        "title": "Fit model",
+        "description": "The model to fit to the data",
+        "type": "object",
+        "objectFields": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "constraints": {
+          "enum": [
+            {
+              "title": "NMR 1:1",
+              "name": "nmr1to1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "method",
+        "title": "Fit method",
+        "description": "The optimisation method to use for fitting",
+        "type": "object",
+        "objectFields": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "constraints": {
+          "enum": [
+            {
+              "title": "Nelder-Mead",
+              "name": "Nelder-Mead"
+            },
+            {
+              "title": "L-BFGS-B",
+              "name": "L-BFGS-B"
+            }
+          ]
+        }
+      },
+      {
+        "name": "normalise",
+        "title": "Subtract initial values",
+        "description": "Subtract initial values from data before fitting",
+        "type": "boolean"
+      },
+      {
+        "name": "dilute",
+        "title": "Dilution correction",
+        "description": "Apply dilution correction to data",
+        "type": "boolean"
+      },
+      {
+        "name": "flavour",
+        "title": "Flavour",
+        "description": "Fitting algorithm flavour",
+        "type": "object",
+        "objectFields": [
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ],
+        "constraints": {
+          "enum": [
+            {
+              "title": "None (Full)",
+              "name": "none"
+            },
+            {
+              "title": "Non-cooperative",
+              "name": "noncoop"
+            },
+            {
+              "title": "Additive",
+              "name": "add"
+            },
+            {
+              "title": "Statistical",
+              "name": "stat"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

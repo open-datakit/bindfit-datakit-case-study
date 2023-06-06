@@ -6,7 +6,7 @@
       {
         "name": "bindfit",
         "title": "Bindfit",
-        "code": "ZGVmIG1haW4oCiAgICBkYXRhLAogICAgcGFyYW1zLAogICAgIyBvcHRpb25zLAogICAgKiprd2FyZ3MsCik6CiAgICBpbXBvcnQgbnVtcHkgYXMgbnAKCiAgICBpbXBvcnQgYmluZGZpdAoKICAgIHByaW50KCJBTEdPUklUSE0iKQogICAgcHJpbnQoImRhdGE6IiwgZGF0YSkKICAgIHByaW50KCJwYXJhbXM6IiwgcGFyYW1zKQoKICAgICMgUGFyYW1ldGVycyBhbmQgb3B0aW9ucwogICAgcGFyYW1zID0gewogICAgICAgICJrIjogewogICAgICAgICAgICAiaW5pdCI6IDEwMC4wLAogICAgICAgICAgICAiYm91bmRzIjogewogICAgICAgICAgICAgICAgIm1pbiI6IDAuMCwKICAgICAgICAgICAgICAgICJtYXgiOiBOb25lLAogICAgICAgICAgICB9LAogICAgICAgIH0sCiAgICB9CgogICAgZml0dGVyX25hbWUgPSAibm1yMXRvMSIKICAgIG1ldGhvZCA9ICJOZWxkZXItTWVhZCIKICAgIG5vcm1hbGlzZSA9IFRydWUKICAgIGRpbHV0ZSA9IEZhbHNlCiAgICBmbGF2b3VyID0gIm5vbmUiCgogICAgIyBMb2FkIHJhdyBkYXRhCiAgICBkYXRhID0gbnAuZ2VuZnJvbXR4dCgiaW5wdXQuY3N2IiwgZGVsaW1pdGVyPSIsIiwgc2tpcF9oZWFkZXI9MSkKICAgICMgQmluZGZpdCBleHBlY3RzIGVhY2ggdmFyaWFibGUgYXMgcm93cwogICAgZGF0YV94ID0gbnAudHJhbnNwb3NlKGRhdGFbOiwgOjJdKQogICAgZGF0YV95ID0gbnAudHJhbnNwb3NlKGRhdGFbOiwgMjpdKQoKICAgICMgQXBwbHkgZGlsdXRpb24gY29ycmVjdGlvbgogICAgIyBUT0RPOiBUaGluayBhYm91dCB3aGVyZSB0aGlzIHNob3VsZCBnbyAtIGZpdHRlciBvciBmdW5jdGlvbj8KICAgICMgT3IganVzdCBhcHBseSBpdCBiZWZvcmUgdGhlIGZpdD8KICAgIGlmIGRpbHV0ZToKICAgICAgICBkYXRhX3kgPSBiaW5kZml0LmhlbHBlcnMuZGlsdXRlKGRhdGFfeFswXSwgZGF0YV95KQoKICAgIGZ1bmN0aW9uID0gYmluZGZpdC5mdW5jdGlvbnMuY29uc3RydWN0KAogICAgICAgIGZpdHRlcl9uYW1lLAogICAgICAgIG5vcm1hbGlzZT1ub3JtYWxpc2UsCiAgICAgICAgZmxhdm91cj1mbGF2b3VyLAogICAgKQoKICAgIGZpdHRlciA9IGJpbmRmaXQuZml0dGVyLkZpdHRlcigKICAgICAgICBkYXRhX3gsIGRhdGFfeSwgZnVuY3Rpb24sIG5vcm1hbGlzZT1ub3JtYWxpc2UsIHBhcmFtcz1wYXJhbXMKICAgICkKCiAgICBmaXR0ZXIucnVuX3NjaXB5KHBhcmFtcywgbWV0aG9kPW1ldGhvZCkKCiAgICBzdW1tYXJ5ID0gewogICAgICAgICJmaXR0ZXIiOiBmaXR0ZXJfbmFtZSwKICAgICAgICAiZml0IjogewogICAgICAgICAgICAieSI6IGZpdHRlci5maXQsCiAgICAgICAgICAgICJjb2VmZnNfcmF3IjogZml0dGVyLmNvZWZmc19yYXcsCiAgICAgICAgICAgICJjb2VmZnMiOiBmaXR0ZXIuY29lZmZzLAogICAgICAgICAgICAibW9sZWZyYWNfcmF3IjogZml0dGVyLm1vbGVmcmFjX3JhdywKICAgICAgICAgICAgIm1vbGVmcmFjIjogZml0dGVyLm1vbGVmcmFjLAogICAgICAgICAgICAicGFyYW1zIjogZml0dGVyLnBhcmFtcywKICAgICAgICAgICAgIm5feSI6IG5wLmFycmF5KGZpdHRlci5maXQpLnNpemUsCiAgICAgICAgICAgICJuX3BhcmFtcyI6IGxlbihmaXR0ZXIucGFyYW1zKSArIG5wLmFycmF5KGZpdHRlci5jb2VmZnNfcmF3KS5zaXplLAogICAgICAgIH0sCiAgICAgICAgInFvZiI6IHsKICAgICAgICAgICAgInJlc2lkdWFscyI6IGZpdHRlci5yZXNpZHVhbHMsCiAgICAgICAgICAgICJzc3IiOiBiaW5kZml0LmhlbHBlcnMuc3NyKGZpdHRlci5yZXNpZHVhbHMpLAogICAgICAgICAgICAicm1zIjogYmluZGZpdC5oZWxwZXJzLnJtcyhmaXR0ZXIucmVzaWR1YWxzKSwKICAgICAgICAgICAgImNvdiI6IGJpbmRmaXQuaGVscGVycy5jb3YoZGF0YV95LCBmaXR0ZXIucmVzaWR1YWxzKSwKICAgICAgICAgICAgInJtc190b3RhbCI6IGJpbmRmaXQuaGVscGVycy5ybXMoZml0dGVyLnJlc2lkdWFscywgdG90YWw9VHJ1ZSksCiAgICAgICAgICAgICJjb3ZfdG90YWwiOiBiaW5kZml0LmhlbHBlcnMuY292KGRhdGFfeSwgZml0dGVyLnJlc2lkdWFscywgdG90YWw9VHJ1ZSksCiAgICAgICAgfSwKICAgICAgICAidGltZSI6IGZpdHRlci50aW1lLAogICAgICAgICJvcHRpb25zIjogewogICAgICAgICAgICAiZGlsdXRlIjogZGlsdXRlLAogICAgICAgICAgICAibm9ybWFsaXNlIjogbm9ybWFsaXNlLAogICAgICAgICAgICAibWV0aG9kIjogbWV0aG9kLAogICAgICAgICAgICAiZmxhdm91ciI6IGZsYXZvdXIsCiAgICAgICAgfSwKICAgIH0KCiAgICByZXR1cm4gc3VtbWFyeQo=",
+        "code": "ZGVmIG1haW4oCiAgICBkYXRhLAogICAgcGFyYW1zLAogICAgb3B0aW9ucywKICAgICoqa3dhcmdzLAopOgogICAgaW1wb3J0IG51bXB5IGFzIG5wCiAgICBpbXBvcnQgcGFuZGFzIGFzIHBkCgogICAgaW1wb3J0IGJpbmRmaXQKCgogICAgIyBDb252ZXJ0IHBhcmFtcyB0byBCaW5kZml0IGZvcm1hdAogICAgIyBUT0RPOiBNb2RpZnkgbGlicmFyeSB0byBhY2NlcHQgRnJpY3Rpb25sZXNzIHBhcmFtcyBmb3JtYXQKICAgIGJpbmRmaXRfcGFyYW1zID0ge30KCiAgICBmb3Iga2V5LCBwYXJhbSBpbiBwYXJhbXNbImRhdGEiXS5pdGVtcygpOgogICAgICAgIGJpbmRmaXRfcGFyYW1zLnVwZGF0ZSh7CiAgICAgICAgICAgIGtleTogewogICAgICAgICAgICAgICAgImluaXQiOiBwYXJhbVsidmFsdWUiXSwKICAgICAgICAgICAgICAgICJib3VuZHMiOiB7CiAgICAgICAgICAgICAgICAgICAgIm1pbiI6IHBhcmFtWyJsb3dlckJvdW5kIl0sCiAgICAgICAgICAgICAgICAgICAgIm1heCI6IHBhcmFtWyJ1cHBlckJvdW5kIl0sCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICB9CiAgICAgICAgfSkKCiAgICAjIEJpbmRmaXQgb3B0aW9ucwogICAgbW9kZWwgPSBvcHRpb25zWyJkYXRhIl1bIm1vZGVsIl0KICAgIG1ldGhvZCA9IG9wdGlvbnNbImRhdGEiXVsibWV0aG9kIl0KICAgIG5vcm1hbGlzZSA9IG9wdGlvbnNbImRhdGEiXVsibm9ybWFsaXNlIl0KICAgIGRpbHV0ZSA9IG9wdGlvbnNbImRhdGEiXVsiZGlsdXRlIl0KICAgIGZsYXZvdXIgPSBvcHRpb25zWyJkYXRhIl1bImZsYXZvdXIiXQoKICAgICMgTG9hZCBkYXRhCiAgICBkZiA9IHBkLkRhdGFGcmFtZS5mcm9tX2RpY3QoZGF0YVsiZGF0YSJdKQogICAgIyBCaW5kZml0IGV4cGVjdHMgZWFjaCB2YXJpYWJsZSBhcyByb3dzCiAgICBkYXRhX3ggPSBucC50cmFuc3Bvc2UoZGYuaWxvY1s6LCA6Ml0udG9fbnVtcHkoKSkKICAgIGRhdGFfeSA9IG5wLnRyYW5zcG9zZShkZi5pbG9jWzosIDI6XS50b19udW1weSgpKQoKICAgICMgQXBwbHkgZGlsdXRpb24gY29ycmVjdGlvbgogICAgIyBUT0RPOiBUaGluayBhYm91dCB3aGVyZSB0aGlzIHNob3VsZCBnbyAtIGZpdHRlciBvciBmdW5jdGlvbj8KICAgICMgT3IganVzdCBhcHBseSBpdCBiZWZvcmUgdGhlIGZpdD8KICAgIGlmIGRpbHV0ZToKICAgICAgICBkYXRhX3kgPSBiaW5kZml0LmhlbHBlcnMuZGlsdXRlKGRhdGFfeFswXSwgZGF0YV95KQoKICAgIGZ1bmN0aW9uID0gYmluZGZpdC5mdW5jdGlvbnMuY29uc3RydWN0KAogICAgICAgIG1vZGVsLAogICAgICAgIG5vcm1hbGlzZT1ub3JtYWxpc2UsCiAgICAgICAgZmxhdm91cj1mbGF2b3VyLAogICAgKQoKICAgIGZpdHRlciA9IGJpbmRmaXQuZml0dGVyLkZpdHRlcigKICAgICAgICBkYXRhX3gsIGRhdGFfeSwgZnVuY3Rpb24sIG5vcm1hbGlzZT1ub3JtYWxpc2UsIHBhcmFtcz1iaW5kZml0X3BhcmFtcwogICAgKQoKICAgIGZpdHRlci5ydW5fc2NpcHkoYmluZGZpdF9wYXJhbXMsIG1ldGhvZD1tZXRob2QpCgogICAgc3VtbWFyeSA9IHsKICAgICAgICAiZml0dGVyIjogbW9kZWwsCiAgICAgICAgImZpdCI6IHsKICAgICAgICAgICAgInkiOiBmaXR0ZXIuZml0LAogICAgICAgICAgICAiY29lZmZzX3JhdyI6IGZpdHRlci5jb2VmZnNfcmF3LAogICAgICAgICAgICAiY29lZmZzIjogZml0dGVyLmNvZWZmcywKICAgICAgICAgICAgIm1vbGVmcmFjX3JhdyI6IGZpdHRlci5tb2xlZnJhY19yYXcsCiAgICAgICAgICAgICJtb2xlZnJhYyI6IGZpdHRlci5tb2xlZnJhYywKICAgICAgICAgICAgInBhcmFtcyI6IGZpdHRlci5wYXJhbXMsCiAgICAgICAgICAgICJuX3kiOiBucC5hcnJheShmaXR0ZXIuZml0KS5zaXplLAogICAgICAgICAgICAibl9wYXJhbXMiOiBsZW4oZml0dGVyLnBhcmFtcykgKyBucC5hcnJheShmaXR0ZXIuY29lZmZzX3Jhdykuc2l6ZSwKICAgICAgICB9LAogICAgICAgICJxb2YiOiB7CiAgICAgICAgICAgICJyZXNpZHVhbHMiOiBmaXR0ZXIucmVzaWR1YWxzLAogICAgICAgICAgICAic3NyIjogYmluZGZpdC5oZWxwZXJzLnNzcihmaXR0ZXIucmVzaWR1YWxzKSwKICAgICAgICAgICAgInJtcyI6IGJpbmRmaXQuaGVscGVycy5ybXMoZml0dGVyLnJlc2lkdWFscyksCiAgICAgICAgICAgICJjb3YiOiBiaW5kZml0LmhlbHBlcnMuY292KGRhdGFfeSwgZml0dGVyLnJlc2lkdWFscyksCiAgICAgICAgICAgICJybXNfdG90YWwiOiBiaW5kZml0LmhlbHBlcnMucm1zKGZpdHRlci5yZXNpZHVhbHMsIHRvdGFsPVRydWUpLAogICAgICAgICAgICAiY292X3RvdGFsIjogYmluZGZpdC5oZWxwZXJzLmNvdihkYXRhX3ksIGZpdHRlci5yZXNpZHVhbHMsIHRvdGFsPVRydWUpLAogICAgICAgIH0sCiAgICAgICAgInRpbWUiOiBmaXR0ZXIudGltZSwKICAgICAgICAib3B0aW9ucyI6IHsKICAgICAgICAgICAgImRpbHV0ZSI6IGRpbHV0ZSwKICAgICAgICAgICAgIm5vcm1hbGlzZSI6IG5vcm1hbGlzZSwKICAgICAgICAgICAgIm1ldGhvZCI6IG1ldGhvZCwKICAgICAgICAgICAgImZsYXZvdXIiOiBmbGF2b3VyLAogICAgICAgIH0sCiAgICB9CgogICAgcmV0dXJuIHN1bW1hcnkK",
         "inputs": [
           {
             "name": "data",
@@ -17,6 +17,11 @@
             "name": "params",
             "type": "resource",
             "resource": "inputParams"
+          },
+          {
+            "name": "options",
+            "type": "resource",
+            "resource": "options"
           }
         ],
         "outputs": [
@@ -278,7 +283,7 @@
             "vary": true,
             "value": 100,
             "lowerBound": 0,
-            "upperBound": "Infinity"
+            "upperBound": null
           }
         },
         "schema": {
@@ -317,6 +322,123 @@
         "title": "Optimised parameters",
         "description": "Optimised parameter values",
         "profile": "parameter-data-resource"
+      },
+      {
+        "name": "options",
+        "title": "Fit options",
+        "description": "Fit options",
+        "profile": "options-data-resource",
+        "data": {
+          "model": "nmr1to1",
+          "method": "Nelder-Mead",
+          "normalise": true,
+          "dilute": false,
+          "flavour": "none"
+        },
+        "schema": {
+          "fields": [
+            {
+              "name": "model",
+              "title": "Fit model",
+              "description": "The model to fit to the data",
+              "type": "object",
+              "objectFields": [
+                {
+                  "name": "title",
+                  "type": "string"
+                },
+                {
+                  "name": "name",
+                  "type": "string"
+                }
+              ],
+              "constraints": {
+                "enum": [
+                  {
+                    "title": "NMR 1:1",
+                    "name": "nmr1to1"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "method",
+              "title": "Fit method",
+              "description": "The optimisation method to use for fitting",
+              "type": "object",
+              "objectFields": [
+                {
+                  "name": "title",
+                  "type": "string"
+                },
+                {
+                  "name": "name",
+                  "type": "string"
+                }
+              ],
+              "constraints": {
+                "enum": [
+                  {
+                    "title": "Nelder-Mead",
+                    "name": "Nelder-Mead"
+                  },
+                  {
+                    "title": "L-BFGS-B",
+                    "name": "L-BFGS-B"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "normalise",
+              "title": "Subtract initial values",
+              "description": "Subtract initial values from data before fitting",
+              "type": "boolean"
+            },
+            {
+              "name": "dilute",
+              "title": "Dilution correction",
+              "description": "Apply dilution correction to data",
+              "type": "boolean"
+            },
+            {
+              "name": "flavour",
+              "title": "Flavour",
+              "description": "Fitting algorithm flavour",
+              "type": "object",
+              "objectFields": [
+                {
+                  "name": "title",
+                  "type": "string"
+                },
+                {
+                  "name": "name",
+                  "type": "string"
+                }
+              ],
+              "constraints": {
+                "enum": [
+                  {
+                    "title": "None (Full)",
+                    "name": "none"
+                  },
+                  {
+                    "title": "Non-cooperative",
+                    "name": "noncoop"
+                  },
+                  {
+                    "title": "Additive",
+                    "name": "add"
+                  },
+                  {
+                    "title": "Statistical",
+                    "name": "stat"
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ],
     "views": [

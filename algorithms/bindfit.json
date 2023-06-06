@@ -12,6 +12,11 @@
       "name": "params",
       "type": "resource",
       "resource": "inputParams"
+    },
+    {
+      "name": "options",
+      "type": "resource",
+      "resource": "options"
     }
   ],
   "outputs": [

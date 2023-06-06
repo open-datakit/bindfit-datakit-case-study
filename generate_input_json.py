@@ -31,7 +31,7 @@ for header in headers:
 data_resource["fields"] = fields
 
 # Populate data
-data_resource["data"] = [ row.to_dict() for i, row in df.iterrows() ]
+data_resource["data"] = df.to_dict(orient="records")
 
 # Write input.json for testing local execution
 with open("input.json", "w") as f:

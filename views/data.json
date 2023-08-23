@@ -1,6 +1,6 @@
 {
   "name": "data",
-  "specType": "opendatafit-csv",
+  "specType": "opendatafit-upload",
   "spec": {},
   "resources": [
     "data"

@@ -1,7 +1,7 @@
 {
   "name": "main",
   "algorithms": [
-    "nmr11"
+    "bindfit"
   ],
   "layout": {
     "type": "bindfit",

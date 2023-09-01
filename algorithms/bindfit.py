@@ -33,7 +33,16 @@ def main(
     flavour = options["data"]["flavour"]
 
     # Load data
-    df = pd.DataFrame.from_dict(data["data"])
+    # TODO: Split this function out into datapackage-utilities library
+    def datapackage_to_dataframe(dp):
+        df = pd.DataFrame.from_dict(dp["data"])
+        # Reorder columns by schema field order
+        cols = [ field["name"] for field in dp["schema"]["fields"] ]
+        df = df[cols]
+        return df
+
+    df = datapackage_to_dataframe(data)
+
     # Bindfit expects each variable as rows
     data_x = np.transpose(df.iloc[:, :2].to_numpy())
     data_y = np.transpose(df.iloc[:, 2:].to_numpy())

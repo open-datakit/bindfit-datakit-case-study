@@ -28,7 +28,8 @@ for header in headers:
         "type": "number",
     })
 
-data_resource["fields"] = fields
+data_resource["schema"]["fields"] = fields
+data_resource["schema"]["primaryKey"] = fields[0]["name"]
 
 # Populate data
 data_resource["data"] = df.to_dict(orient="records")

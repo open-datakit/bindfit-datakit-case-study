@@ -2,6 +2,7 @@ def main(
     data,
     params,
     options,
+    outputs,
     **kwargs,
 ):
     import numpy as np
@@ -94,4 +95,14 @@ def main(
         },
     }
 
-    return summary
+    for key, param in fitter.params.items():
+        outputs["params"].update({
+            "data": {
+                key: {
+                    "value": param["value"],
+                    "stderr": param["stderr"],
+                },
+            },
+        })
+
+    return outputs

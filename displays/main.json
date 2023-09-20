@@ -10,31 +10,42 @@
         {
           "name": "control",
           "tabs": [
-            "data",
-            "params"
+            "control"
           ]
         },
         {
           "name": "main",
           "tabs": [
+            "fit",
+            "data"
           ]
         }
       ],
       "tabs": [
         {
+          "name": "control",
+          "title": "Options",
+          "icon": "",
+          "views": [
+            "upload",
+            "params"
+          ]
+        },
+        {
+          "name": "fit",
+          "title": "Fit",
+          "icon": "",
+          "views": [
+            "fitGraph"
+          ]
+        },
+        {
           "name": "data",
           "title": "Data",
           "icon": "",
           "views": [
-            "data"
-          ]
-        },
-        {
-          "name": "params",
-          "title": "Parameters",
-          "icon": "",
-          "views": [
-            "params"
+            "dataTable",
+            "fitTable"
           ]
         }
       ]

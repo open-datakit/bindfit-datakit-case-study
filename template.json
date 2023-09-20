@@ -8,24 +8,39 @@
   ],
   "resources": [
     {
-      "name": "data"
+      "name": "inputData"
     },
     {
       "name": "inputParams"
     },
     {
+      "name": "inputOptions"
+    },
+    {
       "name": "outputParams"
     },
     {
-      "name": "options"
+      "name": "outputFit"
+    },
+    {
+      "name": "outputResiduals"
     }
   ],
   "views": [
     {
-      "name": "data"
+      "name": "upload"
     },
     {
       "name": "params"
+    },
+    {
+      "name": "dataTable"
+    },
+    {
+      "name": "fitTable"
+    },
+    {
+      "name": "fitGraph"
     }
   ],
   "displays": [

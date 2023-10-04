@@ -7,10 +7,22 @@
       {
         "name": "k"
       }
-    ]
+    ],
+    "parameterSpace": {
+      "type": "algorithmInput",
+      "algorithm": "bindfit",
+      "name": "params"
+    }
   },
-  "resources": [
-    "inputParams",
-    "outputParams"
-  ]
+  "resources": {
+    "input": {
+      "type": "algorithmInput",
+      "algorithm": "bindfit",
+      "name": "params"
+    },
+    "output": {
+      "type": "resource",
+      "name": "outputParams"
+    }
+  }
 }

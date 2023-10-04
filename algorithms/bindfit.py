@@ -26,8 +26,9 @@ def main(
             }
         })
 
+    model = params["metadata"]["model"]["name"]
+
     # Bindfit options
-    model = options["data"]["model"]
     method = options["data"]["method"]
     normalise = options["data"]["normalise"]
     dilute = options["data"]["dilute"]
@@ -97,14 +98,28 @@ def main(
 
     # TODO: This conversion should be moved to Bindfit library
     for key, param in fitter.params.items():
-        outputs["params"].update({
-            "data": {
+        try:
+            outputs["params"]["data"].update({
                 key: {
                     "value": param["value"],
                     "stderr": param["stderr"],
                 },
-            },
-        })
+            })
+        except KeyError:
+            # No existing data key, create
+            outputs["params"] = {
+                "data": {
+                    key: {
+                        "value": param["value"],
+                        "stderr": param["stderr"],
+                    },
+                },
+            }
+
+    # TODO: Think of a better way of doing this?
+    # Populate output params schema and metadata from input params
+    outputs["params"]["metadata"] = params["metadata"]
+    outputs["params"]["schema"] = params["schema"]
 
     # Translate fitter.fit into JSON for tabular data schema
     # TODO: This should be done by the Bindfit library

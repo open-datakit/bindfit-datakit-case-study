@@ -3,11 +3,6 @@
   "title": "Parameters",
   "specType": "opendatafit-params",
   "spec": {
-    "keys": [
-      {
-        "name": "k"
-      }
-    ],
     "parameterSpace": {
       "type": "algorithmInput",
       "algorithm": "bindfit",

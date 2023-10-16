@@ -125,7 +125,7 @@
             "legendgroup": 3,
             "marker": {
               "size": 8,
-              "color": "darkmagenta",
+              "color": "darkgoldenrod",
               "symbol": "circle-open-dot"
             },
             "x": [
@@ -361,7 +361,7 @@
             "legendgroup": 3,
             "line": {
                 "width": 1,
-                "color": "darkmagenta",
+                "color": "darkgoldenrod",
                 "shape": "spline"
             },
             "x": [
@@ -598,7 +598,7 @@
             "legendgroup": 3,
             "line": {
                 "width": 1,
-                "color": "darkmagenta"
+                "color": "darkgoldenrod"
             },
             "x": [
                 "0",
@@ -710,8 +710,13 @@
         }
     ],
     "layout": {
-        "title": {
-            "text": "Bindfit"
+        "margin": {
+          "t": 5,
+          "b": 5,
+          "l": 5,
+          "r": 5,
+          "pad": 0,
+          "autoexpand": true
         },
         "xaxis": {
             "title": {
@@ -725,11 +730,19 @@
             "side": "bottom",
             "type": "linear",
             "autorange": true,
-            "automargin": true
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
         },
         "yaxis": {
             "title": {
-                "text": "$\\delta$"
+                "text": "δ"
             },
             "ticksuffix": " ppm",
             "exponentformat": "power",
@@ -739,7 +752,16 @@
             ],
             "side": "left",
             "type": "linear",
-            "autorange": true
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
         },
         "yaxis2": {
             "title": {
@@ -753,8 +775,19 @@
             ],
             "side": "left",
             "type": "linear",
-            "autorange": true
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
         },
+        "plot_bgcolor": "white",
+        "paper_bgcolor": "white",
         "autosize": true,
         "hovermode": "x",
         "showlegend": true,

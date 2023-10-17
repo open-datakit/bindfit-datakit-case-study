@@ -69,6 +69,11 @@
       "name": "qof",
       "type": "resource",
       "resource": "outputQof"
+    },
+    {
+      "name": "coeffs",
+      "type": "resource",
+      "resource": "outputCoeffs"
     }
   ]
 }

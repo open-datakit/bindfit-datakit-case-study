@@ -202,6 +202,10 @@ def main(
         }
     ]
 
+    # TODO: Output data should be stripped before being passed to algorithm
+    # so we don't have to reset it beforehand
+    outputs["qof"]["data"] = []
+
     y_names = [ i["name"] for i in data["schema"]["fields"][2:] ]
     rms = bindfit.helpers.rms(fitter.residuals)
     cov = bindfit.helpers.cov(data_y, fitter.residuals)
@@ -217,5 +221,49 @@ def main(
         "rms": bindfit.helpers.rms(fitter.residuals, total=True),
         "cov": bindfit.helpers.cov(data_y, fitter.residuals, total=True),
     })
+
+    # TODO: Output data should be stripped before being passed to algorithm
+    # so we don't have to reset it beforehand
+    outputs["coeffs"]["data"] = []
+
+    # TODO: Please get rid of this XD
+    # This mapping should happen inside Bindfit library
+    # Copied from molefrac_to_json above
+    coeff_field_name_map = {
+        "nmr1to1": ["H", "HG"],
+        "nmr1to2": ["H", "HG", "HG2"],
+    }
+
+    y_fields = [ i["name"] for i in data["schema"]["fields"][2:] ]
+    coeff_fields = coeff_field_name_map[model]
+
+    outputs["coeffs"]["schema"] = {
+        "primaryKey": "name",
+        "fields": [
+            {
+                "name": "name",
+                "title": "Name",
+                "type": "string",
+                "unit": "",
+            }
+        ] +
+        [
+            {
+                "name": i,
+                "title": i,
+                "type": "number",
+                "unit": "",
+            }
+            for i in coeff_fields
+        ],
+    }
+
+    for name, c in zip(y_fields, zip(*fitter.coeffs)):
+        coeff_row = {
+            "name": name,
+            **dict(zip(coeff_fields, c))
+        }
+
+        outputs["coeffs"]["data"].append(coeff_row)
 
     return outputs

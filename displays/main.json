@@ -55,7 +55,8 @@
           "icon": "",
           "views": [
             "fitDetailsTable",
-            "qofTable"
+            "qofTable",
+            "coeffTable"
           ]
         },
         {

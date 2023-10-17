@@ -1,0 +1,9 @@
+{
+  "name": "coeffTable",
+  "title": "Coefficients",
+  "spec": {},
+  "specType": "opendatafit-basic-table",
+  "resources": [
+    "outputCoeffs"
+  ]
+}

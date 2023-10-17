@@ -45,6 +45,9 @@
     },
     {
       "name": "outputQof"
+    },
+    {
+      "name": "outputCoeffs"
     }
   ],
   "views": [
@@ -71,6 +74,9 @@
     },
     {
       "name": "qofTable"
+    },
+    {
+      "name": "coeffTable"
     }
   ],
   "displays": [

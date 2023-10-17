@@ -17,6 +17,7 @@
           "name": "main",
           "tabs": [
             "fit",
+            "molefracs",
             "data"
           ]
         }
@@ -37,6 +38,14 @@
           "icon": "",
           "views": [
             "fitGraph"
+          ]
+        },
+        {
+          "name": "molefracs",
+          "title": "Molefractions",
+          "icon": "",
+          "views": [
+            "molefracGraph"
           ]
         },
         {

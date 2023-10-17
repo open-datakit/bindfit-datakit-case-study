@@ -36,6 +36,9 @@
     },
     {
       "name": "outputResiduals"
+    },
+    {
+      "name": "outputMolefracs"
     }
   ],
   "views": [
@@ -53,6 +56,9 @@
     },
     {
       "name": "fitGraph"
+    },
+    {
+      "name": "molefracGraph"
     }
   ],
   "displays": [

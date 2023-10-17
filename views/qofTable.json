@@ -1,0 +1,9 @@
+{
+  "name": "qofTable",
+  "title": "Quality of fit",
+  "spec": {},
+  "specType": "opendatafit-basic-table",
+  "resources": [
+    "outputQof"
+  ]
+}

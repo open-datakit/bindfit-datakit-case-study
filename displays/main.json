@@ -54,7 +54,8 @@
           "title": "Details",
           "icon": "",
           "views": [
-            "fitDetailsTable"
+            "fitDetailsTable",
+            "qofTable"
           ]
         },
         {

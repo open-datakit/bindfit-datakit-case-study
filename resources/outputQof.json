@@ -1,0 +1,30 @@
+{
+  "name": "outputQof",
+  "title": "Quality of fit",
+  "description": "Quality of fit",
+  "profile": "tabular-data-resource",
+  "data": [],
+  "schema": {
+    "primaryKey": "name",
+    "fields": [
+      {
+        "name": "name",
+        "title": "Name",
+        "unit": "",
+        "type": "string"
+      },
+      {
+        "name": "rms",
+        "title": "RMS",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "cov",
+        "title": "Covariance",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  }
+}

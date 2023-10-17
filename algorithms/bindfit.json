@@ -64,6 +64,11 @@
       "name": "fitDetails",
       "type": "resource",
       "resource": "outputFitDetails"
+    },
+    {
+      "name": "qof",
+      "type": "resource",
+      "resource": "outputQof"
     }
   ]
 }

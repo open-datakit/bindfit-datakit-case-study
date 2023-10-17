@@ -202,4 +202,20 @@ def main(
         }
     ]
 
+    y_names = [ i["name"] for i in data["schema"]["fields"][2:] ]
+    rms = bindfit.helpers.rms(fitter.residuals)
+    cov = bindfit.helpers.cov(data_y, fitter.residuals)
+    for name, r, c in zip(y_names, rms, cov):
+        outputs["qof"]["data"].append({
+            "name": name,
+            "rms": r,
+            "cov": c,
+        })
+
+    outputs["qof"]["data"].append({
+        "name": "Total",
+        "rms": bindfit.helpers.rms(fitter.residuals, total=True),
+        "cov": bindfit.helpers.cov(data_y, fitter.residuals, total=True),
+    })
+
     return outputs

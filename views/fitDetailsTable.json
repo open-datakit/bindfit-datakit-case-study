@@ -1,0 +1,9 @@
+{
+  "name": "fitDetailsTable",
+  "title": "Fit details",
+  "spec": {},
+  "specType": "opendatafit-basic-table",
+  "resources": [
+    "outputFitDetails"
+  ]
+}

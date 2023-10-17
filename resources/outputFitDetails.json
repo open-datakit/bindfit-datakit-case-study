@@ -1,0 +1,36 @@
+{
+  "name": "outputFitDetails",
+  "title": "Fit details",
+  "description": "Fit details",
+  "profile": "tabular-data-resource",
+  "data": [],
+  "schema": {
+    "primaryKey": "time",
+    "fields": [
+      {
+        "name": "time",
+        "title": "Time to fit",
+        "unit": "s",
+        "type": "number"
+      },
+      {
+        "name": "ssr",
+        "title": "SSR",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "n_y",
+        "title": "Fitted datapoints",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "n_params",
+        "title": "Fitted params",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  }
+}

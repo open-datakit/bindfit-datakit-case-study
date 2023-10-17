@@ -18,6 +18,7 @@
           "tabs": [
             "fit",
             "molefracs",
+            "details",
             "data"
           ]
         }
@@ -49,8 +50,16 @@
           ]
         },
         {
+          "name": "details",
+          "title": "Details",
+          "icon": "",
+          "views": [
+            "fitDetailsTable"
+          ]
+        },
+        {
           "name": "data",
-          "title": "Data",
+          "title": "Raw data",
           "icon": "",
           "views": [
             "dataTable",

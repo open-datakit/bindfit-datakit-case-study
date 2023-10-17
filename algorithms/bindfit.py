@@ -193,4 +193,13 @@ def main(
 
     outputs["molefracs"]["data"], outputs["molefracs"]["schema"] = molefrac_to_json(data, fitter.molefrac)
 
+    outputs["fitDetails"]["data"] = [
+        {
+            "time": fitter.time,
+            "ssr": bindfit.helpers.ssr(fitter.residuals),
+            "n_y": np.array(fitter.fit).size,
+            "n_params": len(fitter.params) + np.array(fitter.coeffs_raw).size,
+        }
+    ]
+
     return outputs

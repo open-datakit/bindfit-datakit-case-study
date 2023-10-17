@@ -59,6 +59,11 @@
       "name": "molefracs",
       "type": "resource",
       "resource": "outputMolefracs"
+    },
+    {
+      "name": "fitDetails",
+      "type": "resource",
+      "resource": "outputFitDetails"
     }
   ]
 }

@@ -6,7 +6,7 @@
       {
         "name": "bindfit",
         "title": "Bindfit",
-        "code": "ZGVmIG1haW4oCiAgICBkYXRhcGFja2FnZSwKICAgIHBhcmFtcywKICAgIG9wdGlvbnMsCiAgICBkYXRhLAogICAgb3V0cHV0cywKICAgICoqa3dhcmdzLAopOgogICAgaW1wb3J0IGJpbmRmaXQKCiAgICBvdXRwdXRzLnVwZGF0ZShiaW5kZml0LmRhdGFwYWNrYWdlLmZpdChkYXRhcGFja2FnZSkpCgogICAgcmV0dXJuIG91dHB1dHMK",
+        "code": "ZGVmIG1haW4oCiAgICBkYXRhcGFja2FnZSwKICAgIHBhcmFtcywKICAgIG9wdGlvbnMsCiAgICBkYXRhLAogICAgb3V0cHV0cywKICAgICoqa3dhcmdzLAopOgogICAgaW1wb3J0IGJpbmRmaXQKCiAgICBpZiBub3QgZGF0YVsiZGF0YSJdOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoIk5vIGRhdGEgcGFzc2VkIHRvIGFsZ29yaXRobSIpCgogICAgb3V0cHV0cy51cGRhdGUoYmluZGZpdC5kYXRhcGFja2FnZS5maXQoZGF0YXBhY2thZ2UpKQoKICAgIHJldHVybiBvdXRwdXRzCg==",
         "inputs": [
           {
             "name": "params",

@@ -21,12 +21,14 @@ headers = list(df.columns)
 fields = []
 
 for header in headers:
-    fields.append({
-        "name": header,
-        "title": header,
-        "unit": "",
-        "type": "number",
-    })
+    fields.append(
+        {
+            "name": header,
+            "title": header,
+            "unit": "",
+            "type": "number",
+        }
+    )
 
 data_resource["schema"]["fields"] = fields
 data_resource["schema"]["primaryKey"] = fields[0]["name"]

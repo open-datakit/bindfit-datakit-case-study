@@ -5,7 +5,8 @@ import base64
 
 # Load datapackage template
 with open("template.json") as f:
-  dp = json.load(f)
+    dp = json.load(f)
+
 
 # Populate template items from individual json subdirectories
 def populate_items(dp, key):
@@ -22,6 +23,7 @@ def populate_items(dp, key):
 
             items.append(item)
     dp[key] = items
+
 
 for key in ["algorithms", "resources", "views", "displays"]:
     populate_items(dp, key)

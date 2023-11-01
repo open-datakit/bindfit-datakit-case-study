@@ -7,14 +7,16 @@ import pandas as pd
 
 # Load datapackage.json
 with open("datapackage.json") as f:
-    dp = json.load(f)
+    datapackage = json.load(f)
 
 
 # Load input file and pre-populate data resource
 df = pd.read_csv("input.csv")
 
 # Get input data resource to be modified
-data_resource = next(i for i in dp["resources"] if i["name"] == "inputData")
+data_resource = next(
+    i for i in datapackage["resources"] if i["name"] == "inputData"
+)
 
 # Generate fields based on data headers
 headers = list(df.columns)
@@ -38,9 +40,4 @@ data_resource["data"] = df.to_dict(orient="records")
 
 # Write input.json for testing local execution
 with open("input.json", "w") as f:
-    input_json = {
-        "datapackage": dp,
-        "algorithm": "bindfit",
-    }
-
-    json.dump(input_json, f, indent=2)
+    json.dump(datapackage, f, indent=2)

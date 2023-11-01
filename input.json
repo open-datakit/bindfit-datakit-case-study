@@ -1,1260 +1,1253 @@
 {
-  "datapackage": {
-    "title": "Bindfit",
-    "description": "Binding constant fitter",
-    "algorithms": [
-      {
-        "name": "bindfit",
-        "title": "Bindfit",
-        "code": "ZGVmIG1haW4oCiAgICBkYXRhcGFja2FnZSwKICAgIHBhcmFtcywKICAgIG9wdGlvbnMsCiAgICBkYXRhLAogICAgb3V0cHV0cywKICAgICoqa3dhcmdzLAopOgogICAgaW1wb3J0IGJpbmRmaXQKCiAgICBpZiBub3QgZGF0YVsiZGF0YSJdOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoIk5vIGRhdGEgcGFzc2VkIHRvIGFsZ29yaXRobSIpCgogICAgb3V0cHV0cy51cGRhdGUoYmluZGZpdC5kYXRhcGFja2FnZS5maXQoZGF0YXBhY2thZ2UpKQoKICAgIHJldHVybiBvdXRwdXRzCg==",
-        "inputs": [
-          {
-            "name": "params",
-            "type": "algorithmParams",
-            "resource": {
-              "params": "inputParamsNMR12",
+  "title": "Bindfit",
+  "description": "Binding constant fitter",
+  "algorithms": [
+    {
+      "name": "bindfit",
+      "title": "Bindfit",
+      "code": "ZGVmIG1haW4oCiAgICBkYXRhcGFja2FnZSwKICAgIHBhcmFtcywKICAgIG9wdGlvbnMsCiAgICBkYXRhLAogICAgb3V0cHV0cywKICAgICoqa3dhcmdzLAopOgogICAgaW1wb3J0IGJpbmRmaXQKCiAgICBpZiBub3QgZGF0YVsiZGF0YSJdOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoIk5vIGRhdGEgcGFzc2VkIHRvIGFsZ29yaXRobSIpCgogICAgb3V0cHV0cy51cGRhdGUoYmluZGZpdC5kYXRhcGFja2FnZS5maXQoZGF0YXBhY2thZ2UpKQoKICAgIHJldHVybiBvdXRwdXRzCg==",
+      "inputs": [
+        {
+          "name": "params",
+          "type": "algorithmParams",
+          "parameterSpace": {
+            "name": "nmr1to1",
+            "params": "inputParamsNMR11",
+            "options": "inputOptionsNMR"
+          },
+          "parameterSpaceGroups": [
+            {
+              "name": "nmr1to1",
+              "params": "inputParamsNMR11",
               "options": "inputOptionsNMR"
             },
-            "resources": [
+            {
+              "name": "nmr1to2",
+              "params": [
+                "inputParamsNMR12",
+                "inputParamsNMR12Add",
+                "inputParamsNMR12Noncoop",
+                "inputParamsNMR12Stat"
+              ],
+              "options": "inputOptionsNMR"
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "type": "resource",
+          "resource": "inputData"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "params",
+          "type": "resource",
+          "resource": "outputParams"
+        },
+        {
+          "name": "fit",
+          "type": "resource",
+          "resource": "outputFit"
+        },
+        {
+          "name": "residuals",
+          "type": "resource",
+          "resource": "outputResiduals"
+        },
+        {
+          "name": "molefracs",
+          "type": "resource",
+          "resource": "outputMolefracs"
+        },
+        {
+          "name": "fitDetails",
+          "type": "resource",
+          "resource": "outputFitDetails"
+        },
+        {
+          "name": "qof",
+          "type": "resource",
+          "resource": "outputQof"
+        },
+        {
+          "name": "coeffs",
+          "type": "resource",
+          "resource": "outputCoeffs"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "inputData",
+      "title": "Input data",
+      "description": "Input data",
+      "profile": "tabular-data-resource",
+      "data": [
+        {
+          "Host": 0.000776,
+          "Guest": 0.0,
+          "Proton 1": 0.0,
+          "Proton 2": 0.0,
+          "Proton 3": 0.0,
+          "Proton 4": 0.0
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 9.70537e-05,
+          "Proton 1": -0.0039,
+          "Proton 2": -0.0005,
+          "Proton 3": 0.0007,
+          "Proton 4": 0.0002
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000193437,
+          "Proton 1": -0.0074,
+          "Proton 2": -0.001,
+          "Proton 3": 0.0024,
+          "Proton 4": 0.0012
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000289157,
+          "Proton 1": -0.0113,
+          "Proton 2": -0.0015,
+          "Proton 3": 0.00365,
+          "Proton 4": 0.0017
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.00038422,
+          "Proton 1": -0.0147,
+          "Proton 2": -0.002,
+          "Proton 3": 0.0044,
+          "Proton 4": 0.00195
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000478632,
+          "Proton 1": -0.0176,
+          "Proton 2": -0.0025,
+          "Proton 3": 0.00535,
+          "Proton 4": 0.0022
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000572402,
+          "Proton 1": -0.021,
+          "Proton 2": -0.0029,
+          "Proton 3": 0.00605,
+          "Proton 4": 0.0027
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000665535,
+          "Proton 1": -0.0245,
+          "Proton 2": -0.0034,
+          "Proton 3": 0.00655,
+          "Proton 4": 0.00295
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000758037,
+          "Proton 1": -0.0274,
+          "Proton 2": -0.0039,
+          "Proton 3": 0.00755,
+          "Proton 4": 0.0032
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000849916,
+          "Proton 1": -0.0299,
+          "Proton 2": -0.0034,
+          "Proton 3": 0.00855,
+          "Proton 4": 0.0039
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.000941176,
+          "Proton 1": -0.0328,
+          "Proton 2": -0.0044,
+          "Proton 3": 0.00925,
+          "Proton 4": 0.0041
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.001076923,
+          "Proton 1": -0.0362,
+          "Proton 2": -0.0049,
+          "Proton 3": 0.0102,
+          "Proton 4": 0.00435
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.001255814,
+          "Proton 1": -0.0411,
+          "Proton 2": -0.0059,
+          "Proton 3": 0.0117,
+          "Proton 4": 0.00485
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.001476112,
+          "Proton 1": -0.0465,
+          "Proton 2": -0.0064,
+          "Proton 3": 0.01315,
+          "Proton 4": 0.0056
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.001778502,
+          "Proton 1": -0.0528,
+          "Proton 2": -0.0074,
+          "Proton 3": 0.0151,
+          "Proton 4": 0.00635
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.002198718,
+          "Proton 1": -0.0611,
+          "Proton 2": -0.0093,
+          "Proton 3": 0.0171,
+          "Proton 4": 0.00685
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.002804382,
+          "Proton 1": -0.0699,
+          "Proton 2": -0.0103,
+          "Proton 3": 0.0205,
+          "Proton 4": 0.0083
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.003569044,
+          "Proton 1": -0.0797,
+          "Proton 2": -0.0118,
+          "Proton 3": 0.0234,
+          "Proton 4": 0.0095
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.004632801,
+          "Proton 1": -0.09,
+          "Proton 2": -0.0132,
+          "Proton 3": 0.0273,
+          "Proton 4": 0.01125
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.006213802,
+          "Proton 1": -0.1012,
+          "Proton 2": -0.0147,
+          "Proton 3": 0.0317,
+          "Proton 4": 0.01315
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.008810489,
+          "Proton 1": -0.1139,
+          "Proton 2": -0.0171,
+          "Proton 3": 0.03565,
+          "Proton 4": 0.0144
+        },
+        {
+          "Host": 0.000776,
+          "Guest": 0.012504331,
+          "Proton 1": -0.1237,
+          "Proton 2": -0.0181,
+          "Proton 3": 0.04055,
+          "Proton 4": 0.0169
+        }
+      ],
+      "schema": {
+        "primaryKey": "Host",
+        "fields": [
+          {
+            "name": "Host",
+            "title": "Host",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "Guest",
+            "title": "Guest",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "Proton 1",
+            "title": "Proton 1",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "Proton 2",
+            "title": "Proton 2",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "Proton 3",
+            "title": "Proton 3",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "Proton 4",
+            "title": "Proton 4",
+            "unit": "",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR11",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr1to1",
+          "title": "NMR 1:1"
+        }
+      },
+      "data": {
+        "k": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": 1000
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k",
+            "unit": "M^{-1}",
+            "fields": [
               {
-                "params": "inputParamsNMR11",
-                "options": "inputOptionsNMR"
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
               },
               {
-                "params": "inputParamsNMR12",
-                "options": "inputOptionsNMR"
+                "name": "value",
+                "title": "Value",
+                "type": "number"
               },
               {
-                "params": "inputParamsNMR12Add",
-                "options": "inputOptionsNMR"
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
               },
               {
-                "params": "inputParamsNMR12Noncoop",
-                "options": "inputOptionsNMR"
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR12",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr1to2",
+          "title": "NMR 1:2"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k12": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
               },
               {
-                "params": "inputParamsNMR12Stat",
-                "options": "inputOptionsNMR"
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
               }
             ]
           },
           {
-            "name": "data",
-            "type": "resource",
-            "resource": "inputData"
-          }
-        ],
-        "outputs": [
-          {
-            "name": "params",
-            "type": "resource",
-            "resource": "outputParams"
-          },
-          {
-            "name": "fit",
-            "type": "resource",
-            "resource": "outputFit"
-          },
-          {
-            "name": "residuals",
-            "type": "resource",
-            "resource": "outputResiduals"
-          },
-          {
-            "name": "molefracs",
-            "type": "resource",
-            "resource": "outputMolefracs"
-          },
-          {
-            "name": "fitDetails",
-            "type": "resource",
-            "resource": "outputFitDetails"
-          },
-          {
-            "name": "qof",
-            "type": "resource",
-            "resource": "outputQof"
-          },
-          {
-            "name": "coeffs",
-            "type": "resource",
-            "resource": "outputCoeffs"
-          }
-        ]
-      }
-    ],
-    "resources": [
-      {
-        "name": "inputData",
-        "title": "Input data",
-        "description": "Input data",
-        "profile": "tabular-data-resource",
-        "data": [
-          {
-            "Host": 0.000776,
-            "Guest": 0.0,
-            "Proton 1": 0.0,
-            "Proton 2": 0.0,
-            "Proton 3": 0.0,
-            "Proton 4": 0.0
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 9.70537e-05,
-            "Proton 1": -0.0039,
-            "Proton 2": -0.0005,
-            "Proton 3": 0.0007,
-            "Proton 4": 0.0002
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000193437,
-            "Proton 1": -0.0074,
-            "Proton 2": -0.001,
-            "Proton 3": 0.0024,
-            "Proton 4": 0.0012
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000289157,
-            "Proton 1": -0.0113,
-            "Proton 2": -0.0015,
-            "Proton 3": 0.00365,
-            "Proton 4": 0.0017
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.00038422,
-            "Proton 1": -0.0147,
-            "Proton 2": -0.002,
-            "Proton 3": 0.0044,
-            "Proton 4": 0.00195
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000478632,
-            "Proton 1": -0.0176,
-            "Proton 2": -0.0025,
-            "Proton 3": 0.00535,
-            "Proton 4": 0.0022
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000572402,
-            "Proton 1": -0.021,
-            "Proton 2": -0.0029,
-            "Proton 3": 0.00605,
-            "Proton 4": 0.0027
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000665535,
-            "Proton 1": -0.0245,
-            "Proton 2": -0.0034,
-            "Proton 3": 0.00655,
-            "Proton 4": 0.00295
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000758037,
-            "Proton 1": -0.0274,
-            "Proton 2": -0.0039,
-            "Proton 3": 0.00755,
-            "Proton 4": 0.0032
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000849916,
-            "Proton 1": -0.0299,
-            "Proton 2": -0.0034,
-            "Proton 3": 0.00855,
-            "Proton 4": 0.0039
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.000941176,
-            "Proton 1": -0.0328,
-            "Proton 2": -0.0044,
-            "Proton 3": 0.00925,
-            "Proton 4": 0.0041
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.001076923,
-            "Proton 1": -0.0362,
-            "Proton 2": -0.0049,
-            "Proton 3": 0.0102,
-            "Proton 4": 0.00435
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.001255814,
-            "Proton 1": -0.0411,
-            "Proton 2": -0.0059,
-            "Proton 3": 0.0117,
-            "Proton 4": 0.00485
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.001476112,
-            "Proton 1": -0.0465,
-            "Proton 2": -0.0064,
-            "Proton 3": 0.01315,
-            "Proton 4": 0.0056
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.001778502,
-            "Proton 1": -0.0528,
-            "Proton 2": -0.0074,
-            "Proton 3": 0.0151,
-            "Proton 4": 0.00635
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.002198718,
-            "Proton 1": -0.0611,
-            "Proton 2": -0.0093,
-            "Proton 3": 0.0171,
-            "Proton 4": 0.00685
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.002804382,
-            "Proton 1": -0.0699,
-            "Proton 2": -0.0103,
-            "Proton 3": 0.0205,
-            "Proton 4": 0.0083
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.003569044,
-            "Proton 1": -0.0797,
-            "Proton 2": -0.0118,
-            "Proton 3": 0.0234,
-            "Proton 4": 0.0095
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.004632801,
-            "Proton 1": -0.09,
-            "Proton 2": -0.0132,
-            "Proton 3": 0.0273,
-            "Proton 4": 0.01125
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.006213802,
-            "Proton 1": -0.1012,
-            "Proton 2": -0.0147,
-            "Proton 3": 0.0317,
-            "Proton 4": 0.01315
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.008810489,
-            "Proton 1": -0.1139,
-            "Proton 2": -0.0171,
-            "Proton 3": 0.03565,
-            "Proton 4": 0.0144
-          },
-          {
-            "Host": 0.000776,
-            "Guest": 0.012504331,
-            "Proton 1": -0.1237,
-            "Proton 2": -0.0181,
-            "Proton 3": 0.04055,
-            "Proton 4": 0.0169
-          }
-        ],
-        "schema": {
-          "primaryKey": "Host",
-          "fields": [
-            {
-              "name": "Host",
-              "title": "Host",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "Guest",
-              "title": "Guest",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "Proton 1",
-              "title": "Proton 1",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "Proton 2",
-              "title": "Proton 2",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "Proton 3",
-              "title": "Proton 3",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "Proton 4",
-              "title": "Proton 4",
-              "unit": "",
-              "type": "number"
-            }
-          ]
-        }
-      },
-      {
-        "name": "inputParamsNMR11",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
-        "profile": "parameter-data-resource",
-        "metadata": {
-          "model": {
-            "name": "nmr1to1",
-            "title": "NMR 1:1"
-          }
-        },
-        "data": {
-          "k": {
-            "vary": true,
-            "value": 100,
-            "lowerBound": 0,
-            "upperBound": 1000
-          }
-        },
-        "schema": {
-          "keys": [
-            {
-              "name": "k",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "name": "inputParamsNMR12",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
-        "profile": "parameter-data-resource",
-        "metadata": {
-          "model": {
-            "name": "nmr1to2",
-            "title": "NMR 1:2"
-          }
-        },
-        "data": {
-          "k11": {
-            "vary": true,
-            "value": 1000,
-            "lowerBound": 0,
-            "upperBound": null
-          },
-          "k12": {
-            "vary": true,
-            "value": 100,
-            "lowerBound": 0,
-            "upperBound": null
-          }
-        },
-        "schema": {
-          "keys": [
-            {
-              "name": "k11",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            },
-            {
-              "name": "k12",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "name": "inputParamsNMR12Add",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
-        "profile": "parameter-data-resource",
-        "metadata": {
-          "model": {
-            "name": "nmr1to2",
-            "title": "NMR 1:2 - Additive",
-            "flavour": "add"
-          }
-        },
-        "data": {
-          "k11": {
-            "vary": true,
-            "value": 1000,
-            "lowerBound": 0,
-            "upperBound": null
-          },
-          "k12": {
-            "vary": true,
-            "value": 100,
-            "lowerBound": 0,
-            "upperBound": null
-          }
-        },
-        "schema": {
-          "keys": [
-            {
-              "name": "k11",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            },
-            {
-              "name": "k12",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "name": "inputParamsNMR12Noncoop",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
-        "profile": "parameter-data-resource",
-        "metadata": {
-          "model": {
-            "name": "nmr1to2",
-            "title": "NMR 1:2 - Non-cooperative",
-            "flavour": "noncoop"
-          }
-        },
-        "data": {
-          "k11": {
-            "vary": true,
-            "value": 1000,
-            "lowerBound": 0,
-            "upperBound": null
-          }
-        },
-        "schema": {
-          "keys": [
-            {
-              "name": "k11",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "name": "inputParamsNMR12Stat",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
-        "profile": "parameter-data-resource",
-        "metadata": {
-          "model": {
-            "name": "nmr1to2",
-            "title": "NMR 1:2 - Statistical",
-            "flavour": "stat"
-          }
-        },
-        "data": {
-          "k11": {
-            "vary": true,
-            "value": 1000,
-            "lowerBound": 0,
-            "upperBound": null
-          }
-        },
-        "schema": {
-          "keys": [
-            {
-              "name": "k11",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "name": "inputOptionsNMR",
-        "title": "Fit options",
-        "description": "Fit options",
-        "profile": "options-data-resource",
-        "data": {
-          "method": {
-            "title": "Nelder-Mead",
-            "name": "nelder-mead"
-          },
-          "normalise": true,
-          "dilute": false
-        },
-        "schema": {
-          "fields": [
-            {
-              "name": "method",
-              "title": "Fit method",
-              "description": "The optimisation method to use for fitting",
-              "type": "object",
-              "objectFields": [
-                {
-                  "name": "title",
-                  "type": "string"
-                },
-                {
-                  "name": "name",
-                  "type": "string"
-                }
-              ],
-              "constraints": {
-                "enum": [
-                  {
-                    "title": "Nelder-Mead",
-                    "name": "Nelder-Mead"
-                  },
-                  {
-                    "title": "L-BFGS-B",
-                    "name": "L-BFGS-B"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "normalise",
-              "title": "Subtract initial values",
-              "description": "Subtract initial values from data before fitting",
-              "type": "boolean"
-            },
-            {
-              "name": "dilute",
-              "title": "Dilution correction",
-              "description": "Apply dilution correction to data",
-              "type": "boolean"
-            }
-          ]
-        }
-      },
-      {
-        "name": "outputParams",
-        "title": "Optimised parameters",
-        "description": "Optimised parameter values",
-        "profile": "parameter-data-resource",
-        "metadata": {},
-        "data": {},
-        "schema": {}
-      },
-      {
-        "name": "outputFit",
-        "title": "Fit",
-        "description": "Output fit",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {
-          "primaryKey": "",
-          "fields": []
-        }
-      },
-      {
-        "name": "outputResiduals",
-        "title": "Residuals",
-        "description": "Fit residuals",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {
-          "primaryKey": "",
-          "fields": []
-        }
-      },
-      {
-        "name": "outputMolefracs",
-        "title": "Molefractions",
-        "description": "Molefractions",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {}
-      },
-      {
-        "name": "outputFitDetails",
-        "title": "Fit details",
-        "description": "Fit details",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {
-          "primaryKey": "time",
-          "fields": [
-            {
-              "name": "time",
-              "title": "Time to fit",
-              "unit": "s",
-              "type": "number"
-            },
-            {
-              "name": "ssr",
-              "title": "SSR",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "n_y",
-              "title": "Fitted datapoints",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "n_params",
-              "title": "Fitted params",
-              "unit": "",
-              "type": "number"
-            }
-          ]
-        }
-      },
-      {
-        "name": "outputQof",
-        "title": "Quality of fit",
-        "description": "Quality of fit",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {
-          "primaryKey": "name",
-          "fields": [
-            {
-              "name": "name",
-              "title": "Name",
-              "unit": "",
-              "type": "string"
-            },
-            {
-              "name": "rms",
-              "title": "RMS",
-              "unit": "",
-              "type": "number"
-            },
-            {
-              "name": "cov",
-              "title": "Covariance",
-              "unit": "",
-              "type": "number"
-            }
-          ]
-        }
-      },
-      {
-        "name": "outputCoeffs",
-        "title": "Coefficients",
-        "description": "Coefficients",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {}
-      }
-    ],
-    "views": [
-      {
-        "name": "upload",
-        "specType": "opendatafit-upload",
-        "spec": {},
-        "resources": [
-          "inputData"
-        ]
-      },
-      {
-        "name": "algorithm",
-        "title": "Algorithm parameters",
-        "specType": "opendatafit-algorithm-params",
-        "algorithm": "bindfit",
-        "resources": {
-          "options": {
-            "type": "algorithmOptions"
-          },
-          "input": {
-            "type": "algorithmParams"
-          },
-          "output": {
-            "type": "resource",
-            "name": "outputParams"
-          }
-        }
-      },
-      {
-        "name": "dataTable",
-        "title": "Input data",
-        "spec": {},
-        "specType": "opendatafit-table",
-        "resources": [
-          "inputData"
-        ]
-      },
-      {
-        "name": "fitTable",
-        "title": "Fit data",
-        "spec": {},
-        "specType": "opendatafit-table",
-        "resources": [
-          "outputFit"
-        ]
-      },
-      {
-        "name": "fitGraph",
-        "spec": {
-          "data": [
-            {
-              "name": "inputData",
-              "x": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum[1]/datum[0]"
-                }
-              },
-              "y": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum.slice(2)"
-                }
-              },
-              "colors": {
-                "attributePath": "marker.color",
-                "values": [
-                  "darkcyan",
-                  "darkslateblue",
-                  "darkgoldenrod",
-                  "crimson"
-                ]
-              },
-              "config": {
-                "mode": "markers",
-                "type": "scatter",
-                "marker": {
-                  "size": 8,
-                  "color": "",
-                  "symbol": "circle-open-dot"
-                }
-              }
-            },
-            {
-              "name": "outputFit",
-              "x": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum[1]/datum[0]"
-                }
-              },
-              "y": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum.slice(2)"
-                }
-              },
-              "colors": {
-                "attributePath": "line.color",
-                "values": [
-                  "darkcyan",
-                  "darkslateblue",
-                  "darkgoldenrod",
-                  "crimson"
-                ]
-              },
-              "config": {
-                "mode": "lines",
-                "type": "scatter",
-                "line": {
-                  "width": 1,
-                  "color": "",
-                  "shape": "spline"
-                }
-              }
-            },
-            {
-              "name": "outputResiduals",
-              "x": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum[1]/datum[0]"
-                }
-              },
-              "y": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum.slice(2)"
-                }
-              },
-              "colors": {
-                "attributePath": "line.color",
-                "values": [
-                  "darkcyan",
-                  "darkslateblue",
-                  "darkgoldenrod",
-                  "crimson"
-                ]
-              },
-              "config": {
-                "mode": "lines",
-                "type": "scatter",
-                "yaxis": "y2",
-                "line": {
-                  "width": 1,
-                  "color": ""
-                }
-              }
-            }
-          ],
-          "layout": {
-            "margin": {
-              "t": 5,
-              "b": 5,
-              "l": 5,
-              "r": 5,
-              "pad": 0,
-              "autoexpand": true
-            },
-            "xaxis": {
-              "title": {
-                "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
-              },
-              "exponentformat": "power",
-              "domain": [
-                0,
-                1
-              ],
-              "side": "bottom",
-              "type": "linear",
-              "autorange": true,
-              "automargin": true,
-              "showgrid": true,
-              "gridcolor": "gainsboro",
-              "gridwidth": 1,
-              "showline": true,
-              "linecolor": "gainsboro",
-              "zerolinecolor": "gainsboro",
-              "zerolinewidth": 2,
-              "mirror": "all"
-            },
-            "yaxis": {
-              "title": {
-                "text": "\u03b4"
-              },
-              "ticksuffix": " ppm",
-              "exponentformat": "power",
-              "domain": [
-                0.375,
-                1
-              ],
-              "side": "left",
-              "type": "linear",
-              "autorange": true,
-              "automargin": true,
-              "showgrid": true,
-              "gridcolor": "gainsboro",
-              "gridwidth": 1,
-              "showline": true,
-              "linecolor": "gainsboro",
-              "zerolinecolor": "gainsboro",
-              "zerolinewidth": 2,
-              "mirror": "all"
-            },
-            "yaxis2": {
-              "title": {
-                "text": "Residuals"
-              },
-              "ticksuffix": " ppm",
-              "exponentformat": "power",
-              "domain": [
-                0,
-                0.25
-              ],
-              "side": "left",
-              "type": "linear",
-              "autorange": true,
-              "automargin": true,
-              "showgrid": true,
-              "gridcolor": "gainsboro",
-              "gridwidth": 1,
-              "showline": true,
-              "linecolor": "gainsboro",
-              "zerolinecolor": "gainsboro",
-              "zerolinewidth": 2,
-              "mirror": "all"
-            },
-            "plot_bgcolor": "white",
-            "paper_bgcolor": "white",
-            "autosize": true,
-            "hovermode": "x",
-            "showlegend": true,
-            "legend": {
-              "traceorder": "grouped"
-            }
-          }
-        },
-        "specType": "plotly",
-        "resources": [
-          "inputData",
-          "outputFit",
-          "outputResiduals"
-        ]
-      },
-      {
-        "name": "molefracGraph",
-        "spec": {
-          "data": [
-            {
-              "name": "outputMolefracs",
-              "x": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum[1]/datum[0]"
-                }
-              },
-              "y": {
-                "transform": {
-                  "type": "formula",
-                  "expr": "datum.slice(2)"
-                }
-              },
-              "colors": {
-                "attributePath": "line.color",
-                "values": [
-                  "darkcyan",
-                  "darkslateblue",
-                  "darkgoldenrod",
-                  "crimson"
-                ]
-              },
-              "config": {
-                "mode": "lines",
-                "type": "scatter",
-                "line": {
-                  "width": 1,
-                  "color": "",
-                  "shape": "spline"
-                }
-              }
-            }
-          ],
-          "layout": {
-            "margin": {
-              "t": 5,
-              "b": 5,
-              "l": 5,
-              "r": 5,
-              "pad": 0,
-              "autoexpand": true
-            },
-            "xaxis": {
-              "title": {
-                "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
-              },
-              "exponentformat": "power",
-              "domain": [
-                0,
-                1
-              ],
-              "side": "bottom",
-              "type": "linear",
-              "autorange": true,
-              "automargin": true,
-              "showgrid": true,
-              "gridcolor": "gainsboro",
-              "gridwidth": 1,
-              "showline": true,
-              "linecolor": "gainsboro",
-              "zerolinecolor": "gainsboro",
-              "zerolinewidth": 2,
-              "mirror": "all"
-            },
-            "yaxis": {
-              "title": {
-                "text": "Molefraction"
-              },
-              "exponentformat": "power",
-              "domain": [
-                0,
-                1
-              ],
-              "side": "left",
-              "type": "linear",
-              "autorange": true,
-              "automargin": true,
-              "showgrid": true,
-              "gridcolor": "gainsboro",
-              "gridwidth": 1,
-              "showline": true,
-              "linecolor": "gainsboro",
-              "zerolinecolor": "gainsboro",
-              "zerolinewidth": 2,
-              "mirror": "all"
-            },
-            "plot_bgcolor": "white",
-            "paper_bgcolor": "white",
-            "autosize": true,
-            "hovermode": "x",
-            "showlegend": true,
-            "legend": {
-              "traceorder": "grouped"
-            }
-          }
-        },
-        "specType": "plotly",
-        "resources": [
-          "outputMolefracs"
-        ]
-      },
-      {
-        "name": "fitDetailsTable",
-        "title": "Fit details",
-        "spec": {},
-        "specType": "opendatafit-basic-table",
-        "resources": [
-          "outputFitDetails"
-        ]
-      },
-      {
-        "name": "qofTable",
-        "title": "Quality of fit",
-        "spec": {},
-        "specType": "opendatafit-basic-table",
-        "resources": [
-          "outputQof"
-        ]
-      },
-      {
-        "name": "coeffTable",
-        "title": "Coefficients",
-        "spec": {},
-        "specType": "opendatafit-basic-table",
-        "resources": [
-          "outputCoeffs"
-        ]
-      }
-    ],
-    "displays": [
-      {
-        "name": "main",
-        "algorithms": [
-          "bindfit"
-        ],
-        "layout": {
-          "type": "bindfit",
-          "spec": {
-            "panes": [
+            "name": "k12",
+            "unit": "M^{-1}",
+            "fields": [
               {
-                "name": "control",
-                "tabs": [
-                  "control"
-                ]
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
               },
               {
-                "name": "main",
-                "tabs": [
-                  "fit",
-                  "molefracs",
-                  "details",
-                  "data"
-                ]
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR12Add",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr1to2",
+          "title": "NMR 1:2 - Additive",
+          "flavour": "add"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k12": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k12",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR12Noncoop",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr1to2",
+          "title": "NMR 1:2 - Non-cooperative",
+          "flavour": "noncoop"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR12Stat",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr1to2",
+          "title": "NMR 1:2 - Statistical",
+          "flavour": "stat"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputOptionsNMR",
+      "title": "Fit options",
+      "description": "Fit options",
+      "profile": "options-data-resource",
+      "data": {
+        "method": {
+          "title": "Nelder-Mead",
+          "name": "nelder-mead"
+        },
+        "normalise": true,
+        "dilute": false
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "method",
+            "title": "Fit method",
+            "description": "The optimisation method to use for fitting",
+            "type": "object",
+            "objectFields": [
+              {
+                "name": "title",
+                "type": "string"
+              },
+              {
+                "name": "name",
+                "type": "string"
               }
             ],
-            "tabs": [
-              {
-                "name": "control",
-                "title": "Options",
-                "icon": "",
-                "views": [
-                  "upload",
-                  "algorithm"
-                ],
-                "layout": "stacked"
-              },
-              {
-                "name": "fit",
-                "title": "Fit",
-                "icon": "",
-                "views": [
-                  "fitGraph"
-                ],
-                "layout": "fullbleed"
-              },
-              {
-                "name": "molefracs",
-                "title": "Molefractions",
-                "icon": "",
-                "views": [
-                  "molefracGraph"
-                ],
-                "layout": "fullbleed"
-              },
-              {
-                "name": "details",
-                "title": "Details",
-                "icon": "",
-                "views": [
-                  "fitDetailsTable",
-                  "qofTable",
-                  "coeffTable"
-                ]
-              },
-              {
-                "name": "data",
-                "title": "Raw data",
-                "icon": "",
-                "views": [
-                  "dataTable",
-                  "fitTable"
-                ],
-                "layout": "stacked"
-              }
-            ]
+            "constraints": {
+              "enum": [
+                {
+                  "title": "Nelder-Mead",
+                  "name": "Nelder-Mead"
+                },
+                {
+                  "title": "L-BFGS-B",
+                  "name": "L-BFGS-B"
+                }
+              ]
+            }
+          },
+          {
+            "name": "normalise",
+            "title": "Subtract initial values",
+            "description": "Subtract initial values from data before fitting",
+            "type": "boolean"
+          },
+          {
+            "name": "dilute",
+            "title": "Dilution correction",
+            "description": "Apply dilution correction to data",
+            "type": "boolean"
           }
+        ]
+      }
+    },
+    {
+      "name": "outputParams",
+      "title": "Optimised parameters",
+      "description": "Optimised parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {},
+      "data": {},
+      "schema": {}
+    },
+    {
+      "name": "outputFit",
+      "title": "Fit",
+      "description": "Output fit",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {
+        "primaryKey": "",
+        "fields": []
+      }
+    },
+    {
+      "name": "outputResiduals",
+      "title": "Residuals",
+      "description": "Fit residuals",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {
+        "primaryKey": "",
+        "fields": []
+      }
+    },
+    {
+      "name": "outputMolefracs",
+      "title": "Molefractions",
+      "description": "Molefractions",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {}
+    },
+    {
+      "name": "outputFitDetails",
+      "title": "Fit details",
+      "description": "Fit details",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {
+        "primaryKey": "time",
+        "fields": [
+          {
+            "name": "time",
+            "title": "Time to fit",
+            "unit": "s",
+            "type": "number"
+          },
+          {
+            "name": "ssr",
+            "title": "SSR",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "n_y",
+            "title": "Fitted datapoints",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "n_params",
+            "title": "Fitted params",
+            "unit": "",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "outputQof",
+      "title": "Quality of fit",
+      "description": "Quality of fit",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {
+        "primaryKey": "name",
+        "fields": [
+          {
+            "name": "name",
+            "title": "Name",
+            "unit": "",
+            "type": "string"
+          },
+          {
+            "name": "rms",
+            "title": "RMS",
+            "unit": "",
+            "type": "number"
+          },
+          {
+            "name": "cov",
+            "title": "Covariance",
+            "unit": "",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "outputCoeffs",
+      "title": "Coefficients",
+      "description": "Coefficients",
+      "profile": "tabular-data-resource",
+      "data": [],
+      "schema": {}
+    }
+  ],
+  "views": [
+    {
+      "name": "upload",
+      "specType": "opendatafit-upload",
+      "spec": {},
+      "resources": [
+        "inputData"
+      ]
+    },
+    {
+      "name": "algorithm",
+      "title": "Algorithm parameters",
+      "specType": "opendatafit-algorithm-params",
+      "algorithm": "bindfit",
+      "resources": {
+        "options": {
+          "type": "algorithmOptions"
+        },
+        "input": {
+          "type": "algorithmParams"
+        },
+        "output": {
+          "type": "resource",
+          "name": "outputParams"
         }
       }
-    ]
-  },
-  "algorithm": "bindfit"
+    },
+    {
+      "name": "dataTable",
+      "title": "Input data",
+      "spec": {},
+      "specType": "opendatafit-table",
+      "resources": [
+        "inputData"
+      ]
+    },
+    {
+      "name": "fitTable",
+      "title": "Fit data",
+      "spec": {},
+      "specType": "opendatafit-table",
+      "resources": [
+        "outputFit"
+      ]
+    },
+    {
+      "name": "fitGraph",
+      "spec": {
+        "data": [
+          {
+            "name": "inputData",
+            "x": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum[1]/datum[0]"
+              }
+            },
+            "y": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum.slice(2)"
+              }
+            },
+            "colors": {
+              "attributePath": "marker.color",
+              "values": [
+                "darkcyan",
+                "darkslateblue",
+                "darkgoldenrod",
+                "crimson"
+              ]
+            },
+            "config": {
+              "mode": "markers",
+              "type": "scatter",
+              "marker": {
+                "size": 8,
+                "color": "",
+                "symbol": "circle-open-dot"
+              }
+            }
+          },
+          {
+            "name": "outputFit",
+            "x": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum[1]/datum[0]"
+              }
+            },
+            "y": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum.slice(2)"
+              }
+            },
+            "colors": {
+              "attributePath": "line.color",
+              "values": [
+                "darkcyan",
+                "darkslateblue",
+                "darkgoldenrod",
+                "crimson"
+              ]
+            },
+            "config": {
+              "mode": "lines",
+              "type": "scatter",
+              "line": {
+                "width": 1,
+                "color": "",
+                "shape": "spline"
+              }
+            }
+          },
+          {
+            "name": "outputResiduals",
+            "x": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum[1]/datum[0]"
+              }
+            },
+            "y": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum.slice(2)"
+              }
+            },
+            "colors": {
+              "attributePath": "line.color",
+              "values": [
+                "darkcyan",
+                "darkslateblue",
+                "darkgoldenrod",
+                "crimson"
+              ]
+            },
+            "config": {
+              "mode": "lines",
+              "type": "scatter",
+              "yaxis": "y2",
+              "line": {
+                "width": 1,
+                "color": ""
+              }
+            }
+          }
+        ],
+        "layout": {
+          "margin": {
+            "t": 5,
+            "b": 5,
+            "l": 5,
+            "r": 5,
+            "pad": 0,
+            "autoexpand": true
+          },
+          "xaxis": {
+            "title": {
+              "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
+            },
+            "exponentformat": "power",
+            "domain": [
+              0,
+              1
+            ],
+            "side": "bottom",
+            "type": "linear",
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
+          },
+          "yaxis": {
+            "title": {
+              "text": "\u03b4"
+            },
+            "ticksuffix": " ppm",
+            "exponentformat": "power",
+            "domain": [
+              0.375,
+              1
+            ],
+            "side": "left",
+            "type": "linear",
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
+          },
+          "yaxis2": {
+            "title": {
+              "text": "Residuals"
+            },
+            "ticksuffix": " ppm",
+            "exponentformat": "power",
+            "domain": [
+              0,
+              0.25
+            ],
+            "side": "left",
+            "type": "linear",
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
+          },
+          "plot_bgcolor": "white",
+          "paper_bgcolor": "white",
+          "autosize": true,
+          "hovermode": "x",
+          "showlegend": true,
+          "legend": {
+            "traceorder": "grouped"
+          }
+        }
+      },
+      "specType": "plotly",
+      "resources": [
+        "inputData",
+        "outputFit",
+        "outputResiduals"
+      ]
+    },
+    {
+      "name": "molefracGraph",
+      "spec": {
+        "data": [
+          {
+            "name": "outputMolefracs",
+            "x": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum[1]/datum[0]"
+              }
+            },
+            "y": {
+              "transform": {
+                "type": "formula",
+                "expr": "datum.slice(2)"
+              }
+            },
+            "colors": {
+              "attributePath": "line.color",
+              "values": [
+                "darkcyan",
+                "darkslateblue",
+                "darkgoldenrod",
+                "crimson"
+              ]
+            },
+            "config": {
+              "mode": "lines",
+              "type": "scatter",
+              "line": {
+                "width": 1,
+                "color": "",
+                "shape": "spline"
+              }
+            }
+          }
+        ],
+        "layout": {
+          "margin": {
+            "t": 5,
+            "b": 5,
+            "l": 5,
+            "r": 5,
+            "pad": 0,
+            "autoexpand": true
+          },
+          "xaxis": {
+            "title": {
+              "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
+            },
+            "exponentformat": "power",
+            "domain": [
+              0,
+              1
+            ],
+            "side": "bottom",
+            "type": "linear",
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
+          },
+          "yaxis": {
+            "title": {
+              "text": "Molefraction"
+            },
+            "exponentformat": "power",
+            "domain": [
+              0,
+              1
+            ],
+            "side": "left",
+            "type": "linear",
+            "autorange": true,
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
+          },
+          "plot_bgcolor": "white",
+          "paper_bgcolor": "white",
+          "autosize": true,
+          "hovermode": "x",
+          "showlegend": true,
+          "legend": {
+            "traceorder": "grouped"
+          }
+        }
+      },
+      "specType": "plotly",
+      "resources": [
+        "outputMolefracs"
+      ]
+    },
+    {
+      "name": "fitDetailsTable",
+      "title": "Fit details",
+      "spec": {},
+      "specType": "opendatafit-basic-table",
+      "resources": [
+        "outputFitDetails"
+      ]
+    },
+    {
+      "name": "qofTable",
+      "title": "Quality of fit",
+      "spec": {},
+      "specType": "opendatafit-basic-table",
+      "resources": [
+        "outputQof"
+      ]
+    },
+    {
+      "name": "coeffTable",
+      "title": "Coefficients",
+      "spec": {},
+      "specType": "opendatafit-basic-table",
+      "resources": [
+        "outputCoeffs"
+      ]
+    }
+  ],
+  "displays": [
+    {
+      "name": "main",
+      "algorithms": [
+        "bindfit"
+      ],
+      "layout": {
+        "type": "bindfit",
+        "spec": {
+          "panes": [
+            {
+              "name": "control",
+              "tabs": [
+                "control"
+              ]
+            },
+            {
+              "name": "main",
+              "tabs": [
+                "fit",
+                "molefracs",
+                "details",
+                "data"
+              ]
+            }
+          ],
+          "tabs": [
+            {
+              "name": "control",
+              "title": "Options",
+              "icon": "",
+              "views": [
+                "upload",
+                "algorithm"
+              ],
+              "layout": "stacked"
+            },
+            {
+              "name": "fit",
+              "title": "Fit",
+              "icon": "",
+              "views": [
+                "fitGraph"
+              ],
+              "layout": "fullbleed"
+            },
+            {
+              "name": "molefracs",
+              "title": "Molefractions",
+              "icon": "",
+              "views": [
+                "molefracGraph"
+              ],
+              "layout": "fullbleed"
+            },
+            {
+              "name": "details",
+              "title": "Details",
+              "icon": "",
+              "views": [
+                "fitDetailsTable",
+                "qofTable",
+                "coeffTable"
+              ]
+            },
+            {
+              "name": "data",
+              "title": "Raw data",
+              "icon": "",
+              "views": [
+                "dataTable",
+                "fitTable"
+              ],
+              "layout": "stacked"
+            }
+          ]
+        }
+      }
+    }
+  ]
 }

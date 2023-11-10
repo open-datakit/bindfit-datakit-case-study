@@ -5,14 +5,20 @@
   "algorithm": "bindfit",
   "resources": {
     "options": {
-      "type": "algorithmOptions"
+      "type": "algorithmOptions",
+      "name": "options"
     },
     "input": {
-      "type": "algorithmParams"
+      "type": "algorithmParams",
+      "name": {
+        "params": "params"
+      }
     },
     "output": {
       "type": "resource",
-      "name": "outputParams"
+      "name": {
+        "params": "outputParams"
+      }
     }
   }
 }

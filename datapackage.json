@@ -15,6 +15,15 @@
             "params": "inputParamsNMR11",
             "options": "inputOptionsNMR"
           },
+          "parameterSpaceMetadata": {
+            "title": "Model",
+            "params": {
+              "title": "Model"
+            },
+            "options": {
+              "title": "Options"
+            }
+          },
           "parameterSpaceGroups": [
             {
               "name": "nmr1to1",
@@ -595,14 +604,20 @@
       "algorithm": "bindfit",
       "resources": {
         "options": {
-          "type": "algorithmOptions"
+          "type": "algorithmOptions",
+          "name": "options"
         },
         "input": {
-          "type": "algorithmParams"
+          "type": "algorithmParams",
+          "name": {
+            "params": "params"
+          }
         },
         "output": {
           "type": "resource",
-          "name": "outputParams"
+          "name": {
+            "params": "outputParams"
+          }
         }
       }
     },

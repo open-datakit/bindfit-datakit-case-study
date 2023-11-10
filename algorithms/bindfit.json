@@ -11,6 +11,15 @@
         "params": "inputParamsNMR11",
         "options": "inputOptionsNMR"
       },
+      "parameterSpaceMetadata": {
+        "title": "Model",
+        "params": {
+          "title": "Model"
+        },
+        "options": {
+          "title": "Options"
+        }
+      },
       "parameterSpaceGroups": [
         {
           "name": "nmr1to1",

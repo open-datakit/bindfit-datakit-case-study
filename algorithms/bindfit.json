@@ -8,13 +8,14 @@
       "type": "algorithmParams",
       "parameterSpace": {
         "name": "nmr1to1",
+        "title": "NMR 1:1",
         "params": "inputParamsNMR11",
         "options": "inputOptionsNMR"
       },
       "parameterSpaceMetadata": {
         "title": "Model",
         "params": {
-          "title": "Model"
+          "title": "Flavour"
         },
         "options": {
           "title": "Options"
@@ -23,11 +24,13 @@
       "parameterSpaceGroups": [
         {
           "name": "nmr1to1",
+          "title": "NMR 1:1",
           "params": "inputParamsNMR11",
           "options": "inputOptionsNMR"
         },
         {
           "name": "nmr1to2",
+          "title": "NMR 1:2",
           "params": [
             "inputParamsNMR12",
             "inputParamsNMR12Add",

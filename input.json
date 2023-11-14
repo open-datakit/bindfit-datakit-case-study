@@ -57,6 +57,12 @@
               "options": "inputOptionsNMR"
             },
             {
+              "name": "nmrdimer",
+              "title": "NMR Dimer Aggregation",
+              "params": "inputParamsNMRDimer",
+              "options": "inputOptionsNMR"
+            },
+            {
               "name": "uv1to1",
               "title": "UV 1:1",
               "params": "inputParamsUV11",
@@ -914,6 +920,56 @@
         "keys": [
           {
             "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMRDimer",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmrdimer",
+          "title": "NMR Dimer Aggregation"
+        }
+      },
+      "data": {
+        "ke": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": 1000
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "ke",
             "unit": "M^{-1}",
             "fields": [
               {

@@ -46,6 +46,17 @@
               "options": "inputOptionsNMR"
             },
             {
+              "name": "nmr2to1",
+              "title": "NMR 2:1",
+              "params": [
+                "inputParamsNMR21",
+                "inputParamsNMR21Add",
+                "inputParamsNMR21Noncoop",
+                "inputParamsNMR21Stat"
+              ],
+              "options": "inputOptionsNMR"
+            },
+            {
               "name": "uv1to1",
               "title": "UV 1:1",
               "params": "inputParamsUV11",
@@ -610,6 +621,273 @@
         "model": {
           "name": "nmr1to2",
           "title": "NMR 1:2 - Statistical",
+          "flavour": "stat"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR21",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr2to1",
+          "title": "NMR 2:1 - Full"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k21": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k21",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR21Add",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr2to1",
+          "title": "NMR 1:2 - Additive",
+          "flavour": "add"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k21": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k21",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR21Noncoop",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr2to1",
+          "title": "NMR 2:1 - Non-cooperative",
+          "flavour": "noncoop"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMR21Stat",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmr2to1",
+          "title": "NMR 2:1 - Statistical",
           "flavour": "stat"
         }
       },

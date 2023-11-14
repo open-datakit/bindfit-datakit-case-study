@@ -42,6 +42,17 @@
           "options": "inputOptionsNMR"
         },
         {
+          "name": "nmr2to1",
+          "title": "NMR 2:1",
+          "params": [
+            "inputParamsNMR21",
+            "inputParamsNMR21Add",
+            "inputParamsNMR21Noncoop",
+            "inputParamsNMR21Stat"
+          ],
+          "options": "inputOptionsNMR"
+        },
+        {
           "name": "uv1to1",
           "title": "UV 1:1",
           "params": "inputParamsUV11",

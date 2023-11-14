@@ -14,6 +14,7 @@ def populate_items(dp, key):
     for i in dp[key]:
         with open(key + "/" + i["name"] + ".json") as f:
             # Load individual item json definition
+            print("Loading", i["name"] + ".json")
             item = json.load(f)
 
             # If algorithm, populate code field in base64

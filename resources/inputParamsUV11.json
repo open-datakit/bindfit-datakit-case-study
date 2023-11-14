@@ -1,0 +1,50 @@
+{
+  "name": "inputParamsUV11",
+  "title": "Input parameters",
+  "description": "Initial parameter values",
+  "profile": "parameter-data-resource",
+  "metadata": {
+    "model": {
+      "name": "uv1to1",
+      "title": "UV 1:1"
+    }
+  },
+  "data": {
+    "k": {
+      "vary": true,
+      "value": 100,
+      "lowerBound": 0,
+      "upperBound": 1000
+    }
+  },
+  "schema": {
+    "keys": [
+      {
+        "name": "k",
+        "unit": "M^{-1}",
+        "fields": [
+          {
+            "name": "vary",
+            "title": "Vary",
+            "type": "boolean"
+          },
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "number"
+          },
+          {
+            "name": "lowerBound",
+            "title": "Lower bound",
+            "type": "number"
+          },
+          {
+            "name": "upperBound",
+            "title": "Upper bound",
+            "type": "number"
+          }
+        ]
+      }
+    ]
+  }
+}

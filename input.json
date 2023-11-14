@@ -44,6 +44,12 @@
                 "inputParamsNMR12Stat"
               ],
               "options": "inputOptionsNMR"
+            },
+            {
+              "name": "uv1to1",
+              "title": "UV 1:1",
+              "params": "inputParamsUV11",
+              "options": "inputOptionsUV"
             }
           ]
         },
@@ -636,6 +642,56 @@
       }
     },
     {
+      "name": "inputParamsUV11",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv1to1",
+          "title": "UV 1:1"
+        }
+      },
+      "data": {
+        "k": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": 1000
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "name": "inputOptionsNMR",
       "title": "Fit options",
       "description": "Fit options",
@@ -647,6 +703,64 @@
         },
         "normalise": true,
         "dilute": false
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "method",
+            "title": "Fit method",
+            "description": "The optimisation method to use for fitting",
+            "type": "object",
+            "objectFields": [
+              {
+                "name": "title",
+                "type": "string"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              }
+            ],
+            "constraints": {
+              "enum": [
+                {
+                  "title": "Nelder-Mead",
+                  "name": "Nelder-Mead"
+                },
+                {
+                  "title": "L-BFGS-B",
+                  "name": "L-BFGS-B"
+                }
+              ]
+            }
+          },
+          {
+            "name": "normalise",
+            "title": "Subtract initial values",
+            "description": "Subtract initial values from data before fitting",
+            "type": "boolean"
+          },
+          {
+            "name": "dilute",
+            "title": "Dilution correction",
+            "description": "Apply dilution correction to data",
+            "type": "boolean"
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputOptionsUV",
+      "title": "Fit options",
+      "description": "Fit options",
+      "profile": "options-data-resource",
+      "data": {
+        "method": {
+          "title": "Nelder-Mead",
+          "name": "nelder-mead"
+        },
+        "normalise": true,
+        "dilute": true
       },
       "schema": {
         "fields": [

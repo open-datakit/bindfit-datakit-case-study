@@ -40,6 +40,12 @@
             "inputParamsNMR12Stat"
           ],
           "options": "inputOptionsNMR"
+        },
+        {
+          "name": "uv1to1",
+          "title": "UV 1:1",
+          "params": "inputParamsUV11",
+          "options": "inputOptionsUV"
         }
       ]
     },

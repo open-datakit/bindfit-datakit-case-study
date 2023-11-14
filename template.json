@@ -26,7 +26,13 @@
       "name": "inputParamsNMR12Stat"
     },
     {
+      "name": "inputParamsUV11"
+    },
+    {
       "name": "inputOptionsNMR"
+    },
+    {
+      "name": "inputOptionsUV"
     },
     {
       "name": "outputParams"

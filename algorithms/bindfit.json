@@ -46,6 +46,17 @@
           "title": "UV 1:1",
           "params": "inputParamsUV11",
           "options": "inputOptionsUV"
+        },
+        {
+          "name": "uv1to2",
+          "title": "UV 1:2",
+          "params": [
+            "inputParamsUV12",
+            "inputParamsUV12Add",
+            "inputParamsUV12Noncoop",
+            "inputParamsUV12Stat"
+          ],
+          "options": "inputOptionsUV"
         }
       ]
     },

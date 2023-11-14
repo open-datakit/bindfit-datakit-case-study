@@ -50,6 +50,17 @@
               "title": "UV 1:1",
               "params": "inputParamsUV11",
               "options": "inputOptionsUV"
+            },
+            {
+              "name": "uv1to2",
+              "title": "UV 1:2",
+              "params": [
+                "inputParamsUV12",
+                "inputParamsUV12Add",
+                "inputParamsUV12Noncoop",
+                "inputParamsUV12Stat"
+              ],
+              "options": "inputOptionsUV"
             }
           ]
         },
@@ -664,6 +675,273 @@
         "keys": [
           {
             "name": "k",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV12",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv1to2",
+          "title": "UV 1:2 - Full"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k12": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k12",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV12Add",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv1to2",
+          "title": "UV 1:2 - Additive",
+          "flavour": "add"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k12": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k12",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV12Noncoop",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv1to2",
+          "title": "UV 1:2 - Non-cooperative",
+          "flavour": "noncoop"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV12Stat",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv1to2",
+          "title": "UV 1:2 - Statistical",
+          "flavour": "stat"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
             "unit": "M^{-1}",
             "fields": [
               {

@@ -15,10 +15,12 @@
       "parameterSpaceMetadata": {
         "title": "Model",
         "params": {
-          "title": "Flavour"
+          "title": "Flavour",
+          "null": false
         },
         "options": {
-          "title": "Options"
+          "title": "Options",
+          "null": false
         }
       },
       "parameterSpaceGroups": [

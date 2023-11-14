@@ -85,6 +85,12 @@
             "inputParamsUV21Stat"
           ],
           "options": "inputOptionsUV"
+        },
+        {
+          "name": "uvdimer",
+          "title": "UV Dimer Aggregation",
+          "params": "inputParamsUVDimer",
+          "options": "inputOptionsUVDimer"
         }
       ]
     },

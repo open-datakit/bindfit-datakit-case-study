@@ -68,10 +68,16 @@
       "name": "inputParamsUV21Stat"
     },
     {
+      "name": "inputParamsUVDimer"
+    },
+    {
       "name": "inputOptionsNMR"
     },
     {
       "name": "inputOptionsUV"
+    },
+    {
+      "name": "inputOptionsUVDimer"
     },
     {
       "name": "outputParams"

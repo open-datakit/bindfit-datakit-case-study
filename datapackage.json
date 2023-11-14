@@ -72,6 +72,17 @@
                 "inputParamsUV12Stat"
               ],
               "options": "inputOptionsUV"
+            },
+            {
+              "name": "uv2to1",
+              "title": "UV 2:1",
+              "params": [
+                "inputParamsUV21",
+                "inputParamsUV21Add",
+                "inputParamsUV21Noncoop",
+                "inputParamsUV21Stat"
+              ],
+              "options": "inputOptionsUV"
             }
           ]
         },
@@ -539,7 +550,7 @@
       "metadata": {
         "model": {
           "name": "nmr2to1",
-          "title": "NMR 1:2 - Additive",
+          "title": "NMR 2:1 - Additive",
           "flavour": "add"
         }
       },
@@ -991,6 +1002,273 @@
         "model": {
           "name": "uv1to2",
           "title": "UV 1:2 - Statistical",
+          "flavour": "stat"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV21",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv2to1",
+          "title": "UV 2:1 - Full"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k21": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k21",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV21Add",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv2to1",
+          "title": "UV 2:1 - Additive",
+          "flavour": "add"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "k21": {
+          "vary": true,
+          "value": 100,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "k21",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV21Noncoop",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv2to1",
+          "title": "UV 2:1 - Non-cooperative",
+          "flavour": "noncoop"
+        }
+      },
+      "data": {
+        "k11": {
+          "vary": true,
+          "value": 1000,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "k11",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsUV21Stat",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uv2to1",
+          "title": "UV 2:1 - Statistical",
           "flavour": "stat"
         }
       },

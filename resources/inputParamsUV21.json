@@ -1,13 +1,12 @@
 {
-  "name": "inputParamsNMR21Add",
+  "name": "inputParamsUV21",
   "title": "Input parameters",
   "description": "Initial parameter values",
   "profile": "parameter-data-resource",
   "metadata": {
     "model": {
-      "name": "nmr2to1",
-      "title": "NMR 2:1 - Additive",
-      "flavour": "add"
+      "name": "uv2to1",
+      "title": "UV 2:1 - Full"
     }
   },
   "data": {

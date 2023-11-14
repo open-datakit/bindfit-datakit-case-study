@@ -1,13 +1,13 @@
 {
-  "name": "inputParamsNMR21Add",
+  "name": "inputParamsUV21Noncoop",
   "title": "Input parameters",
   "description": "Initial parameter values",
   "profile": "parameter-data-resource",
   "metadata": {
     "model": {
-      "name": "nmr2to1",
-      "title": "NMR 2:1 - Additive",
-      "flavour": "add"
+      "name": "uv2to1",
+      "title": "UV 2:1 - Non-cooperative",
+      "flavour": "noncoop"
     }
   },
   "data": {
@@ -16,44 +16,12 @@
       "value": 1000,
       "lowerBound": 0,
       "upperBound": null
-    },
-    "k21": {
-      "vary": true,
-      "value": 100,
-      "lowerBound": 0,
-      "upperBound": null
     }
   },
   "schema": {
     "keys": [
       {
         "name": "k11",
-        "unit": "M^{-1}",
-        "fields": [
-          {
-            "name": "vary",
-            "title": "Vary",
-            "type": "boolean"
-          },
-          {
-            "name": "value",
-            "title": "Value",
-            "type": "number"
-          },
-          {
-            "name": "lowerBound",
-            "title": "Lower bound",
-            "type": "number"
-          },
-          {
-            "name": "upperBound",
-            "title": "Upper bound",
-            "type": "number"
-          }
-        ]
-      },
-      {
-        "name": "k21",
         "unit": "M^{-1}",
         "fields": [
           {

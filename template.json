@@ -53,6 +53,18 @@
       "name": "inputParamsUV12Stat"
     },
     {
+      "name": "inputParamsUV21"
+    },
+    {
+      "name": "inputParamsUV21Add"
+    },
+    {
+      "name": "inputParamsUV21Noncoop"
+    },
+    {
+      "name": "inputParamsUV21Stat"
+    },
+    {
       "name": "inputOptionsNMR"
     },
     {

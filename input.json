@@ -63,6 +63,12 @@
               "options": "inputOptionsNMR"
             },
             {
+              "name": "nmrcoek",
+              "title": "NMR CoEK Aggregation",
+              "params": "inputParamsNMRCoEK",
+              "options": "inputOptionsNMR"
+            },
+            {
               "name": "uv1to1",
               "title": "UV 1:1",
               "params": "inputParamsUV11",
@@ -977,6 +983,88 @@
           {
             "name": "ke",
             "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "inputParamsNMRCoEK",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "nmrcoek",
+          "title": "NMR CoEK Aggregation"
+        }
+      },
+      "data": {
+        "ke": {
+          "vary": true,
+          "value": 200,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "rho": {
+          "vary": true,
+          "value": 0.3,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "ke",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "rho",
+            "unit": "",
             "fields": [
               {
                 "name": "vary",

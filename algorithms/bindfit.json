@@ -59,6 +59,12 @@
           "options": "inputOptionsNMR"
         },
         {
+          "name": "nmrcoek",
+          "title": "NMR CoEK Aggregation",
+          "params": "inputParamsNMRCoEK",
+          "options": "inputOptionsNMR"
+        },
+        {
           "name": "uv1to1",
           "title": "UV 1:1",
           "params": "inputParamsUV11",

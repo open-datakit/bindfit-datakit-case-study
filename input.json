@@ -1,6 +1,11 @@
 {
   "title": "Bindfit",
   "description": "Binding constant fitter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opendatafit/bindfit-datapackage",
+    "name": "opendatafit/bindfit-datapackage"
+  },
   "algorithms": [
     {
       "name": "bindfit",
@@ -2463,7 +2468,7 @@
             },
             {
               "name": "data",
-              "title": "Raw data",
+              "title": "Data",
               "icon": "",
               "views": [
                 "dataTable",

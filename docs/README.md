@@ -1,6 +1,8 @@
 # Bindfit datapackage documentation
 
-Welcome to the opendata.fit Bindfit datapackage documentation.
+## About
+
+Bindfit is a binding constant fitting tool designed to work with classical supramolecular titration data obtained from NMR, UV, Fluorescence and other methods.
 
 ## Getting started
 
@@ -14,5 +16,5 @@ For further details:
 
 ## External links
 
-* [Bindfit datapackage on GitHub](https://github.com/opendatafit/bindfit-datapackage)
-* [Bindfit Python library on GitHub](https://github.com/opendatafit/bindfit)
+* 📦 [Bindfit datapackage on GitHub](https://github.com/opendatafit/bindfit-datapackage)
+* 💻 [Bindfit Python library on GitHub](https://github.com/opendatafit/bindfit)

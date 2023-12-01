@@ -100,7 +100,13 @@
               "name": "uvdimer",
               "title": "UV Dimer Aggregation",
               "params": "inputParamsUVDimer",
-              "options": "inputOptionsUVDimer"
+              "options": "inputOptionsUVAgg"
+            },
+            {
+              "name": "uvcoek",
+              "title": "UV CoEK Aggregation",
+              "params": "inputParamsUVCoEK",
+              "options": "inputOptionsUVAgg"
             }
           ]
         },
@@ -1726,6 +1732,88 @@
       }
     },
     {
+      "name": "inputParamsUVCoEK",
+      "title": "Input parameters",
+      "description": "Initial parameter values",
+      "profile": "parameter-data-resource",
+      "metadata": {
+        "model": {
+          "name": "uvcoek",
+          "title": "UV CoEK Aggregation"
+        }
+      },
+      "data": {
+        "ke": {
+          "vary": true,
+          "value": 2700,
+          "lowerBound": 0,
+          "upperBound": null
+        },
+        "rho": {
+          "vary": true,
+          "value": 0.003,
+          "lowerBound": 0,
+          "upperBound": null
+        }
+      },
+      "schema": {
+        "keys": [
+          {
+            "name": "ke",
+            "unit": "M^{-1}",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "rho",
+            "unit": "",
+            "fields": [
+              {
+                "name": "vary",
+                "title": "Vary",
+                "type": "boolean"
+              },
+              {
+                "name": "value",
+                "title": "Value",
+                "type": "number"
+              },
+              {
+                "name": "lowerBound",
+                "title": "Lower bound",
+                "type": "number"
+              },
+              {
+                "name": "upperBound",
+                "title": "Upper bound",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "name": "inputOptionsNMR",
       "title": "Fit options",
       "description": "Fit options",
@@ -1842,7 +1930,7 @@
       }
     },
     {
-      "name": "inputOptionsUVDimer",
+      "name": "inputOptionsUVAgg",
       "title": "Fit options",
       "description": "Fit options",
       "profile": "options-data-resource",

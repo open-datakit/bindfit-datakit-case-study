@@ -79,13 +79,16 @@
       "name": "inputParamsUVDimer"
     },
     {
+      "name": "inputParamsUVCoEK"
+    },
+    {
       "name": "inputOptionsNMR"
     },
     {
       "name": "inputOptionsUV"
     },
     {
-      "name": "inputOptionsUVDimer"
+      "name": "inputOptionsUVAgg"
     },
     {
       "name": "outputParams"

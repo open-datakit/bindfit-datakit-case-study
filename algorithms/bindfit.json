@@ -96,7 +96,13 @@
           "name": "uvdimer",
           "title": "UV Dimer Aggregation",
           "params": "inputParamsUVDimer",
-          "options": "inputOptionsUVDimer"
+          "options": "inputOptionsUVAgg"
+        },
+        {
+          "name": "uvcoek",
+          "title": "UV CoEK Aggregation",
+          "params": "inputParamsUVCoEK",
+          "options": "inputOptionsUVAgg"
         }
       ]
     },

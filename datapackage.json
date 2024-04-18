@@ -7,9 +7,15 @@
     "url": "https://github.com/opendatafit/bindfit-datapackage",
     "name": "opendatafit/bindfit-datapackage"
   },
-  "algorithms": [ "bindfit" ],
-  "resources": [ "data" ],
+  "algorithms": [
+    "bindfit"
+  ],
+  "resources": [
+    "data"
+  ],
   "views": [],
-  "displays": [ "main" ],
+  "displays": [
+    "main"
+  ],
   "timestamp": 0
 }

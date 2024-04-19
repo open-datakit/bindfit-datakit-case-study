@@ -1,16 +1,19 @@
 def main(
-    datapackage,
-    params,
-    options,
     data,
-    outputs,
-    **kwargs,
+    fitMethod,
+    fitModel,
+    fitModelParams,
+    subInitValues,
+    dilutionCorrection,
+    flavour,
+    fitResults,
 ):
-    import bindfit
+    print(data)
 
-    if not data["data"]:
-        raise ValueError("No data passed to algorithm")
+    #if not data["data"]:
+    #    raise ValueError("No data passed to algorithm")
 
-    outputs.update(bindfit.datapackage.fit(datapackage))
 
-    return outputs
+    return {
+        "flavour": "test"
+    }

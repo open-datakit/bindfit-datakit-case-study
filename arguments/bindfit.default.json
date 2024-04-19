@@ -5,7 +5,7 @@
   "data": [
     {
       "name": "data",
-      "resource": "inputData"
+      "resource": "data"
     },
     {
       "name": "fitMethod",

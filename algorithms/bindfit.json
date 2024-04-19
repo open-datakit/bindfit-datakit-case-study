@@ -1,8 +1,124 @@
 {
   "name": "bindfit",
   "title": "Bindfit",
-  "codeFile": "./bindfit.py",
-  "container": "opendatafit/bindfit:v1",
-  "profile": "model-fit-algorithm",
-  "timestamp": 0
+  "profile": "opendatafit-algorithm",
+  "code": "bindfit.py",
+  "interface": [
+    {
+      "name": "data",
+      "title": "Input data",
+      "description": "Input data",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": false
+    },
+    {
+      "name": "fitMethod",
+      "title": "Fit method",
+      "description": "The optimisation method to use for fitting",
+      "type": "string",
+      "enum": [
+        {
+          "title": "Nelder-Mead",
+          "value": "nelder-mead"
+        },
+        {
+          "title": "L-BFGS-B",
+          "value": "L-BFGS-B"
+        }
+      ],
+      "null": false
+    },
+    {
+      "name": "fitModel",
+      "title": "Fit model",
+      "description": "The model to fit to the data",
+      "type": "string",
+      "enum": [
+        {
+          "title": "NMR 1:1",
+          "value": "nmr1to1"
+        },
+        {
+          "title": "NMR 1:2",
+          "value": "nmr1to2"
+        },
+        {
+          "title": "NMR 2:1",
+          "value": "nmr2to1"
+        },
+        {
+          "title": "UV 1:1",
+          "value": "uv1to2"
+        },
+        {
+          "title": "UV 1:2",
+          "value": "uv1to2"
+        },
+        {
+          "title": "UV 2:1",
+          "value": "uv2to1"
+        }
+      ],
+      "null": false
+    },
+    {
+      "name": "fitModelParams",
+      "title": "Fit model parameters",
+      "description": "Fit model parameter initial guesses and optimised values",
+      "type": "resource",
+      "profile": "opendatafit-parameter-resource",
+      "enum": [
+        "nmr1to1Params",
+        "nmr1to2Params",
+        "nmr2to1Params",
+        "uv1to1Params",
+        "uv1to2Params",
+        "uv2to1Params"
+      ]
+    },
+    {
+      "name": "subInitValues",
+      "title": "Subtract initial values",
+      "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
+      "type": "boolean",
+      "null": false
+    },
+    {
+      "name": "dilutionCorrection",
+      "title": "Dilution correction",
+      "description": "If true, apply dilution correction to the data before fitting",
+      "type": "boolean",
+      "null": false
+    },
+    {
+      "name": "flavour",
+      "title": "Dilution correction",
+      "description": "If true, apply dilution correction to the data before fitting",
+      "type": "string",
+      "enum": [
+        {
+          "title": "Add",
+          "value": "add"
+        },
+        {
+          "title": "Stat",
+          "value": "stat"
+        },
+        {
+          "title": "Non-coop",
+          "value": "noncoop"
+        }
+      ],
+      "null": true
+    },
+    {
+      "name": "fitResults",
+      "title": "Fit results",
+      "description": "Fit results",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true
+    }
+  ]
 }

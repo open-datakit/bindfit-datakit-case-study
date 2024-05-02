@@ -69,12 +69,16 @@
       "type": "resource",
       "profile": "opendatafit-parameter-resource",
       "enum": [
-        "nmr1to1Params",
-        "nmr1to2Params",
-        "nmr2to1Params",
-        "uv1to1Params",
-        "uv1to2Params",
-        "uv2to1Params"
+        "nmr11Params",
+        "nmr12Params",
+        "nmr21Params",
+        "nmrCoekParams",
+        "nmrDimerParams",
+        "uv11Params",
+        "uv12Params",
+        "uv21Params",
+        "uvCoekParams",
+        "uvDimerParams"
       ]
     },
     {
@@ -110,14 +114,6 @@
           "value": "noncoop"
         }
       ],
-      "null": true
-    },
-    {
-      "name": "fitResults",
-      "title": "Fit results",
-      "description": "Fit results",
-      "type": "resource",
-      "profile": "tabular-data-resource",
       "null": true
     }
   ]

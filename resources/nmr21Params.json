@@ -1,0 +1,25 @@
+{
+  "name": "nmr21Params",
+  "title": "NMR 2:1 parameters",
+  "description": "NMR 2:1 binding curve model parameters",
+  "profile": "tabular-data-resource",
+  "data": [
+    {
+      "name": "k11",
+      "fit": true,
+      "init": 1000,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null
+    },
+    {
+      "name": "k21",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null
+    }
+  ],
+  "schema": "params"
+}

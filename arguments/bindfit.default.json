@@ -17,7 +17,7 @@
     },
     {
       "name": "fitModelParams",
-      "resource": "nmr1to1Params"
+      "resource": "nmr11Params"
     },
     {
       "name": "subInitValues",
@@ -29,11 +29,9 @@
     },
     {
       "name": "flavour",
-      "value": null
-    },
-    {
-      "name": "fitResults",
-      "resource": "fitResults"
+      "value": "test"
     }
-  ]
+  ],
+  "algorithm": "bindfit",
+  "container": "opendatafit/python-execution-base:v1"
 }

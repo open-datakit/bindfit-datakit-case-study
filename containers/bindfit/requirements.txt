@@ -1,0 +1,3 @@
+numpy==1.24.2
+bindfit@git+https://github.com/opendatafit/bindfit.git@main
+opendatafit@git+https://github.com/opendatafit/opendatafit.git@main

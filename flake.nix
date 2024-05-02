@@ -18,12 +18,13 @@
       devShells.default = pkgs.mkShell {
         buildInputs = [
           pkgs.pre-commit
-          pkgs.python310
-          pkgs.python310Packages.platformdirs
-          pkgs.python310Packages.packaging
-          pkgs.python310Packages.numpy
-          pkgs.python310Packages.scipy
-          pkgs.python310Packages.pandas
+          pkgs.python311
+          pkgs.python311Packages.pip
+          pkgs.python311Packages.platformdirs
+          pkgs.python311Packages.packaging
+          pkgs.python311Packages.numpy
+          pkgs.python311Packages.scipy
+          pkgs.python311Packages.pandas
         ];
       };
     });

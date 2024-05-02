@@ -33,29 +33,30 @@ def main(
     # Imports
     import numpy as np
     import bindfit
-    import opendatafit
 
     # Error checks
-    if not data["data"]:
+    if not data:
         raise ValueError("No data passed to algorithm")
 
     # Munge data into Bindfit format
-    # Bindfit expects each variable as rows
-    df = opendatafit.helpers.tabular_data_resource_to_dataframe(data)
-    data_x = np.transpose(df.iloc[:, :2].to_numpy())
-    data_y = np.transpose(df.iloc[:, 2:].to_numpy())
+    # Bindfit expects each variable as row
+    # np.asarray(list()) required to convert index list of tuples to normal
+    # numpy matrix
+    # TODO: Move this to a helper function in opendatafit.TabularDataResource
+    data_x = np.transpose(np.asarray(list(data.data.index.to_numpy())))
+    data_y = np.transpose(data.data.to_numpy())
 
     # Convert param initial values and bounds to Bindfit format
     input_params = {}
 
-    for param in fitModelParams["data"]:
+    for key, row in fitModelParams.data.iterrows():
         input_params.update(
             {
-                param["name"]: {
-                    "init": param["value"],
+                key: {
+                    "init": row["init"],
                     "bounds": {
-                        "min": param["lowerBound"],
-                        "max": param["upperBound"],
+                        "min": row["lowerBound"],
+                        "max": row["upperBound"],
                     },
                 }
             }
@@ -82,12 +83,10 @@ def main(
 
     # Munge output data
 
-    # Optimised parameter values
-    for param in fitModelParams["data"]:
-        key = param["name"]
-        if key in fitter.params:
-            param["value"] = fitter.params[key]["value"]
-            param["stderr"] = fitter.params[key]["stderr"]
+    # Write optimised parameter values
+    for key, result in fitter.params.items():
+        fitModelParams.data.loc["k", "value"] = result["value"]
+        fitModelParams.data.loc["k", "stderr"] = result["stderr"]
 
     return {
         "fitModelParams": fitModelParams

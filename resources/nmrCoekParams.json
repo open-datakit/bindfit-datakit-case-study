@@ -10,7 +10,8 @@
       "init": 200,
       "value": null,
       "lowerBound": 0,
-      "upperBound": null
+      "upperBound": null,
+      "stderr": null
     },
     {
       "name": "rho",
@@ -18,7 +19,8 @@
       "init": 0.3,
       "value": null,
       "lowerBound": 0,
-      "upperBound": null
+      "upperBound": null,
+      "stderr": null
     }
   ],
   "schema": "params"

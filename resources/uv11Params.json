@@ -10,7 +10,8 @@
       "init": 100,
       "value": null,
       "lowerBound": 0,
-      "upperBound": 1000
+      "upperBound": 1000,
+      "stderr": null
     }
   ],
   "schema": "params"

@@ -39,6 +39,12 @@
         "title": "Upper bound",
         "type": "number",
         "unit": "M^{-1}"
+      },
+      {
+        "name": "stderr",
+        "title": "Standard error",
+        "type": "number",
+        "unit": "M^{-1}"
       }
     ]
   }

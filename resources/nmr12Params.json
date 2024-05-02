@@ -10,7 +10,8 @@
       "init": 1000,
       "value": null,
       "lowerBound": 0,
-      "upperBound": null
+      "upperBound": null,
+      "stderr": null
     },
     {
       "name": "k12",
@@ -18,7 +19,8 @@
       "init": 100,
       "value": null,
       "lowerBound": 0,
-      "upperBound": null
+      "upperBound": null,
+      "stderr": null
     }
   ],
   "schema": "params"

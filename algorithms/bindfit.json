@@ -115,6 +115,22 @@
         }
       ],
       "null": true
+    },
+    {
+      "name": "fitCurve",
+      "title": "Fit curve",
+      "description": "Fit curve",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true
+    },
+    {
+      "name": "fitResiduals",
+      "title": "Fit residuals",
+      "description": "Fit residuals",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true
     }
   ]
 }

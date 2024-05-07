@@ -30,8 +30,16 @@
     {
       "name": "flavour",
       "value": "test"
+    },
+    {
+      "name": "fitCurve",
+      "resource": "fitCurve"
+    },
+    {
+      "name": "fitResiduals",
+      "resource": "fitResiduals"
     }
   ],
   "algorithm": "bindfit",
-  "container": "opendatafit/python-execution-base:v1"
+  "container": "opendatafit/bindfit"
 }

@@ -1,2 +1,2 @@
-numpy==1.24.2
+numpy
 bindfit@git+https://github.com/opendatafit/bindfit.git@main

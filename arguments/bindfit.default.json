@@ -5,7 +5,8 @@
   "data": [
     {
       "name": "data",
-      "resource": "data"
+      "resource": "data",
+      "metaschema": "data"
     },
     {
       "name": "fitMethod",
@@ -33,11 +34,18 @@
     },
     {
       "name": "fitCurve",
-      "resource": "fitCurve"
+      "resource": "fitCurve",
+      "metaschema": "data"
     },
     {
       "name": "fitResiduals",
-      "resource": "fitResiduals"
+      "resource": "fitResiduals",
+      "metaschema": "data"
+    },
+    {
+      "name": "fitMolefractions",
+      "resource": "fitMolefractions",
+      "metaschema": "molefractions11"
     }
   ],
   "algorithm": "bindfit",

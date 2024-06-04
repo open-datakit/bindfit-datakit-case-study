@@ -8,6 +8,7 @@ def main(
     flavour,
     fitCurve,
     fitResiduals,
+    fitMolefractions,
 ):
     """Construct and run a Bindfit fitter given a dataset and parameters
 
@@ -87,6 +88,15 @@ def main(
     # Write output fit and residuals data
     fitCurve.data = fitter.fit_curve()
     fitResiduals.data = fitter.fit_residuals()
+
+    # Write output molefractions
+    fitMolefractions.data = fitter.fit_molefractions()
+
+    # Write output coeffs
+
+    # Write output quality of fit statistics
+
+    # Write output fit details (values in arguments only)
 
     return {
         "fitModelParams": fitModelParams,

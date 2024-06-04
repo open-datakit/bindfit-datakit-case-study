@@ -10,6 +10,10 @@
       "description": "Input data",
       "type": "resource",
       "profile": "tabular-data-resource",
+      "metaschema": [
+        "data",
+        "dataAgg"
+      ],
       "null": false
     },
     {
@@ -122,7 +126,11 @@
       "description": "Fit curve",
       "type": "resource",
       "profile": "tabular-data-resource",
-      "null": true
+      "null": true,
+      "metaschema": [
+        "data",
+        "dataAgg"
+      ]
     },
     {
       "name": "fitResiduals",
@@ -130,7 +138,25 @@
       "description": "Fit residuals",
       "type": "resource",
       "profile": "tabular-data-resource",
-      "null": true
+      "null": true,
+      "metaschema": [
+        "data",
+        "dataAgg"
+      ]
+    },
+    {
+      "name": "fitMolefractions",
+      "title": "Fit molefractions",
+      "description": "Fit residuals",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": [
+        "molefractions11",
+        "molefractions12",
+        "molefractions21",
+        "molefractionsAgg"
+      ]
     }
   ]
 }

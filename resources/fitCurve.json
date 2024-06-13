@@ -3,6 +3,6 @@
   "title": "Fit curve data",
   "description": "Fit curve data",
   "profile": "tabular-data-resource",
-  "schema": "data",
+  "schema": {},
   "data": []
 }

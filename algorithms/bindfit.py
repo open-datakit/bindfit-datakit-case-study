@@ -32,11 +32,15 @@ def main(
         Output fit curve
     fitResiduals: `tabular-data-resource`
         Output fit residuals
+    fitMolefractions: `tabular-data-resource`
+        Output fit molefractions
 
     Returns
     -------
     TODO
     """
+    print("Algorithm got inputs")
+
     # Imports
     import numpy as np
     import bindfit
@@ -79,6 +83,7 @@ def main(
     fitter.run_scipy(input_params, method=fitMethod)
 
     # Munge output data
+    print("Writing outputs")
 
     # Write optimised parameter values
     for key, result in fitter.params.items():
@@ -91,6 +96,8 @@ def main(
 
     # Write output molefractions
     fitMolefractions.data = fitter.fit_molefractions()
+    # TODO: Should we set schema to match input or output schema here?
+    # Generate schema from the fit_molefractions index and column names?
 
     # Write output coeffs
 
@@ -102,4 +109,5 @@ def main(
         "fitModelParams": fitModelParams,
         "fitCurve": fitCurve,
         "fitResiduals": fitResiduals,
+        "fitMolefractions": fitMolefractions,
     }

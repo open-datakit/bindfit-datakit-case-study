@@ -42,7 +42,6 @@ def main(
     print("Algorithm got inputs")
 
     # Imports
-    import numpy as np
     import bindfit
 
     # Error checks

@@ -18,7 +18,8 @@
     },
     {
       "name": "fitModelParams",
-      "resource": "nmr11Params"
+      "resource": "nmr11Params",
+      "metaschema": "params"
     },
     {
       "name": "subInitValues",

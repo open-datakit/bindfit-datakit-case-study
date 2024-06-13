@@ -3,7 +3,10 @@
   "title": "Default data metaschema",
   "profile": "tabular-data-resource-metaschema",
   "schema": {
-    "primaryKey": ["host", "guest"],
+    "primaryKey": [
+      "host",
+      "guest"
+    ],
     "fields": [
       {
         "name": "host",

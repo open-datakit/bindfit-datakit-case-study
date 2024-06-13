@@ -4,32 +4,32 @@
       "name": "inputData",
       "x": {
         "transform": {
-        "type": "formula",
-        "expr": "datum[1]/datum[0]"
+          "type": "formula",
+          "expr": "datum[1]/datum[0]"
         }
       },
       "y": {
         "transform": {
-        "type": "slice",
-        "slice": "2:"
+          "type": "slice",
+          "slice": "2:"
         }
       },
       "colors": {
         "attributePath": "marker.color",
         "values": [
-        "darkcyan",
-        "darkslateblue",
-        "darkmagenta",
-        "crimson"
+          "darkcyan",
+          "darkslateblue",
+          "darkmagenta",
+          "crimson"
         ]
       },
       "config": {
         "mode": "markers",
         "type": "scatter",
         "marker": {
-        "size": 8,
-        "color": "",
-        "symbol": "circle-open-dot"
+          "size": 8,
+          "color": "",
+          "symbol": "circle-open-dot"
         }
       }
     },
@@ -37,23 +37,23 @@
       "name": "outputFit",
       "x": {
         "transform": {
-        "type": "formula",
-        "expr": "datum[1]/datum[0]"
+          "type": "formula",
+          "expr": "datum[1]/datum[0]"
         }
       },
       "y": {
         "transform": {
-        "type": "slice",
-        "slice": "2:"
+          "type": "slice",
+          "slice": "2:"
         }
       },
       "colors": {
         "attributePath": "line.color",
         "values": [
-        "darkcyan",
-        "darkslateblue",
-        "darkmagenta",
-        "crimson"
+          "darkcyan",
+          "darkslateblue",
+          "darkmagenta",
+          "crimson"
         ]
       },
       "config": {
@@ -70,23 +70,23 @@
       "name": "outputResiduals",
       "x": {
         "transform": {
-        "type": "formula",
-        "expr": "datum[1]/datum[0]"
+          "type": "formula",
+          "expr": "datum[1]/datum[0]"
         }
       },
       "y": {
         "transform": {
-        "type": "slice",
-        "slice": "2:"
+          "type": "slice",
+          "slice": "2:"
         }
       },
       "colors": {
         "attributePath": "line.color",
         "values": [
-        "darkcyan",
-        "darkslateblue",
-        "darkmagenta",
-        "crimson"
+          "darkcyan",
+          "darkslateblue",
+          "darkmagenta",
+          "crimson"
         ]
       },
       "config": {

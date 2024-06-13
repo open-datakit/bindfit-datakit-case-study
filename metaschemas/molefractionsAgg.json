@@ -3,7 +3,9 @@
   "title": "Molefractions metaschema for aggregate models",
   "profile": "tabular-data-resource-metaschema",
   "schema": {
-    "primaryKey": ["host"],
+    "primaryKey": [
+      "host"
+    ],
     "fields": [
       {
         "name": "host",

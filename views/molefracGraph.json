@@ -5,13 +5,13 @@
       {
         "name": "outputMolefracs",
         "x": {
-            "transform": {
+          "transform": {
             "type": "formula",
             "expr": "datum[1]/datum[0]"
           }
         },
         "y": {
-            "transform": {
+          "transform": {
             "type": "formula",
             "expr": "datum.slice(2)"
           }

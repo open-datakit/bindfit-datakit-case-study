@@ -22,5 +22,6 @@
       "upperBound": null,
       "stderr": null
     }
-  ]
+  ],
+  "schema": "metaschema"
 }

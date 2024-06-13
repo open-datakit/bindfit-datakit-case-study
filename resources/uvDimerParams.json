@@ -13,5 +13,6 @@
       "upperBound": 1000,
       "stderr": null
     }
-  ]
+  ],
+  "schema": "metaschema"
 }

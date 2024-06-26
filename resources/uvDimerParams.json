@@ -1,0 +1,18 @@
+{
+  "name": "uvDimerParams",
+  "title": "UV Dimer parameters",
+  "description": "UV Dimer binding curve model parameters",
+  "profile": "tabular-data-resource",
+  "data": [
+    {
+      "name": "ke",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": 1000,
+      "stderr": null
+    }
+  ],
+  "schema": "metaschema"
+}

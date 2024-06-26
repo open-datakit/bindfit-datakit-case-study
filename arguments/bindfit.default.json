@@ -1,0 +1,54 @@
+{
+  "name": "bindfit.default",
+  "title": "Bindfit algorithm default argument space",
+  "profile": "opendatafit-algorithm-arguments",
+  "data": [
+    {
+      "name": "data",
+      "resource": "data",
+      "metaschema": "data"
+    },
+    {
+      "name": "fitMethod",
+      "value": "nelder-mead"
+    },
+    {
+      "name": "fitModel",
+      "value": "nmr1to1"
+    },
+    {
+      "name": "fitModelParams",
+      "resource": "nmr11Params",
+      "metaschema": "params"
+    },
+    {
+      "name": "subInitValues",
+      "value": true
+    },
+    {
+      "name": "dilutionCorrection",
+      "value": false
+    },
+    {
+      "name": "flavour",
+      "value": "test"
+    },
+    {
+      "name": "fitCurve",
+      "resource": "fitCurve",
+      "metaschema": "data"
+    },
+    {
+      "name": "fitResiduals",
+      "resource": "fitResiduals",
+      "metaschema": "data"
+    },
+    {
+      "name": "fitMolefractions",
+      "resource": "fitMolefractions",
+      "metaschema": "molefractions11"
+    }
+  ],
+  "algorithm": "bindfit",
+  "container": "opendatafit/bindfit"
+}

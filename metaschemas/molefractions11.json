@@ -1,0 +1,37 @@
+{
+  "name": "molefractions11",
+  "title": "Molefractions metaschema for 1:1 models",
+  "profile": "tabular-data-resource-metaschema",
+  "schema": {
+    "primaryKey": [
+      "host",
+      "guest"
+    ],
+    "fields": [
+      {
+        "name": "host",
+        "index": "0",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "guest",
+        "index": "1",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "H",
+        "index": "2",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "HG",
+        "index": "3",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "uv12Params",
+  "title": "UV 1:2 parameters",
+  "description": "UV 1:2 binding curve model parameters",
+  "profile": "tabular-data-resource",
+  "data": [
+    {
+      "name": "k11",
+      "fit": true,
+      "init": 1000,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    },
+    {
+      "name": "k12",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    }
+  ],
+  "schema": "metaschema"
+}

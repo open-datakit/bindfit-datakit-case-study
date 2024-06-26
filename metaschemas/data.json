@@ -1,0 +1,31 @@
+{
+  "name": "data",
+  "title": "Default data metaschema",
+  "profile": "tabular-data-resource-metaschema",
+  "schema": {
+    "primaryKey": [
+      "host",
+      "guest"
+    ],
+    "fields": [
+      {
+        "name": "host",
+        "index": "0",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "guest",
+        "index": "1",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "y",
+        "index": "2:",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  }
+}

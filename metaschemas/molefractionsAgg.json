@@ -1,0 +1,30 @@
+{
+  "name": "molefractionsAgg",
+  "title": "Molefractions metaschema for aggregate models",
+  "profile": "tabular-data-resource-metaschema",
+  "schema": {
+    "primaryKey": [
+      "host"
+    ],
+    "fields": [
+      {
+        "name": "host",
+        "index": "0",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "Hs",
+        "index": "1",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "He",
+        "index": "2",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  }
+}

@@ -1,152 +1,163 @@
 {
   "name": "bindfit",
   "title": "Bindfit",
-  "code": "",
-  "inputs": [
+  "profile": "opendatafit-algorithm",
+  "code": "bindfit.py",
+  "interface": [
     {
-      "name": "params",
-      "type": "algorithmParams",
-      "parameterSpace": {
-        "name": "nmr1to1",
-        "title": "NMR 1:1",
-        "params": "inputParamsNMR11",
-        "options": "inputOptionsNMR"
-      },
-      "parameterSpaceMetadata": {
-        "title": "Model",
-        "params": {
-          "title": "Flavour",
-          "null": false
-        },
-        "options": {
-          "title": "Options",
-          "null": false
-        }
-      },
-      "parameterSpaceGroups": [
+      "name": "data",
+      "title": "Input data",
+      "description": "Input data",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "metaschema": [
+        "data",
+        "dataAgg"
+      ],
+      "null": false
+    },
+    {
+      "name": "fitMethod",
+      "title": "Fit method",
+      "description": "The optimisation method to use for fitting",
+      "type": "string",
+      "enum": [
         {
-          "name": "nmr1to1",
+          "title": "Nelder-Mead",
+          "value": "nelder-mead"
+        },
+        {
+          "title": "L-BFGS-B",
+          "value": "L-BFGS-B"
+        }
+      ],
+      "null": false
+    },
+    {
+      "name": "fitModel",
+      "title": "Fit model",
+      "description": "The model to fit to the data",
+      "type": "string",
+      "enum": [
+        {
           "title": "NMR 1:1",
-          "params": "inputParamsNMR11",
-          "options": "inputOptionsNMR"
+          "value": "nmr1to1"
         },
         {
-          "name": "nmr1to2",
           "title": "NMR 1:2",
-          "params": [
-            "inputParamsNMR12",
-            "inputParamsNMR12Add",
-            "inputParamsNMR12Noncoop",
-            "inputParamsNMR12Stat"
-          ],
-          "options": "inputOptionsNMR"
+          "value": "nmr1to2"
         },
         {
-          "name": "nmr2to1",
           "title": "NMR 2:1",
-          "params": [
-            "inputParamsNMR21",
-            "inputParamsNMR21Add",
-            "inputParamsNMR21Noncoop",
-            "inputParamsNMR21Stat"
-          ],
-          "options": "inputOptionsNMR"
+          "value": "nmr2to1"
         },
         {
-          "name": "nmrdimer",
-          "title": "NMR Dimer Aggregation",
-          "params": "inputParamsNMRDimer",
-          "options": "inputOptionsNMR"
-        },
-        {
-          "name": "nmrcoek",
-          "title": "NMR CoEK Aggregation",
-          "params": "inputParamsNMRCoEK",
-          "options": "inputOptionsNMR"
-        },
-        {
-          "name": "uv1to1",
           "title": "UV 1:1",
-          "params": "inputParamsUV11",
-          "options": "inputOptionsUV"
+          "value": "uv1to2"
         },
         {
-          "name": "uv1to2",
           "title": "UV 1:2",
-          "params": [
-            "inputParamsUV12",
-            "inputParamsUV12Add",
-            "inputParamsUV12Noncoop",
-            "inputParamsUV12Stat"
-          ],
-          "options": "inputOptionsUV"
+          "value": "uv1to2"
         },
         {
-          "name": "uv2to1",
           "title": "UV 2:1",
-          "params": [
-            "inputParamsUV21",
-            "inputParamsUV21Add",
-            "inputParamsUV21Noncoop",
-            "inputParamsUV21Stat"
-          ],
-          "options": "inputOptionsUV"
-        },
-        {
-          "name": "uvdimer",
-          "title": "UV Dimer Aggregation",
-          "params": "inputParamsUVDimer",
-          "options": "inputOptionsUVAgg"
-        },
-        {
-          "name": "uvcoek",
-          "title": "UV CoEK Aggregation",
-          "params": "inputParamsUVCoEK",
-          "options": "inputOptionsUVAgg"
+          "value": "uv2to1"
         }
+      ],
+      "null": false
+    },
+    {
+      "name": "fitModelParams",
+      "title": "Fit model parameters",
+      "description": "Fit model parameter initial guesses and optimised values",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "metaschema": "params",
+      "enum": [
+        "nmr11Params",
+        "nmr12Params",
+        "nmr21Params",
+        "nmrCoekParams",
+        "nmrDimerParams",
+        "uv11Params",
+        "uv12Params",
+        "uv21Params",
+        "uvCoekParams",
+        "uvDimerParams"
       ]
     },
     {
-      "name": "data",
-      "type": "resource",
-      "resource": "inputData"
-    }
-  ],
-  "outputs": [
-    {
-      "name": "params",
-      "type": "resource",
-      "resource": "outputParams"
+      "name": "subInitValues",
+      "title": "Subtract initial values",
+      "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
+      "type": "boolean",
+      "null": false
     },
     {
-      "name": "fit",
-      "type": "resource",
-      "resource": "outputFit"
+      "name": "dilutionCorrection",
+      "title": "Dilution correction",
+      "description": "If true, apply dilution correction to the data before fitting",
+      "type": "boolean",
+      "null": false
     },
     {
-      "name": "residuals",
-      "type": "resource",
-      "resource": "outputResiduals"
+      "name": "flavour",
+      "title": "Dilution correction",
+      "description": "If true, apply dilution correction to the data before fitting",
+      "type": "string",
+      "enum": [
+        {
+          "title": "Add",
+          "value": "add"
+        },
+        {
+          "title": "Stat",
+          "value": "stat"
+        },
+        {
+          "title": "Non-coop",
+          "value": "noncoop"
+        }
+      ],
+      "null": true
     },
     {
-      "name": "molefracs",
+      "name": "fitCurve",
+      "title": "Fit curve",
+      "description": "Fit curve",
       "type": "resource",
-      "resource": "outputMolefracs"
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": [
+        "data",
+        "dataAgg"
+      ]
     },
     {
-      "name": "fitDetails",
+      "name": "fitResiduals",
+      "title": "Fit residuals",
+      "description": "Fit residuals",
       "type": "resource",
-      "resource": "outputFitDetails"
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": [
+        "data",
+        "dataAgg"
+      ]
     },
     {
-      "name": "qof",
+      "name": "fitMolefractions",
+      "title": "Fit molefractions",
+      "description": "Fit residuals",
       "type": "resource",
-      "resource": "outputQof"
-    },
-    {
-      "name": "coeffs",
-      "type": "resource",
-      "resource": "outputCoeffs"
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": [
+        "molefractions11",
+        "molefractions12",
+        "molefractions21",
+        "molefractionsAgg"
+      ]
     }
   ]
 }

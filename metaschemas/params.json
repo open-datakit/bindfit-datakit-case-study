@@ -1,0 +1,58 @@
+{
+  "name": "params",
+  "title": "Parameter metaschema",
+  "description": "Parameter metaschema for Bindfit parameter table",
+  "profile": "tabular-data-resource-metaschema",
+  "schema": {
+    "primaryKey": "name",
+    "fields": [
+      {
+        "name": "name",
+        "title": "Name",
+        "index": 0,
+        "type": "string"
+      },
+      {
+        "name": "fit",
+        "title": "Fit",
+        "index": 1,
+        "type": "boolean"
+      },
+      {
+        "name": "init",
+        "title": "Initial value",
+        "index": 2,
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "value",
+        "title": "Optimised value",
+        "index": 3,
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "lowerBound",
+        "title": "Lower bound",
+        "index": 4,
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "upperBound",
+        "title": "Upper bound",
+        "index": 5,
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "stderr",
+        "title": "Standard error",
+        "index": 6,
+        "type": "number",
+        "unit": "M^{-1}"
+      }
+    ]
+  }
+}

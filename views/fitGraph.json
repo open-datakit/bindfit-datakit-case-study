@@ -26,9 +26,9 @@
           ]
         },
         "config": {
-            "mode": "markers",
-            "type": "scatter",
-            "marker": {
+          "mode": "markers",
+          "type": "scatter",
+          "marker": {
             "size": 8,
             "color": "",
             "symbol": "circle-open-dot"
@@ -38,13 +38,13 @@
       {
         "name": "outputFit",
         "x": {
-            "transform": {
+          "transform": {
             "type": "formula",
             "expr": "datum[1]/datum[0]"
           }
         },
         "y": {
-            "transform": {
+          "transform": {
             "type": "formula",
             "expr": "datum.slice(2)"
           }
@@ -71,13 +71,13 @@
       {
         "name": "outputResiduals",
         "x": {
-            "transform": {
+          "transform": {
             "type": "formula",
             "expr": "datum[1]/datum[0]"
           }
         },
         "y": {
-            "transform": {
+          "transform": {
             "type": "formula",
             "expr": "datum.slice(2)"
           }
@@ -135,7 +135,7 @@
       },
       "yaxis": {
         "title": {
-          "text": "δ"
+          "text": "\u03b4"
         },
         "ticksuffix": " ppm",
         "exponentformat": "power",

@@ -9,6 +9,7 @@ def main(
     fitCurve,
     fitResiduals,
     fitMolefractions,
+    fitCoefficients,
 ):
     """Construct and run a Bindfit fitter given a dataset and parameters
 
@@ -95,10 +96,9 @@ def main(
 
     # Write output molefractions
     fitMolefractions.data = fitter.fit_molefractions()
-    # TODO: Should we set schema to match input or output schema here?
-    # Generate schema from the fit_molefractions index and column names?
 
-    # Write output coeffs
+    # Write output coefficients
+    fitCoefficients.data = fitter.fit_coefficients
 
     # Write output quality of fit statistics
 
@@ -109,4 +109,5 @@ def main(
         "fitCurve": fitCurve,
         "fitResiduals": fitResiduals,
         "fitMolefractions": fitMolefractions,
+        "fitCoefficients": fitCoefficients,
     }

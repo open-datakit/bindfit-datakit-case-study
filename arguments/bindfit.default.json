@@ -47,6 +47,11 @@
       "name": "fitMolefractions",
       "resource": "fitMolefractions",
       "metaschema": "molefractions11"
+    },
+    {
+      "name": "fitCoefficients",
+      "resource": "fitCoefficients",
+      "metaschema": "coefficients11"
     }
   ],
   "algorithm": "bindfit",

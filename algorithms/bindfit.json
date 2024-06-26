@@ -158,6 +158,20 @@
         "molefractions21",
         "molefractionsAgg"
       ]
+    },
+    {
+      "name": "fitCoefficients",
+      "title": "Fit coefficients",
+      "description": "Fit coefficients",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": [
+        "coefficients11",
+        "coefficients12",
+        "coefficients21",
+        "coefficientsAgg"
+      ]
     }
   ]
 }

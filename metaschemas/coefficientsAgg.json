@@ -5,16 +5,23 @@
   "schema": {
     "fields": [
       {
+        "name": "name",
+        "title": "Name",
+        "index": "0",
+        "unit": "",
+        "type": "string"
+      },
+      {
         "name": "h",
         "title": "H + He/2",
-        "index": "0",
+        "index": "1",
         "unit": "",
         "type": "number"
       },
       {
         "name": "hs",
         "title": "Hs + He/2",
-        "index": "1",
+        "index": "2",
         "unit": "",
         "type": "number"
       }

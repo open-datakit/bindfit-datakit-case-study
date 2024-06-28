@@ -3,25 +3,33 @@
   "title": "Coefficients metaschema for 1:2 models",
   "profile": "tabular-data-resource-metaschema",
   "schema": {
+    "primaryKey": "name",
     "fields": [
+      {
+        "name": "name",
+        "title": "Name",
+        "index": "0",
+        "unit": "",
+        "type": "string"
+      },
       {
         "name": "h",
         "title": "H",
-        "index": "0",
+        "index": "1",
         "unit": "",
         "type": "number"
       },
       {
         "name": "hg",
         "title": "HG",
-        "index": "1",
+        "index": "2",
         "unit": "",
         "type": "number"
       },
       {
         "name": "hg2",
         "title": "HG2",
-        "index": "2",
+        "index": "3",
         "unit": "",
         "type": "number"
       }

@@ -1,33 +1,42 @@
 {
-  "name": "outputFitDetails",
-  "title": "Fit details",
-  "description": "Fit details",
-  "profile": "tabular-data-resource",
-  "data": [],
+  "name": "summary",
+  "title": "Fit summary metaschema",
+  "profile": "tabular-data-resource-metaschema",
   "schema": {
-    "primaryKey": "time",
+    "primaryKey": "model",
     "fields": [
       {
+        "name": "model",
+        "title": "Model",
+        "index": 0,
+        "unit": "",
+        "type": "string"
+      },
+      {
         "name": "time",
-        "title": "Time to fit",
+        "title": "Time",
+        "index": "1",
         "unit": "s",
         "type": "number"
       },
       {
         "name": "ssr",
         "title": "SSR",
+        "index": "2",
         "unit": "",
         "type": "number"
       },
       {
         "name": "n_y",
         "title": "Fitted datapoints",
+        "index": "3",
         "unit": "",
         "type": "number"
       },
       {
         "name": "n_params",
-        "title": "Fitted params",
+        "title": "Fitted parameters",
+        "index": "4",
         "unit": "",
         "type": "number"
       }

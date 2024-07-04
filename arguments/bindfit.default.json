@@ -52,6 +52,11 @@
       "name": "fitCoefficients",
       "resource": "fitCoefficients",
       "metaschema": "coefficients11"
+    },
+    {
+      "name": "fitSummary",
+      "resource": "fitSummary",
+      "metaschema": "summary"
     }
   ],
   "algorithm": "bindfit",

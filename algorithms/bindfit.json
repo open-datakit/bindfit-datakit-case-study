@@ -172,6 +172,24 @@
         "coefficients21",
         "coefficientsAgg"
       ]
+    },
+    {
+      "name": "fitQuality",
+      "title": "Fit quality",
+      "description": "Fit quality",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": "quality"
+    },
+    {
+      "name": "fitSummary",
+      "title": "Fit summary",
+      "description": "Fit summary",
+      "type": "resource",
+      "profile": "tabular-data-resource",
+      "null": true,
+      "metaschema": "summary"
     }
   ]
 }

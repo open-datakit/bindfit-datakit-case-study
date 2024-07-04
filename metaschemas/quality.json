@@ -1,27 +1,27 @@
 {
-  "name": "coefficients11",
-  "title": "Coefficients metaschema for 1:1 models",
+  "name": "quality",
+  "title": "Fit quality metaschema",
   "profile": "tabular-data-resource-metaschema",
   "schema": {
-    "primaryKey": "name",
+    "primaryKey": "fit",
     "fields": [
       {
-        "name": "name",
-        "title": "Name",
+        "name": "fit",
+        "title": "Fit",
         "index": "0",
         "unit": "",
         "type": "string"
       },
       {
-        "name": "h",
-        "title": "H",
+        "name": "rms",
+        "title": "RMS",
         "index": "1",
         "unit": "",
         "type": "number"
       },
       {
-        "name": "hg",
-        "title": "HG",
+        "name": "cov",
+        "title": "Covariance",
         "index": "2",
         "unit": "",
         "type": "number"

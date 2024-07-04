@@ -10,6 +10,8 @@ def main(
     fitResiduals,
     fitMolefractions,
     fitCoefficients,
+    fitQuality,
+    fitSummary,
 ):
     """Construct and run a Bindfit fitter given a dataset and parameters
 
@@ -40,8 +42,6 @@ def main(
     -------
     TODO
     """
-    print("Algorithm got inputs")
-
     # Imports
     import bindfit
 
@@ -83,7 +83,6 @@ def main(
     fitter.run_scipy(input_params, method=fitMethod)
 
     # Munge output data
-    print("Writing outputs")
 
     # Write optimised parameter values
     for key, result in fitter.params.items():
@@ -91,18 +90,20 @@ def main(
         fitModelParams.data.loc[key, "stderr"] = result["stderr"]
 
     # Write output fit and residuals data
-    fitCurve.data = fitter.fit_curve()
-    fitResiduals.data = fitter.fit_residuals()
+    fitCurve.data = fitter.fit_curve
+    fitResiduals.data = fitter.fit_residuals
 
     # Write output molefractions
-    fitMolefractions.data = fitter.fit_molefractions()
+    fitMolefractions.data = fitter.fit_molefractions
 
     # Write output coefficients
     fitCoefficients.data = fitter.fit_coefficients
 
-    # Write output quality of fit statistics
+    # Write output fit quality statistics
+    fitQuality.data = fitter.fit_quality
 
-    # Write output fit details (values in arguments only)
+    # Write output fit details
+    fitSummary.data = fitter.fit_summary
 
     return {
         "fitModelParams": fitModelParams,
@@ -110,4 +111,6 @@ def main(
         "fitResiduals": fitResiduals,
         "fitMolefractions": fitMolefractions,
         "fitCoefficients": fitCoefficients,
+        "fitSummary": fitSummary,
+        "fitQuality": fitQuality,
     }

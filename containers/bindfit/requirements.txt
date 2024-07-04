@@ -1,2 +1,2 @@
 numpy
-bindfit@git+https://github.com/opendatafit/bindfit.git@main
+bindfit@git+https://github.com/opendatafit/bindfit.git@add-fit-qof-property

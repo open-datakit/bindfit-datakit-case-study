@@ -54,6 +54,11 @@
       "metaschema": "coefficients11"
     },
     {
+      "name": "fitQuality",
+      "resource": "fitQuality",
+      "metaschema": "quality"
+    },
+    {
       "name": "fitSummary",
       "resource": "fitSummary",
       "metaschema": "summary"

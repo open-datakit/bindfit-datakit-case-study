@@ -40,8 +40,6 @@ def main(
     -------
     TODO
     """
-    print("Algorithm got inputs")
-
     # Imports
     import bindfit
 
@@ -83,7 +81,6 @@ def main(
     fitter.run_scipy(input_params, method=fitMethod)
 
     # Munge output data
-    print("Writing outputs")
 
     # Write optimised parameter values
     for key, result in fitter.params.items():

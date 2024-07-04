@@ -10,6 +10,7 @@ def main(
     fitResiduals,
     fitMolefractions,
     fitCoefficients,
+    fitQuality,
     fitSummary,
 ):
     """Construct and run a Bindfit fitter given a dataset and parameters
@@ -98,9 +99,10 @@ def main(
     # Write output coefficients
     fitCoefficients.data = fitter.fit_coefficients
 
-    # Write output quality of fit statistics
+    # Write output fit quality statistics
+    fitQuality.data = fitter.fit_quality
 
-    # Write output fit details (values in arguments only)
+    # Write output fit details
     fitSummary.data = fitter.fit_summary
 
     return {
@@ -110,4 +112,5 @@ def main(
         "fitMolefractions": fitMolefractions,
         "fitCoefficients": fitCoefficients,
         "fitSummary": fitSummary,
+        "fitQuality": fitQuality,
     }

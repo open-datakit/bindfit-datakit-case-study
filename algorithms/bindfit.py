@@ -101,7 +101,7 @@ def main(
     # Write output quality of fit statistics
 
     # Write output fit details (values in arguments only)
-    # fitSummary = fitter.fit_summary
+    fitSummary.data = fitter.fit_summary
 
     return {
         "fitModelParams": fitModelParams,

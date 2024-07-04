@@ -88,11 +88,11 @@ def main(
         fitModelParams.data.loc[key, "stderr"] = result["stderr"]
 
     # Write output fit and residuals data
-    fitCurve.data = fitter.fit_curve()
-    fitResiduals.data = fitter.fit_residuals()
+    fitCurve.data = fitter.fit_curve
+    fitResiduals.data = fitter.fit_residuals
 
     # Write output molefractions
-    fitMolefractions.data = fitter.fit_molefractions()
+    fitMolefractions.data = fitter.fit_molefractions
 
     # Write output coefficients
     fitCoefficients.data = fitter.fit_coefficients

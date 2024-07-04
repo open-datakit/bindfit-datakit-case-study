@@ -8,7 +8,7 @@
       {
         "name": "model",
         "title": "Model",
-        "index": 0,
+        "index": "0",
         "unit": "",
         "type": "string"
       },

@@ -1,9 +1,9 @@
 {
-  "name": "fitGraph",
+  "name": "fitGraphPlotly",
   "spec": {
     "data": [
       {
-        "name": "inputData",
+        "name": "data",
         "x": {
           "transform": {
             "type": "formula",
@@ -13,7 +13,7 @@
         "y": {
           "transform": {
             "type": "formula",
-            "expr": "datum.slice(2)"
+            "expr": "datum[2:]"
           }
         },
         "colors": {
@@ -36,7 +36,7 @@
         }
       },
       {
-        "name": "outputFit",
+        "name": "fitCurve",
         "x": {
           "transform": {
             "type": "formula",
@@ -46,7 +46,7 @@
         "y": {
           "transform": {
             "type": "formula",
-            "expr": "datum.slice(2)"
+            "expr": "datum[2:]"
           }
         },
         "colors": {
@@ -69,7 +69,7 @@
         }
       },
       {
-        "name": "outputResiduals",
+        "name": "fitResiduals",
         "x": {
           "transform": {
             "type": "formula",
@@ -79,7 +79,7 @@
         "y": {
           "transform": {
             "type": "formula",
-            "expr": "datum.slice(2)"
+            "expr": "datum[2:]"
           }
         },
         "colors": {
@@ -113,7 +113,7 @@
       },
       "xaxis": {
         "title": {
-          "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
+          "text": "Equivalent total [G]/[H]"
         },
         "exponentformat": "power",
         "domain": [
@@ -191,8 +191,8 @@
   },
   "specType": "plotly",
   "resources": [
-    "inputData",
-    "outputFit",
-    "outputResiduals"
+    "data",
+    "fitCurve",
+    "fitResiduals"
   ]
 }

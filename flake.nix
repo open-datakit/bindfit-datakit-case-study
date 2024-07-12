@@ -19,12 +19,11 @@
         buildInputs = [
           pkgs.pre-commit
           pkgs.python311
-          pkgs.python311Packages.pip
-          pkgs.python311Packages.platformdirs
-          pkgs.python311Packages.packaging
+          # Workaround for numpy library linking error in NixOS
           pkgs.python311Packages.numpy
           pkgs.python311Packages.scipy
           pkgs.python311Packages.pandas
+          pkgs.python311Packages.matplotlib
         ];
       };
     });

@@ -2,7 +2,7 @@
   "name": "uvDimerParams",
   "title": "UV Dimer parameters",
   "description": "UV Dimer binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "defaultData": [
     {
       "name": "ke",

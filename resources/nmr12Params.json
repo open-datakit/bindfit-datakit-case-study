@@ -2,7 +2,7 @@
   "name": "nmr12Params",
   "title": "NMR 1:2 parameters",
   "description": "NMR 1:2 binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "defaultData": [
     {
       "name": "k11",

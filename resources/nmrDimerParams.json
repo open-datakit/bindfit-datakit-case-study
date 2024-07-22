@@ -2,7 +2,7 @@
   "name": "nmrDimerParams",
   "title": "NMR Dimer parameters",
   "description": "NMR Dimer binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "defaultData": [
     {
       "name": "ke",

@@ -2,7 +2,7 @@
   "name": "uv12Params",
   "title": "UV 1:2 parameters",
   "description": "UV 1:2 binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "defaultData": [
     {
       "name": "k11",

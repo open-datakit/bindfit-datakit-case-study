@@ -2,7 +2,7 @@
   "name": "uvCoekParams",
   "title": "UV CoEK parameters",
   "description": "UV CoEK binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "defaultData": [
     {
       "name": "ke",

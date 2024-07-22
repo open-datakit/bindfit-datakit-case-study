@@ -2,7 +2,7 @@
   "name": "nmr11Params",
   "title": "NMR 1:1 parameters",
   "description": "NMR 1:1 binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "schema": "metaschema",
   "defaultData": [
     {

@@ -2,7 +2,7 @@
   "name": "nmrCoekParams",
   "title": "NMR CoEK parameters",
   "description": "NMR CoEK binding curve model parameters",
-  "profile": "tabular-data-resource",
+  "profile": "parameter-tabular-data-resource",
   "defaultData": [
     {
       "name": "ke",

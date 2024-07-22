@@ -4,15 +4,26 @@
   "description": "NMR 1:1 binding curve model parameters",
   "profile": "tabular-data-resource",
   "schema": "metaschema",
+  "defaultData": [
+    {
+      "name": "k",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": 1000,
+      "stderr": null
+    }
+  ],
   "data": [
     {
       "name": "k",
       "fit": true,
       "init": 100,
-      "value": 334.4824435026385,
+      "value": null,
       "lowerBound": 0,
       "upperBound": 1000,
-      "stderr": 0.9202864643503644
+      "stderr": null
     }
   ]
 }

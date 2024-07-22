@@ -3,6 +3,26 @@
   "title": "UV 2:1 parameters",
   "description": "UV 2:1 binding curve model parameters",
   "profile": "tabular-data-resource",
+  "defaultData": [
+    {
+      "name": "k11",
+      "fit": true,
+      "init": 1000,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    },
+    {
+      "name": "k21",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    }
+  ],
   "data": [
     {
       "name": "k11",

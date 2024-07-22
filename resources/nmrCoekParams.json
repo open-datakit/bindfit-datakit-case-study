@@ -3,6 +3,26 @@
   "title": "NMR CoEK parameters",
   "description": "NMR CoEK binding curve model parameters",
   "profile": "tabular-data-resource",
+  "defaultData": [
+    {
+      "name": "ke",
+      "fit": true,
+      "init": 200,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    },
+    {
+      "name": "rho",
+      "fit": true,
+      "init": 0.3,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    }
+  ],
   "data": [
     {
       "name": "ke",

@@ -3,6 +3,26 @@
   "title": "UV CoEK parameters",
   "description": "UV CoEK binding curve model parameters",
   "profile": "tabular-data-resource",
+  "defaultData": [
+    {
+      "name": "ke",
+      "fit": true,
+      "init": 2700,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    },
+    {
+      "name": "rho",
+      "fit": true,
+      "init": 0.003,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "stderr": null
+    }
+  ],
   "data": [
     {
       "name": "ke",

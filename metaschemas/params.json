@@ -10,23 +10,20 @@
         "name": "name",
         "title": "Name",
         "index": 0,
-        "type": "string",
-        "default": "k"
+        "type": "string"
       },
       {
         "name": "fit",
         "title": "Fit",
         "index": 1,
-        "type": "boolean",
-        "default": true
+        "type": "boolean"
       },
       {
         "name": "init",
         "title": "Initial value",
         "index": 2,
         "type": "number",
-        "unit": "M^{-1}",
-        "default": 100
+        "unit": "M^{-1}"
       },
       {
         "name": "value",
@@ -40,16 +37,14 @@
         "title": "Lower bound",
         "index": 4,
         "type": "number",
-        "unit": "M^{-1}",
-        "default": 0
+        "unit": "M^{-1}"
       },
       {
         "name": "upperBound",
         "title": "Upper bound",
         "index": 5,
         "type": "number",
-        "unit": "M^{-1}",
-        "default": 1000
+        "unit": "M^{-1}"
       },
       {
         "name": "stderr",

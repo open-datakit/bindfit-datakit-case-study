@@ -3,6 +3,6 @@
   "title": "Fit coefficients",
   "description": "Fit coefficients",
   "profile": "tabular-data-resource",
-  "data": [],
-  "schema": {}
+  "schema": {},
+  "data": []
 }

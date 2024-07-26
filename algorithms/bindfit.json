@@ -71,7 +71,7 @@
       "title": "Fit model parameters",
       "description": "Fit model parameter initial guesses and optimised values",
       "type": "resource",
-      "profile": "tabular-data-resource",
+      "profile": "parameter-tabular-data-resource",
       "metaschema": "params",
       "enum": [
         "nmr11Params",

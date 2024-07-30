@@ -14,7 +14,11 @@
         "data",
         "dataAgg"
       ],
-      "null": false
+      "null": false,
+      "defaultData": {
+        "resource": "data",
+        "metaschema": "data"
+      }
     },
     {
       "name": "fitMethod",
@@ -28,10 +32,13 @@
         },
         {
           "title": "L-BFGS-B",
-          "value": "L-BFGS-B"
+          "value": "bfgs"
         }
       ],
-      "null": false
+      "null": false,
+      "defaultData": {
+        "value": "nelder-mead"
+      }
     },
     {
       "name": "fitModel",
@@ -64,7 +71,10 @@
           "value": "uv2to1"
         }
       ],
-      "null": false
+      "null": false,
+      "defaultData": {
+        "value": "nmr1to1"
+      }
     },
     {
       "name": "fitModelParams",
@@ -84,21 +94,32 @@
         "uv21Params",
         "uvCoekParams",
         "uvDimerParams"
-      ]
+      ],
+      "null": false,
+      "defaultData": {
+        "resource": "nmr11Params",
+        "metaschema": "params"
+      }
     },
     {
       "name": "subInitValues",
       "title": "Subtract initial values",
       "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
       "type": "boolean",
-      "null": false
+      "null": false,
+      "defaultData": {
+        "value": true
+      }
     },
     {
       "name": "dilutionCorrection",
       "title": "Dilution correction",
       "description": "If true, apply dilution correction to the data before fitting",
       "type": "boolean",
-      "null": false
+      "null": false,
+      "defaultData": {
+        "value": false
+      }
     },
     {
       "name": "flavour",
@@ -119,7 +140,10 @@
           "value": "noncoop"
         }
       ],
-      "null": true
+      "null": true,
+      "defaultData": {
+        "value": null
+      }
     },
     {
       "name": "fitCurve",
@@ -131,7 +155,11 @@
       "metaschema": [
         "data",
         "dataAgg"
-      ]
+      ],
+      "defaultData": {
+        "resource": "fitCurve",
+        "metaschema": "data"
+      }
     },
     {
       "name": "fitResiduals",
@@ -143,7 +171,11 @@
       "metaschema": [
         "data",
         "dataAgg"
-      ]
+      ],
+      "defaultData": {
+        "resource": "fitResiduals",
+        "metaschema": "data"
+      }
     },
     {
       "name": "fitMolefractions",
@@ -157,7 +189,11 @@
         "molefractions12",
         "molefractions21",
         "molefractionsAgg"
-      ]
+      ],
+      "defaultData": {
+        "resource": "fitMolefractions",
+        "metaschema": "molefractions11"
+      }
     },
     {
       "name": "fitCoefficients",
@@ -171,7 +207,11 @@
         "coefficients12",
         "coefficients21",
         "coefficientsAgg"
-      ]
+      ],
+      "defaultData": {
+        "resource": "fitCoefficients",
+        "metaschema": "coefficients11"
+      }
     },
     {
       "name": "fitQuality",
@@ -180,7 +220,11 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": "quality"
+      "metaschema": "quality",
+      "defaultData": {
+        "resource": "fitQuality",
+        "metaschema": "quality"
+      }
     },
     {
       "name": "fitSummary",
@@ -189,7 +233,11 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": "summary"
+      "metaschema": "summary",
+      "defaultData": {
+        "resource": "fitSummary",
+        "metaschema": "summary"
+      }
     }
   ]
 }

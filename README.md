@@ -5,13 +5,15 @@ Bindfit is a binding constant fitting tool designed to work with classical supra
 * 🗒️ [Bindfit datapackage documentation](https://docs.opendata.fit/v/bindfit-datapackage/)
 * 💻 [Bindfit Python library GitHub](https://github.com/opendatafit/bindfit)
 
-## Usage
+## Example usage
 ```
 opendata-cli reset  # Clear any previous outputs
 opendata-cli load bindfit data ./data/nmr11.csv  # Load input data
 opendata-cli set-param bindfit fitModelParams k 314  # Set initial parameter guess
+opendata-cli set-arg fitMethod "bfgs"  # Set fit method
 opendata-cli run bindfit  # Run algorithm
 opendata-cli view fitGraphMatplotlib  # View fit graph
+opendata-cli view-table fitCoefficients  # View fit coefficients table
 ```
 
 ## Development

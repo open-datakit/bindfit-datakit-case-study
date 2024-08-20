@@ -3,6 +3,48 @@
   "title": "Fit summary",
   "description": "Fit summary",
   "profile": "tabular-data-resource",
-  "schema": {},
-  "data": []
+  "schema": {
+    "fields": [
+      {
+        "name": "model",
+        "title": "Model",
+        "unit": "",
+        "type": "string"
+      },
+      {
+        "name": "time",
+        "title": "Time",
+        "unit": "s",
+        "type": "number"
+      },
+      {
+        "name": "ssr",
+        "title": "SSR",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "n_y",
+        "title": "Fitted datapoints",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "n_params",
+        "title": "Fitted parameters",
+        "unit": "",
+        "type": "number"
+      }
+    ],
+    "primaryKey": "model"
+  },
+  "data": [
+    {
+      "model": "nmr_1to1",
+      "time": 0.004351575999862689,
+      "ssr": 2.5656103157357222e-05,
+      "n_y": 88,
+      "n_params": 5
+    }
+  ]
 }

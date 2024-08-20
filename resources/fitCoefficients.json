@@ -3,6 +3,49 @@
   "title": "Fit coefficients",
   "description": "Fit coefficients",
   "profile": "tabular-data-resource",
-  "schema": {},
-  "data": []
+  "schema": {
+    "fields": [
+      {
+        "name": "name",
+        "title": "name",
+        "unit": "",
+        "type": "string"
+      },
+      {
+        "name": "h",
+        "title": "H",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "hg",
+        "title": "HG",
+        "unit": "",
+        "type": "number"
+      }
+    ],
+    "primaryKey": "name"
+  },
+  "data": [
+    {
+      "name": "y0",
+      "h": 0.0,
+      "hg": -0.1553048981754122
+    },
+    {
+      "name": "y1",
+      "h": 0.0,
+      "hg": -0.02265293087656197
+    },
+    {
+      "name": "y2",
+      "h": 0.0,
+      "hg": 0.04746589693430596
+    },
+    {
+      "name": "y3",
+      "h": 0.0,
+      "hg": 0.01961362595563629
+    }
+  ]
 }

@@ -23,7 +23,7 @@ def main(
         The optimisation algorithm to use for fitting
     fitModel: `str`
         The model to fit to the data
-    fitModelParams: `tabular-data-resource`
+    fitModelParams: `parameter-tabular-data-resource`
         Table of parameters containing initial guesses and output values
     subInitValues: `bool`
         If true, subtract the first column from all data before fitting

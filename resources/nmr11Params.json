@@ -19,11 +19,11 @@
     {
       "name": "k",
       "fit": true,
-      "init": 314,
-      "value": 334.4824437783285,
+      "init": 100,
+      "value": null,
       "lowerBound": 0,
       "upperBound": 1000,
-      "stderr": 0.9202864642043526
+      "stderr": null
     }
   ]
 }

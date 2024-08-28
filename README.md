@@ -7,16 +7,25 @@ Bindfit is a binding constant fitting tool designed to work with classical supra
 
 ## Example usage
 ```
-opendata-cli reset  # Clear any previous outputs
-opendata-cli load bindfit data ./data/nmr11.csv  # Load input data
-opendata-cli set-param bindfit fitModelParams k 314  # Set initial parameter guess
-opendata-cli set-arg fitMethod "bfgs"  # Set fit method
-opendata-cli run bindfit  # Run algorithm
-opendata-cli view fitGraphMatplotlib  # View fit graph
-opendata-cli view-table fitCoefficients  # View fit coefficients table
+ods reset                                   # Clear any previous outputs
+ods load bindfit data ./data/nmr11.csv      # Load input data
+ods set-param bindfit fitModelParams k 314  # Set initial parameter guess
+ods set-arg fitMethod "bfgs"                # Set fit method
+ods run bindfit  # Run algorithm
+ods view fitGraphMatplotlib                 # View fit graph
+ods view-table fitCoefficients              # View fit coefficients table
 ```
 
 ## Development
+
+### Requirements
+
+* Docker
+* Python (to run CLI)
+* [opendatafit/cli](https://github.com/opendatafit/cli)
+* [opendatafit/containers](https://github.com/opendatafit/containers)
+
+### Set up pre-commit hooks
 
 Set up included Flake (`flake.nix`) with direnv (`.envrc`) to automatically load development environment.
 
@@ -26,13 +35,30 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-Build container:
+### Build execution container
+
+Build base execution container:
 ```
+# Navigate to opendatafit/containers repository
+cd python-execution-base
+./build.sh
+```
+
+Build bindfit-datapackage container:
+```
+# Navigate back to bindfit-datapackage repository
 cd containers
 ./build.sh
 ```
 
-Execute datapackage:
+### Install CLI
+
 ```
-./test_datapackage.py
+python -m venv .venv
+source .venv/bin/activate
+pip install -e /PATH/TO/CLI
+
+ods  # Check CLI is installed
 ```
+
+See [Usage](#usage) for command reference.

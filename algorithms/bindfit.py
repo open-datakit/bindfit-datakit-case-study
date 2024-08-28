@@ -40,7 +40,20 @@ def main(
 
     Returns
     -------
-    TODO
+    fitModelParams: `parameter-tabular-data-resource`
+        Table of parameters containing initial guesses and output values
+    fitCurve: `tabular-data-resource`
+        Optimised fit curve
+    fitResiduals: `tabular-data-resource`
+        Optimised fit curve residual values
+    fitMolefractions: `tabular-data-resource`
+        Optimised fit molefractions
+    fitCoefficients: `tabular-data-resource`
+        Optimised fit coefficients
+    fitSummary: `tabular-data-resource`
+        A summary of fit information - time to fit, degrees of freedom, etc.
+    fitQuality: `tabular-data-resource`
+        Quality of fit metrics
     """
     # Imports
     import bindfit

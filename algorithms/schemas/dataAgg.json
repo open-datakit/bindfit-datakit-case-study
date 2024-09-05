@@ -1,7 +1,7 @@
 {
   "name": "data",
-  "title": "Aggregate data metaschema",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Aggregate data schema",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": "host",
     "fields": [

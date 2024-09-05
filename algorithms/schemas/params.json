@@ -1,8 +1,8 @@
 {
   "name": "params",
-  "title": "Parameter metaschema",
-  "description": "Parameter metaschema for Bindfit parameter table",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Parameter schema",
+  "description": "Parameter schema for Bindfit",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": "name",
     "fields": [

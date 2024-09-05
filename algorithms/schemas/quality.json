@@ -1,7 +1,7 @@
 {
   "name": "quality",
-  "title": "Fit quality metaschema",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Fit quality schema",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": "fit",
     "fields": [

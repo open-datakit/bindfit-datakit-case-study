@@ -1,7 +1,7 @@
 {
   "name": "data",
-  "title": "Default data metaschema",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Default data schema",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": [
       "host",

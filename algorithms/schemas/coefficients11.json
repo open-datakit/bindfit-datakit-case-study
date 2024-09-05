@@ -1,7 +1,7 @@
 {
   "name": "coefficients11",
-  "title": "Coefficients metaschema for 1:1 models",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Coefficients schema for 1:1 models",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": "name",
     "fields": [

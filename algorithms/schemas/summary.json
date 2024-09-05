@@ -1,7 +1,7 @@
 {
   "name": "summary",
-  "title": "Fit summary metaschema",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Fit summary schema",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": "model",
     "fields": [

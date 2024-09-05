@@ -1,7 +1,7 @@
 {
   "name": "molefractionsAgg",
-  "title": "Molefractions metaschema for aggregate models",
-  "profile": "tabular-data-resource-metaschema",
+  "title": "Molefractions schema for aggregate models",
+  "profile": "ods-schema",
   "schema": {
     "primaryKey": [
       "host"

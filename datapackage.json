@@ -7,50 +7,6 @@
     "url": "https://github.com/opendatastudio/bindfit-datapackage",
     "name": "opendatastudio/bindfit-datapackage"
   },
-  "algorithms": [
-    "bindfit"
-  ],
-  "configurations": [
-    "bindfit.default"
-  ],
-  "metaschemas": [
-    "data",
-    "dataAgg",
-    "params",
-    "quality",
-    "summary",
-    "coefficients11",
-    "coefficients12",
-    "coefficients21",
-    "coefficientsAgg",
-    "molefractions11",
-    "molefractions12",
-    "molefractions21",
-    "molefractionsAgg"
-  ],
-  "resources": [
-    "data",
-    "nmr11Params",
-    "nmr12Params",
-    "nmr21Params",
-    "nmrCoekParams",
-    "nmrDimerParams",
-    "uv11Params",
-    "uv12Params",
-    "uv21Params",
-    "uvCoekParams",
-    "uvDimerParams",
-    "fitCurve",
-    "fitMolefractions",
-    "fitCoefficients",
-    "fitQuality",
-    "fitResiduals",
-    "fitSummary",
-    "qof"
-  ],
-  "views": [
-    "fitGraphMatplotlib"
-  ],
   "created": 1721295423,
   "updated": 1725168233
 }

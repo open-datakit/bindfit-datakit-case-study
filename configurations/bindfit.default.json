@@ -1,7 +1,7 @@
 {
   "name": "bindfit.default",
-  "title": "Bindfit algorithm default argument space",
-  "profile": "ods-algorithm-arguments",
+  "title": "Bindfit algorithm default configuration",
+  "profile": "ods-configuration",
   "algorithm": "bindfit",
   "container": "ods/bindfit",
   "data": [

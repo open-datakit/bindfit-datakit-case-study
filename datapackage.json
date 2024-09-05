@@ -10,7 +10,7 @@
   "algorithms": [
     "bindfit"
   ],
-  "arguments": [
+  "configurations": [
     "bindfit.default"
   ],
   "metaschemas": [
@@ -52,5 +52,5 @@
     "fitGraphMatplotlib"
   ],
   "created": 1721295423,
-  "updated": 1725085551
+  "updated": 1725168233
 }

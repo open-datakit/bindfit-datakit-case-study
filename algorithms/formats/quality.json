@@ -1,7 +1,7 @@
 {
   "name": "quality",
-  "title": "Fit quality schema",
-  "profile": "ods-schema",
+  "title": "Format for fit quality data",
+  "profile": "ods-format",
   "schema": {
     "primaryKey": "fit",
     "fields": [

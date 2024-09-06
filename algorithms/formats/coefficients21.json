@@ -1,33 +1,34 @@
 {
-  "name": "molefractions11",
-  "title": "Molefractions schema for 1:1 models",
-  "profile": "ods-schema",
+  "name": "coefficients21",
+  "title": "Format for 2:1 model coefficients",
+  "profile": "ods-format",
   "schema": {
-    "primaryKey": [
-      "host",
-      "guest"
-    ],
+    "primaryKey": "name",
     "fields": [
       {
-        "name": "host",
+        "name": "name",
+        "title": "Name",
         "index": "0",
         "unit": "",
-        "type": "number"
+        "type": "string"
       },
       {
-        "name": "guest",
+        "name": "h",
+        "title": "H",
         "index": "1",
         "unit": "",
         "type": "number"
       },
       {
-        "name": "H",
+        "name": "hg",
+        "title": "HG",
         "index": "2",
         "unit": "",
         "type": "number"
       },
       {
-        "name": "HG",
+        "name": "h2g",
+        "title": "H2G",
         "index": "3",
         "unit": "",
         "type": "number"

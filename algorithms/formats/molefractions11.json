@@ -1,7 +1,7 @@
 {
-  "name": "molefractions12",
-  "title": "Molefractions schema for 1:2 models",
-  "profile": "ods-schema",
+  "name": "molefractions11",
+  "title": "Format for 1:1 model molefractions",
+  "profile": "ods-format",
   "schema": {
     "primaryKey": [
       "host",
@@ -29,12 +29,6 @@
       {
         "name": "HG",
         "index": "3",
-        "unit": "",
-        "type": "number"
-      },
-      {
-        "name": "HG2",
-        "index": "4",
         "unit": "",
         "type": "number"
       }

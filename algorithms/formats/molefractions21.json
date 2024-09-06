@@ -1,7 +1,7 @@
 {
   "name": "molefractions21",
-  "title": "Molefractions schema for 2:1 models",
-  "profile": "ods-schema",
+  "title": "Format for 2:1 model molefractions",
+  "profile": "ods-format",
   "schema": {
     "primaryKey": [
       "host",

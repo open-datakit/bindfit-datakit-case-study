@@ -10,14 +10,14 @@
       "description": "Input data",
       "type": "resource",
       "profile": "tabular-data-resource",
-      "metaschema": [
+      "format": [
         "data",
         "dataAgg"
       ],
       "null": false,
       "defaultData": {
         "resource": "data",
-        "metaschema": "data"
+        "format": "data"
       }
     },
     {
@@ -82,7 +82,7 @@
       "description": "Fit model parameter initial guesses and optimised values",
       "type": "resource",
       "profile": "parameter-tabular-data-resource",
-      "metaschema": "params",
+      "format": "params",
       "enum": [
         "nmr11Params",
         "nmr12Params",
@@ -98,7 +98,7 @@
       "null": false,
       "defaultData": {
         "resource": "nmr11Params",
-        "metaschema": "params"
+        "format": "params"
       }
     },
     {
@@ -152,13 +152,13 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": [
+      "format": [
         "data",
         "dataAgg"
       ],
       "defaultData": {
         "resource": "fitCurve",
-        "metaschema": "data"
+        "format": "data"
       }
     },
     {
@@ -168,13 +168,13 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": [
+      "format": [
         "data",
         "dataAgg"
       ],
       "defaultData": {
         "resource": "fitResiduals",
-        "metaschema": "data"
+        "format": "data"
       }
     },
     {
@@ -184,7 +184,7 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": [
+      "format": [
         "molefractions11",
         "molefractions12",
         "molefractions21",
@@ -192,7 +192,7 @@
       ],
       "defaultData": {
         "resource": "fitMolefractions",
-        "metaschema": "molefractions11"
+        "format": "molefractions11"
       }
     },
     {
@@ -202,7 +202,7 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": [
+      "format": [
         "coefficients11",
         "coefficients12",
         "coefficients21",
@@ -210,7 +210,7 @@
       ],
       "defaultData": {
         "resource": "fitCoefficients",
-        "metaschema": "coefficients11"
+        "format": "coefficients11"
       }
     },
     {
@@ -220,10 +220,10 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": "quality",
+      "format": "quality",
       "defaultData": {
         "resource": "fitQuality",
-        "metaschema": "quality"
+        "format": "quality"
       }
     },
     {
@@ -233,10 +233,10 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "metaschema": "summary",
+      "format": "summary",
       "defaultData": {
         "resource": "fitSummary",
-        "metaschema": "summary"
+        "format": "summary"
       }
     }
   ]

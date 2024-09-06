@@ -1,7 +1,7 @@
 {
   "name": "molefractionsAgg",
-  "title": "Molefractions schema for aggregate models",
-  "profile": "ods-schema",
+  "title": "Format for aggregate model molefractions",
+  "profile": "ods-format",
   "schema": {
     "primaryKey": [
       "host"

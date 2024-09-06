@@ -1,8 +1,7 @@
 {
   "name": "params",
-  "title": "Parameter schema",
-  "description": "Parameter schema for Bindfit",
-  "profile": "ods-schema",
+  "title": "Format for bindfit algorithm parameters",
+  "profile": "ods-format",
   "schema": {
     "primaryKey": "name",
     "fields": [

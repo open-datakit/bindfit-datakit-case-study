@@ -1,0 +1,31 @@
+{
+  "name": "data",
+  "title": "Format for non-aggregate model data",
+  "profile": "ods-format",
+  "schema": {
+    "primaryKey": [
+      "host",
+      "guest"
+    ],
+    "fields": [
+      {
+        "name": "host",
+        "index": "0",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "guest",
+        "index": "1",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "y",
+        "index": "2:",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  }
+}

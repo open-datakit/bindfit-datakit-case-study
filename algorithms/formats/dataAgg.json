@@ -1,12 +1,9 @@
 {
   "name": "data",
-  "title": "Default data schema",
-  "profile": "ods-schema",
+  "title": "Format for aggregate model data",
+  "profile": "ods-format",
   "schema": {
-    "primaryKey": [
-      "host",
-      "guest"
-    ],
+    "primaryKey": "host",
     "fields": [
       {
         "name": "host",
@@ -15,14 +12,8 @@
         "type": "number"
       },
       {
-        "name": "guest",
-        "index": "1",
-        "unit": "",
-        "type": "number"
-      },
-      {
         "name": "y",
-        "index": "2:",
+        "index": "1:",
         "unit": "",
         "type": "number"
       }

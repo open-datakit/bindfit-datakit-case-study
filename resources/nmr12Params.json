@@ -3,6 +3,7 @@
   "title": "NMR 1:2 parameters",
   "description": "NMR 1:2 binding curve model parameters",
   "profile": "parameter-tabular-data-resource",
+  "schema": "inherit-from-format",
   "defaultData": [
     {
       "name": "k11",
@@ -42,6 +43,5 @@
       "upperBound": null,
       "stderr": null
     }
-  ],
-  "schema": "external"
+  ]
 }

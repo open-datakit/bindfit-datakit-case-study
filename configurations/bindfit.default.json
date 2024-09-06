@@ -8,7 +8,7 @@
     {
       "name": "data",
       "resource": "data",
-      "metaschema": "data"
+      "format": "data"
     },
     {
       "name": "fitMethod",
@@ -21,7 +21,7 @@
     {
       "name": "fitModelParams",
       "resource": "nmr11Params",
-      "metaschema": "params"
+      "format": "params"
     },
     {
       "name": "subInitValues",
@@ -38,32 +38,32 @@
     {
       "name": "fitCurve",
       "resource": "fitCurve",
-      "metaschema": "data"
+      "format": "data"
     },
     {
       "name": "fitResiduals",
       "resource": "fitResiduals",
-      "metaschema": "data"
+      "format": "data"
     },
     {
       "name": "fitMolefractions",
       "resource": "fitMolefractions",
-      "metaschema": "molefractions11"
+      "format": "molefractions11"
     },
     {
       "name": "fitCoefficients",
       "resource": "fitCoefficients",
-      "metaschema": "coefficients11"
+      "format": "coefficients11"
     },
     {
       "name": "fitQuality",
       "resource": "fitQuality",
-      "metaschema": "quality"
+      "format": "quality"
     },
     {
       "name": "fitSummary",
       "resource": "fitSummary",
-      "metaschema": "summary"
+      "format": "summary"
     }
   ]
 }

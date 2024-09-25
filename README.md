@@ -7,13 +7,13 @@ Bindfit is a binding constant fitting tool designed to work with classical supra
 
 ## Example usage
 ```
-ods reset                                   # Clear any previous outputs
-ods load bindfit data ./data/nmr11.csv      # Load input data
-ods set-param params k 314                  # Set initial parameter guess
-ods set-var method "bfgs"                   # Set fit method
-ods run                                     # Run algorithm
-ods view fitGraphMatplotlib                 # View fit graph
-ods view-table fitCoefficients              # View fit coefficients table
+opends reset                                   # Clear any previous outputs
+opends load bindfit data ./data/nmr11.csv      # Load input data
+opends set-param params k 314                  # Set initial parameter guess
+opends set-var method "bfgs"                   # Set fit method
+opends run                                     # Run algorithm
+opends view fitGraphMatplotlib                 # View fit graph
+opends view-table fitCoefficients              # View fit coefficients table
 ```
 
 ## Development
@@ -57,7 +57,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e /PATH/TO/CLI
 
-ods  # Check CLI is installed
+opends  # Check CLI is installed
 ```
 
 See [Usage](#usage) for command reference.

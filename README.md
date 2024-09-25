@@ -39,8 +39,7 @@ pre-commit run --all-files
 
 Build base execution container:
 ```
-# Navigate to opendatastudio/containers repository
-cd python-execution-base
+# Navigate to opendatastudio/python-run-base repository
 ./build.sh
 ```
 

@@ -1,8 +1,0 @@
-{
-  "name": "upload",
-  "specType": "ods-upload",
-  "spec": {},
-  "resources": [
-    "inputData"
-  ]
-}

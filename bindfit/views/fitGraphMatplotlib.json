@@ -1,0 +1,11 @@
+{
+  "name": "fitGraphMatplotlib",
+  "specType": "matplotlib",
+  "specFile": "fitGraphMatplotlib.py",
+  "container": "opends/bindfit",
+  "resources": [
+    "data",
+    "fitCurve",
+    "fitResiduals"
+  ]
+}

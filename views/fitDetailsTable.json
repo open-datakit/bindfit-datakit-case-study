@@ -1,9 +1,0 @@
-{
-  "name": "fitDetailsTable",
-  "title": "Fit details",
-  "spec": {},
-  "specType": "ods-basic-table",
-  "resources": [
-    "outputFitDetails"
-  ]
-}

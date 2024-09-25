@@ -1,0 +1,8 @@
+{
+  "name": "upload",
+  "specType": "opends-upload",
+  "spec": {},
+  "resources": [
+    "inputData"
+  ]
+}

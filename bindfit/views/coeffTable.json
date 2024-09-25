@@ -1,0 +1,9 @@
+{
+  "name": "coeffTable",
+  "title": "Coefficients",
+  "spec": {},
+  "specType": "opends-basic-table",
+  "resources": [
+    "outputCoeffs"
+  ]
+}

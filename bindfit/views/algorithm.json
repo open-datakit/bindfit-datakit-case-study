@@ -1,0 +1,24 @@
+{
+  "name": "algorithm",
+  "title": "Algorithm parameters",
+  "specType": "opends-algorithm-params",
+  "algorithm": "bindfit",
+  "resources": {
+    "options": {
+      "type": "algorithmOptions",
+      "name": "options"
+    },
+    "input": {
+      "type": "algorithmParams",
+      "name": {
+        "params": "params"
+      }
+    },
+    "output": {
+      "type": "resource",
+      "name": {
+        "params": "outputParams"
+      }
+    }
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "name": "coeffTable",
-  "title": "Coefficients",
-  "spec": {},
-  "specType": "ods-basic-table",
-  "resources": [
-    "outputCoeffs"
-  ]
-}

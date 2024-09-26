@@ -1,7 +1,7 @@
 {
-  "name": "molefractions11",
-  "title": "Format for 1:1 model molefractions",
-  "profile": "opends-format",
+  "name": "data",
+  "title": "Metaschema for non-aggregate model data",
+  "profile": "opends-metaschema",
   "schema": {
     "primaryKey": [
       "host",
@@ -21,14 +21,8 @@
         "type": "number"
       },
       {
-        "name": "H",
-        "index": "2",
-        "unit": "",
-        "type": "number"
-      },
-      {
-        "name": "HG",
-        "index": "3",
+        "name": "y",
+        "index": "2:",
         "unit": "",
         "type": "number"
       }

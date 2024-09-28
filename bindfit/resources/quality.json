@@ -1,26 +1,26 @@
 {
-  "name": "fitCoefficients",
-  "title": "Fit coefficients",
-  "description": "Fit coefficients",
+  "name": "quality",
+  "title": "Fit quality",
+  "description": "Fit quality",
   "profile": "tabular-data-resource",
   "schema": {
-    "primaryKey": "name",
+    "primaryKey": "fit",
     "fields": [
       {
-        "name": "name",
-        "title": "name",
+        "name": "fit",
+        "title": "Fit",
         "unit": "",
         "type": "string"
       },
       {
-        "name": "h",
-        "title": "H",
+        "name": "rms",
+        "title": "RMS",
         "unit": "",
         "type": "number"
       },
       {
-        "name": "hg",
-        "title": "HG",
+        "name": "cov",
+        "title": "Covariance",
         "unit": "",
         "type": "number"
       }

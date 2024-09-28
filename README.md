@@ -8,6 +8,7 @@ Bindfit is a binding constant fitting tool designed to work with classical supra
 ## Example usage
 ```
 opends reset                                   # Clear any previous outputs
+opends init                                    # Initialise the default run
 opends load bindfit data ./data/nmr11.csv      # Load input data
 opends set method "nmr1to1"                    # Set fit model
 opends set method "nelder-mead"                # Set fit method

@@ -12,7 +12,7 @@ opends init                                    # Initialise the default run
 opends load bindfit data ./data/nmr11.csv      # Load input data
 opends set method "nmr1to1"                    # Set fit model
 opends set method "nelder-mead"                # Set fit method
-opends set params.k 314                        # Set initial parameter guess
+opends set params.k.init 314                   # Set initial parameter guess
 opends run                                     # Run algorithm
 opends show params                             # View optimised parameters
 opends show fitSummary                         # View fit summary

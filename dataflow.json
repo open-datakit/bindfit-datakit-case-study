@@ -1,0 +1,19 @@
+{
+  "title": "Bindfit",
+  "description": "Binding constant fitter dataflow",
+  "profile": "opends-analysis-dataflow",
+  "algorithms": [
+    "bindfit"
+  ],
+  "runs": [
+    "bindfit.run",
+    "bindfit.test.run"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opendatastudio/bindfit-dataflow",
+    "name": "opendatastudio/bindfit-dataflow"
+  },
+  "created": 1721295423,
+  "updated": 1727674174
+}

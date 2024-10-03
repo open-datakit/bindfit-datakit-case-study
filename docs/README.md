@@ -1,4 +1,4 @@
-# Bindfit datapackage documentation
+# Bindfit dataflow documentation
 
 ## About
 
@@ -16,5 +16,5 @@ For further details:
 
 ## External links
 
-* 📦 [Bindfit datapackage on GitHub](https://github.com/opendatastudio/bindfit-datapackage)
+* 📦 [Bindfit dataflow on GitHub](https://github.com/opendatastudio/bindfit-dataflow)
 * 💻 [Bindfit Python library on GitHub](https://github.com/opendatastudio/bindfit)

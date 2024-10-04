@@ -8,11 +8,11 @@ def main(
     data: pd.DataFrame, fit: pd.DataFrame, residuals: pd.DataFrame
 ) -> Figure:
     # Get data
-    index = np.array(list(data.data.index.to_numpy()))
-    x = index[:, 1] / index[:, 0]  # guest/host
-    y = data.data.to_numpy()
-    y_fit = fit.data.to_numpy()
-    y_residuals = residuals.data.to_numpy()
+    index = np.array(list(data.index.to_numpy()))
+    x = index[:, 1] / index[:, 0]  # Guest/Host
+    y = data.to_numpy()
+    y_fit = fit.to_numpy()
+    y_residuals = residuals.to_numpy()
 
     # Upper plot
     fig = plt.figure(1)

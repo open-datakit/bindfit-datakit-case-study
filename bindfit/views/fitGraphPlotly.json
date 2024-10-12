@@ -3,6 +3,39 @@
   "spec": {
     "data": [
       {
+        "name": "fit",
+        "x": {
+          "transform": {
+            "type": "formula",
+            "expr": "datum[1]/datum[0]"
+          }
+        },
+        "y": {
+          "transform": {
+            "type": "formula",
+            "expr": "datum.slice(2)"
+          }
+        },
+        "colors": {
+          "attributePath": "line.color",
+          "values": [
+            "#d42724",
+            "#4c64a1",
+            "#7698b3",
+            "#83b5d1"
+          ]
+        },
+        "config": {
+          "mode": "lines",
+          "type": "scatter",
+          "line": {
+            "width": 2,
+            "color": "",
+            "shape": "spline"
+          }
+        }
+      },
+      {
         "name": "data",
         "x": {
           "transform": {
@@ -13,16 +46,16 @@
         "y": {
           "transform": {
             "type": "formula",
-            "expr": "datum[2:]"
+            "expr": "datum.slice(2)"
           }
         },
         "colors": {
           "attributePath": "marker.color",
           "values": [
-            "darkcyan",
-            "darkslateblue",
-            "darkgoldenrod",
-            "crimson"
+            "#4c64a1",
+            "#7698b3",
+            "#83b5d1",
+            "#d42724"
           ]
         },
         "config": {
@@ -31,12 +64,12 @@
           "marker": {
             "size": 8,
             "color": "",
-            "symbol": "circle-open-dot"
+            "symbol": "triangle-up"
           }
         }
       },
       {
-        "name": "fitCurve",
+        "name": "residuals",
         "x": {
           "transform": {
             "type": "formula",
@@ -46,49 +79,16 @@
         "y": {
           "transform": {
             "type": "formula",
-            "expr": "datum[2:]"
+            "expr": "datum.slice(2)"
           }
         },
         "colors": {
           "attributePath": "line.color",
           "values": [
-            "darkcyan",
-            "darkslateblue",
-            "darkgoldenrod",
-            "crimson"
-          ]
-        },
-        "config": {
-          "mode": "lines",
-          "type": "scatter",
-          "line": {
-            "width": 1,
-            "color": "",
-            "shape": "spline"
-          }
-        }
-      },
-      {
-        "name": "fitResiduals",
-        "x": {
-          "transform": {
-            "type": "formula",
-            "expr": "datum[1]/datum[0]"
-          }
-        },
-        "y": {
-          "transform": {
-            "type": "formula",
-            "expr": "datum[2:]"
-          }
-        },
-        "colors": {
-          "attributePath": "line.color",
-          "values": [
-            "darkcyan",
-            "darkslateblue",
-            "darkgoldenrod",
-            "crimson"
+            "#d42724",
+            "#4c64a1",
+            "#7698b3",
+            "#83b5d1"
           ]
         },
         "config": {
@@ -96,7 +96,7 @@
           "type": "scatter",
           "yaxis": "y2",
           "line": {
-            "width": 1,
+            "width": 2,
             "color": ""
           }
         }
@@ -124,13 +124,13 @@
         "type": "linear",
         "autorange": true,
         "automargin": true,
-        "showgrid": true,
+        "showgrid": false,
         "gridcolor": "gainsboro",
         "gridwidth": 1,
         "showline": true,
         "linecolor": "gainsboro",
         "zerolinecolor": "gainsboro",
-        "zerolinewidth": 2,
+        "zerolinewidth": 1,
         "mirror": "all"
       },
       "yaxis": {
@@ -148,13 +148,14 @@
         "autorange": true,
         "automargin": true,
         "showgrid": true,
-        "gridcolor": "gainsboro",
+        "gridcolor": "grey",
+        "griddash": "dash",
         "gridwidth": 1,
         "showline": true,
-        "linecolor": "gainsboro",
-        "zerolinecolor": "gainsboro",
-        "zerolinewidth": 2,
-        "mirror": "all"
+        "linecolor": "black",
+        "zerolinecolor": "black",
+        "zerolinewidth": 1,
+        "mirror": false
       },
       "yaxis2": {
         "title": {
@@ -171,16 +172,17 @@
         "autorange": true,
         "automargin": true,
         "showgrid": true,
-        "gridcolor": "gainsboro",
+        "gridcolor": "grey",
+        "griddash": "dash",
         "gridwidth": 1,
         "showline": true,
-        "linecolor": "gainsboro",
-        "zerolinecolor": "gainsboro",
-        "zerolinewidth": 2,
-        "mirror": "all"
+        "linecolor": "black",
+        "zerolinecolor": "black",
+        "zerolinewidth": 1,
+        "mirror": false
       },
       "plot_bgcolor": "white",
-      "paper_bgcolor": "white",
+      "paper_bgcolor": "transparent",
       "autosize": true,
       "hovermode": "x",
       "showlegend": true,
@@ -192,7 +194,7 @@
   "specType": "plotly",
   "resources": [
     "data",
-    "fitCurve",
-    "fitResiduals"
+    "fit",
+    "residuals"
   ]
 }

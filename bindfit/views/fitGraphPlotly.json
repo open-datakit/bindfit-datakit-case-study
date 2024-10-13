@@ -1,5 +1,7 @@
 {
   "name": "fitGraphPlotly",
+  "title": "Fit curve",
+  "description": "Optimised binding curve plotted against data and fit residuals",
   "spec": {
     "data": [
       {

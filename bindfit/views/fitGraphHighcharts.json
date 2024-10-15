@@ -1,0 +1,12 @@
+{
+  "name": "fitGraphHighcharts",
+  "title": "Fit curve",
+  "description": "Optimised binding curve plotted against data and fit residuals",
+  "spec": {},
+  "specType": "highcharts",
+  "resources": [
+    "data",
+    "fit",
+    "residuals"
+  ]
+}

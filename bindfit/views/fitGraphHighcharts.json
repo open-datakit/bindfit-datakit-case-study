@@ -2,7 +2,228 @@
   "name": "fitGraphHighcharts",
   "title": "Fit curve",
   "description": "Optimised binding curve plotted against data and fit residuals",
-  "spec": {},
+  "spec": {
+    "dataPool": {
+      "connectors": [
+        {
+          "id": "connector",
+          "type": "JSON",
+          "options": {
+            "data": {
+              "resources": [
+                "data",
+                "fit",
+                "residuals"
+              ]
+            },
+            "dataModifier": {
+              "type": "Math",
+              "columnFormulas": [
+                {
+                  "column": "x",
+                  "formula": "B1/A1"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "gui": {
+      "layouts": [
+        {
+          "id": "layout-1",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "id": "cell-1",
+                  "height": "400px"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "id": "cell-2",
+                  "height": "250px"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "components": [
+      {
+        "cell": "cell-1",
+        "type": "Highcharts",
+        "sync": {
+          "highlight": true
+        },
+        "connector": [
+          {
+            "id": "connector",
+            "columnAssignment": [
+              {
+                "seriesId": "data",
+                "data": [
+                  "x",
+                  [
+                    "data_y0",
+                    "data_y1",
+                    "data_y2",
+                    "data_y3"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "id": "connector",
+            "columnAssignment": [
+              {
+                "seriesId": "fit",
+                "data": [
+                  "x",
+                  [
+                    "fit_y0",
+                    "fit_y1",
+                    "fit_y2",
+                    "fit_y3"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "chartOptions": {
+          "title": {
+            "text": "Fit curve"
+          },
+          "xAxis": {
+            "title": {
+              "text": "Equivalent total [G]/[H]"
+            }
+          },
+          "yAxis": {
+            "title": {
+              "text": "Delta (ppm)"
+            }
+          },
+          "legend": {
+            "align": "center",
+            "verticalAlign": "top",
+            "layout": "horizontal"
+          },
+          "tooltip": {
+            "crosshairs": [
+              true,
+              false
+            ],
+            "shared": true,
+            "valueDecimals": 4,
+            "valueSuffix": " ppm"
+          },
+          "series": [
+            {
+              "id": "data",
+              "name": "Data",
+              "type": "line",
+              "lineWidth": 0,
+              "dashStyle": "dot",
+              "marker": {
+                "enabled": true
+              }
+            },
+            {
+              "id": "fit",
+              "name": "Fit",
+              "type": "line",
+              "marker": {
+                "enabled": false,
+                "states": {
+                  "hover": {
+                    "enabled": false
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "cell": "cell-2",
+        "type": "Highcharts",
+        "sync": {
+          "highlight": true
+        },
+        "connector": [
+          {
+            "id": "connector",
+            "columnAssignment": [
+              {
+                "seriesId": "residuals",
+                "data": [
+                  "x",
+                  [
+                    "residuals_y0",
+                    "residuals_y1",
+                    "residuals_y2",
+                    "residuals_y3"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "chartOptions": {
+          "title": {
+            "text": "Residuals"
+          },
+          "xAxis": {
+            "title": {
+              "text": "Equivalent total [G]/[H]"
+            }
+          },
+          "yAxis": {
+            "title": {
+              "text": "Residuals"
+            }
+          },
+          "legend": {
+            "align": "center",
+            "verticalAlign": "bottom",
+            "layout": "horizontal"
+          },
+          "tooltip": {
+            "crosshairs": [
+              true,
+              false
+            ],
+            "shared": true,
+            "valueDecimals": 4,
+            "valueSuffix": " ppm"
+          },
+          "series": [
+            {
+              "id": "residuals",
+              "name": "Residuals",
+              "type": "line",
+              "marker": {
+                "enabled": false,
+                "states": {
+                  "hover": {
+                    "enabled": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
   "specType": "highcharts",
   "resources": [
     "data",

@@ -9,13 +9,13 @@ Bindfit is a binding constant fitting tool designed to work with classical supra
 ```
 opends reset                                   # Clear any previous outputs
 opends init                                    # Initialise the default run
-opends load bindfit data ./data/nmr11.csv      # Load input data
-opends set method "nmr1to1"                    # Set fit model
+opends load data ./data/nmr11.csv      # Load input data
+opends set model "nmr1to1"                    # Set fit model
 opends set method "nelder-mead"                # Set fit method
-opends set params.k.init 314                   # Set initial parameter guess
+opends set inputParams.k.init 314              # Set initial parameter guess
 opends run                                     # Run algorithm
-opends show params                             # View optimised parameters
-opends show fitSummary                         # View fit summary
+opends show outputParams                             # View optimised parameters
+opends show summary                         # View fit summary
 opends view fitGraphMatplotlib                 # View fit graph
 ```
 

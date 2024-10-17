@@ -4,10 +4,11 @@
     "layout": {
       "rows": [
         {
+          "class": "grid grid-cols-4 gap-4",
           "cells": [
             {
               "name": "control-panel",
-              "width": "30%",
+              "style": "grid-column:span 1 / span 1;",
               "layout": {
                 "rows": [
                   {
@@ -71,7 +72,7 @@
             },
             {
               "name": "main-panel",
-              "width": "70%",
+              "style": "grid-column:span 3 / span 3;",
               "view": "fitGraphHighcharts"
             }
           ]

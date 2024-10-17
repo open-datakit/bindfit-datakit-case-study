@@ -1,78 +1,107 @@
 {
   "name": "main",
-  "algorithms": [
-    "bindfit"
-  ],
-  "layout": {
-    "type": "bindfit",
-    "spec": {
-      "panes": [
-        {
-          "name": "control",
-          "tabs": [
-            "control"
-          ]
-        },
-        {
-          "name": "main",
-          "tabs": [
-            "fit",
-            "molefracs",
-            "details",
-            "data"
-          ]
-        }
-      ],
-      "tabs": [
-        {
-          "name": "control",
-          "title": "Options",
-          "icon": "",
-          "views": [
-            "upload",
-            "algorithm"
-          ],
-          "layout": "stacked"
-        },
-        {
-          "name": "fit",
-          "title": "Fit",
-          "icon": "",
-          "views": [
-            "fitGraph"
-          ],
-          "layout": "fullbleed"
-        },
-        {
-          "name": "molefracs",
-          "title": "Molefractions",
-          "icon": "",
-          "views": [
-            "molefracGraph"
-          ],
-          "layout": "fullbleed"
-        },
-        {
-          "name": "details",
-          "title": "Details",
-          "icon": "",
-          "views": [
-            "fitDetailsTable",
-            "qofTable",
-            "coeffTable"
-          ]
-        },
-        {
-          "name": "data",
-          "title": "Data",
-          "icon": "",
-          "views": [
-            "dataTable",
-            "fitTable"
-          ],
-          "layout": "stacked"
-        }
-      ]
+  "gui": {
+    "layouts": [
+      {
+        "id": "layout-1",
+        "rows": [
+          {
+            "cells": [
+              {
+                "id": "control-panel",
+                "width": "30%",
+                "layout": {
+                  "rows": [
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-data"
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-model"
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-parameters"
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-method"
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-flavour"
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-subinit"
+                        }
+                      ]
+                    },
+                    {
+                      "cells": [
+                        {
+                          "id": "control-panel-dilution"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "main-panel",
+                "width": "70%"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "cell": "control-panel-data",
+      "variable": "data"
+    },
+    {
+      "cell": "control-panel-model",
+      "variable": "model"
+    },
+    {
+      "cell": "control-panel-parameters",
+      "resource": "params"
+    },
+    {
+      "cell": "control-panel-method",
+      "variable": "method"
+    },
+    {
+      "cell": "control-panel-flavour",
+      "variable": "flavour"
+    },
+    {
+      "cell": "control-panel-subinit",
+      "variable": "subInitValues"
+    },
+    {
+      "cell": "control-panel-dilution",
+      "variable": "dilutionCorrection"
     }
-  }
+  ]
 }

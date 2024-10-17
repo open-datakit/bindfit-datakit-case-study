@@ -1,9 +1,0 @@
-{
-  "name": "qofTable",
-  "title": "Quality of fit",
-  "spec": {},
-  "specType": "opends-basic-table",
-  "resources": [
-    "outputQof"
-  ]
-}

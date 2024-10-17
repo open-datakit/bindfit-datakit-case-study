@@ -1,9 +1,0 @@
-{
-  "name": "fitTable",
-  "title": "Fit data",
-  "spec": {},
-  "specType": "opends-table",
-  "resources": [
-    "outputFit"
-  ]
-}

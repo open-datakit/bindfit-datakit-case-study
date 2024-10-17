@@ -1,9 +1,0 @@
-{
-  "name": "dataTable",
-  "title": "Input data",
-  "spec": {},
-  "specType": "opends-table",
-  "resources": [
-    "inputData"
-  ]
-}

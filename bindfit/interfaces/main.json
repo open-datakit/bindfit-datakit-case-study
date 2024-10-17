@@ -31,7 +31,10 @@
                     "cells": [
                       {
                         "name": "control-panel-parameters",
-                        "resource": "inputParams"
+                        "resource": "inputParams",
+                        "options": {
+                          "size": "compact"
+                        }
                       }
                     ]
                   },

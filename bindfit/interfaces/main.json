@@ -71,7 +71,8 @@
             },
             {
               "name": "main-panel",
-              "width": "70%"
+              "width": "70%",
+              "view": "fitGraphHighcharts"
             }
           ]
         }

@@ -1,107 +1,81 @@
 {
   "name": "main",
   "gui": {
-    "layouts": [
-      {
-        "id": "layout-1",
-        "rows": [
-          {
-            "cells": [
-              {
-                "id": "control-panel",
-                "width": "30%",
-                "layout": {
-                  "rows": [
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-data"
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-model"
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-parameters"
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-method"
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-flavour"
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-subinit"
-                        }
-                      ]
-                    },
-                    {
-                      "cells": [
-                        {
-                          "id": "control-panel-dilution"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "main-panel",
-                "width": "70%"
+    "layout": {
+      "rows": [
+        {
+          "cells": [
+            {
+              "name": "control-panel",
+              "width": "30%",
+              "layout": {
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-data",
+                        "variable": "data"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-model",
+                        "variable": "model"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-parameters",
+                        "variable": "params"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-method",
+                        "variable": "method"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-flavour",
+                        "variable": "flavour"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-subinit",
+                        "variable": "subInitValues"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-dilution",
+                        "variable": "dilutionCorrection"
+                      }
+                    ]
+                  }
+                ]
               }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "components": [
-    {
-      "cell": "control-panel-data",
-      "variable": "data"
-    },
-    {
-      "cell": "control-panel-model",
-      "variable": "model"
-    },
-    {
-      "cell": "control-panel-parameters",
-      "resource": "params"
-    },
-    {
-      "cell": "control-panel-method",
-      "variable": "method"
-    },
-    {
-      "cell": "control-panel-flavour",
-      "variable": "flavour"
-    },
-    {
-      "cell": "control-panel-subinit",
-      "variable": "subInitValues"
-    },
-    {
-      "cell": "control-panel-dilution",
-      "variable": "dilutionCorrection"
+            },
+            {
+              "name": "main-panel",
+              "width": "70%"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  }
 }

@@ -31,7 +31,7 @@
                     "cells": [
                       {
                         "name": "control-panel-parameters",
-                        "variable": "params"
+                        "resource": "inputParams"
                       }
                     ]
                   },

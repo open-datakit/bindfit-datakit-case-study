@@ -127,7 +127,7 @@
       },
       {
         "name": "flavour",
-        "title": "Dilution correction",
+        "title": "Flavour",
         "description": "If true, apply dilution correction to the data before fitting",
         "type": "string",
         "enum": [

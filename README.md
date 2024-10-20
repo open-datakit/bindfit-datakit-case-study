@@ -1,8 +1,8 @@
-# Bindfit dataflow for opendata.studio
+# Bindfit datakit for opendata.studio
 
 Bindfit is a binding constant fitting tool designed to work with classical supramolecular titration data obtained from NMR, UV, Fluorescence and other methods.
 
-* 🗒️ [Bindfit dataflow documentation](https://docs.opendata.fstudio/v/bindfit-dataflow/)
+* 🗒️ [Bindfit datakit documentation](https://docs.opendata.fstudio/v/bindfit-datakit/)
 * 💻 [Bindfit Python library GitHub](https://github.com/opendatastudio/bindfit)
 
 ## Example usage
@@ -46,9 +46,9 @@ Build base execution container:
 ./build.sh
 ```
 
-Build bindfit-dataflow container:
+Build bindfit-datakit container:
 ```
-# Navigate back to bindfit-dataflow repository
+# Navigate back to bindfit-datakit repository
 cd containers
 ./build.sh
 ```

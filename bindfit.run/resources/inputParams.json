@@ -1,0 +1,53 @@
+{
+  "name": "inputParams",
+  "title": "Input parameters",
+  "description": "Fit parameter initial guesses and bounds",
+  "profile": "tabular-data-resource",
+  "schema": {
+    "primaryKey": "name",
+    "fields": [
+      {
+        "name": "name",
+        "title": "Name",
+        "description": "The name of the parameter",
+        "type": "string"
+      },
+      {
+        "name": "fit",
+        "title": "Fit",
+        "description": "Whether to fit this parameter",
+        "type": "boolean"
+      },
+      {
+        "name": "init",
+        "title": "Initial value",
+        "description": "The initial guess for the parameter value",
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "lowerBound",
+        "title": "Lower bound",
+        "description": "The lower bound for the parameter value",
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "upperBound",
+        "title": "Upper bound",
+        "description": "The upper bound for the parameter value",
+        "type": "number",
+        "unit": "M^{-1}"
+      }
+    ]
+  },
+  "data": [
+    {
+      "name": "k",
+      "fit": true,
+      "init": 22000,
+      "lowerBound": 0,
+      "upperBound": null
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "fit",
+  "title": "Fit curve",
+  "description": "Fit curve",
+  "profile": "tabular-data-resource",
+  "schema": {
+    "fields": [
+      {
+        "name": "host",
+        "unit": "",
+        "type": "number",
+        "title": "H"
+      },
+      {
+        "name": "guest",
+        "unit": "",
+        "type": "number",
+        "title": "G"
+      },
+      {
+        "name": "y0",
+        "unit": "",
+        "type": "number",
+        "title": "Y1"
+      }
+    ],
+    "primaryKey": [
+      "host",
+      "guest"
+    ]
+  },
+  "data": []
+}

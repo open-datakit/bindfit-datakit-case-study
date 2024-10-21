@@ -1,0 +1,30 @@
+{
+  "name": "coefficients",
+  "title": "Coefficients",
+  "description": "Fit coefficients",
+  "profile": "tabular-data-resource",
+  "schema": {
+    "primaryKey": "name",
+    "fields": [
+      {
+        "name": "name",
+        "title": "Name",
+        "unit": "",
+        "type": "string"
+      },
+      {
+        "name": "h",
+        "title": "H",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "hg",
+        "title": "HG",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  },
+  "data": []
+}

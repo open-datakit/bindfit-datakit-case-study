@@ -1,0 +1,39 @@
+{
+  "name": "molefractions",
+  "title": "Molefractions",
+  "description": "Fit molefractions",
+  "profile": "tabular-data-resource",
+  "schema": {
+    "primaryKey": [
+      "host",
+      "guest"
+    ],
+    "fields": [
+      {
+        "name": "host",
+        "title": "Host",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "guest",
+        "title": "Guest",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "h",
+        "title": "H",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "hg",
+        "title": "HG",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  },
+  "data": []
+}

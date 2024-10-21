@@ -1,0 +1,73 @@
+{
+  "name": "bindfit.run",
+  "title": "Run configuration for bindfit",
+  "profile": "opends-run",
+  "algorithm": "bindfit",
+  "container": "opends/bindfit",
+  "data": {
+    "inputs": [
+      {
+        "name": "data",
+        "resource": "data",
+        "metaschema": "data"
+      },
+      {
+        "name": "method",
+        "value": "nelder-mead"
+      },
+      {
+        "name": "model",
+        "value": "uv1to1"
+      },
+      {
+        "name": "inputParams",
+        "resource": "inputParams"
+      },
+      {
+        "name": "subInitValues",
+        "value": false
+      },
+      {
+        "name": "dilutionCorrection",
+        "value": true
+      },
+      {
+        "name": "flavour",
+        "value": null,
+        "disabled": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "outputParams",
+        "resource": "outputParams"
+      },
+      {
+        "name": "fit",
+        "resource": "fit",
+        "metaschema": "data"
+      },
+      {
+        "name": "residuals",
+        "resource": "residuals",
+        "metaschema": "data"
+      },
+      {
+        "name": "molefractions",
+        "resource": "molefractions"
+      },
+      {
+        "name": "coefficients",
+        "resource": "coefficients"
+      },
+      {
+        "name": "quality",
+        "resource": "quality"
+      },
+      {
+        "name": "summary",
+        "resource": "summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "quality",
+  "title": "Fit quality",
+  "description": "Fit quality",
+  "profile": "tabular-data-resource",
+  "schema": {
+    "primaryKey": "fit",
+    "fields": [
+      {
+        "name": "fit",
+        "title": "Fit",
+        "unit": "",
+        "type": "string"
+      },
+      {
+        "name": "rms",
+        "title": "RMS",
+        "unit": "",
+        "type": "number"
+      },
+      {
+        "name": "cov",
+        "title": "Covariance",
+        "unit": "",
+        "type": "number"
+      }
+    ]
+  },
+  "data": []
+}

@@ -43,9 +43,16 @@
   },
   "data": [
     {
-      "name": "k",
+      "name": "k11",
       "fit": true,
-      "init": 22000,
+      "init": 1.44,
+      "lowerBound": 0,
+      "upperBound": null
+    },
+    {
+      "name": "k12",
+      "fit": true,
+      "init": 0.24,
       "lowerBound": 0,
       "upperBound": null
     }

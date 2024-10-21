@@ -17,7 +17,7 @@
       },
       {
         "name": "model",
-        "value": "uv1to1"
+        "value": "nmr1to2"
       },
       {
         "name": "inputParams",
@@ -25,11 +25,11 @@
       },
       {
         "name": "subInitValues",
-        "value": false
+        "value": true
       },
       {
         "name": "dilutionCorrection",
-        "value": true
+        "value": false
       },
       {
         "name": "flavour",

@@ -1,7 +1,7 @@
 {
   "name": "outputParams",
-  "title": "Output parameters",
-  "description": "Optimised parameter values",
+  "title": "Figure 7",
+  "description": "Calculated binding constant values",
   "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": "name",

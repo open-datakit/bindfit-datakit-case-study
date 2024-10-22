@@ -106,6 +106,10 @@
             "#EE6C4D",
             "#FA8334"
           ],
+          "chart": {
+            "marginRight": 100,
+            "marginLeft": 100
+          },
           "title": {
             "text": null
           },
@@ -195,6 +199,10 @@
             "#EE6C4D",
             "#FA8334"
           ],
+          "chart": {
+            "marginRight": 100,
+            "marginLeft": 100
+          },
           "title": {
             "text": null
           },

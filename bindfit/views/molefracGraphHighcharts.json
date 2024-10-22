@@ -82,7 +82,7 @@
           },
           "xAxis": {
             "title": {
-              "text": "Equivalent total [G]/[H]"
+              "text": "TFA/1 equivalent"
             },
             "gridLineWidth": 1
           },
@@ -107,7 +107,11 @@
           "series": [
             {
               "id": "molefractions",
-              "name": "Molefraction",
+              "name": [
+                "1",
+                "1-TFA",
+                "1-TFA2"
+              ],
               "type": "spline",
               "marker": {
                 "enabled": false,

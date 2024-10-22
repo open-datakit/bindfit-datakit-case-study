@@ -107,7 +107,7 @@
             "#FA8334"
           ],
           "title": {
-            "text": "Fit curve"
+            "text": null
           },
           "xAxis": {
             "title": {
@@ -196,7 +196,7 @@
             "#FA8334"
           ],
           "title": {
-            "text": "Residuals"
+            "text": null
           },
           "xAxis": {
             "title": {

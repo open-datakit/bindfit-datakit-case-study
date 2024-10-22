@@ -38,7 +38,7 @@
               "cells": [
                 {
                   "id": "cell-1",
-                  "height": "200px"
+                  "height": "300px"
                 }
               ]
             },
@@ -46,7 +46,7 @@
               "cells": [
                 {
                   "id": "cell-2",
-                  "height": "100px"
+                  "height": "200px"
                 }
               ]
             }

@@ -226,7 +226,7 @@
           "series": [
             {
               "id": "residuals",
-              "name": "Residuals",
+              "name": "Data",
               "type": "line",
               "marker": {
                 "enabled": false,

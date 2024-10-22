@@ -112,7 +112,8 @@
           "xAxis": {
             "title": {
               "text": "Equivalent total [G]/[H]"
-            }
+            },
+            "gridLineWidth": 1
           },
           "yAxis": {
             "title": {
@@ -200,7 +201,8 @@
           "xAxis": {
             "title": {
               "text": "Equivalent total [G]/[H]"
-            }
+            },
+            "gridLineWidth": 1
           },
           "yAxis": {
             "title": {

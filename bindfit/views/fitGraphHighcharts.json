@@ -121,9 +121,9 @@
             }
           },
           "legend": {
-            "align": "center",
-            "verticalAlign": "top",
-            "layout": "horizontal"
+            "align": "right",
+            "verticalAlign": "middle",
+            "layout": "vertical"
           },
           "tooltip": {
             "crosshairs": [
@@ -210,9 +210,9 @@
             }
           },
           "legend": {
-            "align": "center",
-            "verticalAlign": "bottom",
-            "layout": "horizontal"
+            "align": "right",
+            "verticalAlign": "middle",
+            "layout": "vertical"
           },
           "tooltip": {
             "crosshairs": [

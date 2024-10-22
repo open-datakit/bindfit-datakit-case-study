@@ -112,7 +112,7 @@
             {
               "id": "molefractions",
               "name": "Molefraction",
-              "type": "line",
+              "type": "spline",
               "marker": {
                 "enabled": false,
                 "states": {

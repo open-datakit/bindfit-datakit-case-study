@@ -1,7 +1,7 @@
 {
   "name": "molefracGraphHighcharts",
-  "title": "Molefractions",
-  "description": "Optimised molefractions",
+  "title": "Figure 6",
+  "description": "Simulated molefractions for 1 and TFA adducts",
   "spec": {
     "dataPool": {
       "connectors": [

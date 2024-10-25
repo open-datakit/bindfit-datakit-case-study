@@ -1,9 +1,9 @@
 {
   "name": "bindfit.run",
   "title": "Run configuration for bindfit",
-  "profile": "opends-run",
+  "profile": "datakit-run",
   "algorithm": "bindfit",
-  "container": "opends/bindfit",
+  "container": "datakits/bindfit",
   "data": {
     "inputs": [
       {
